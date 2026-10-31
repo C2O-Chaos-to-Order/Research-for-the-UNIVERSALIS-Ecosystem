@@ -22,6 +22,15 @@ Report 13's open research gaps govern what must be learned. Report 14's build/no
 
 Existing UNIVERSALIS domain repositories for ontology, human/intelligence powers, skills, capabilities and knowledge remain taxonomy/content repositories. They are not substitutes for the core product repository. Their current descriptions and metadata include legacy GAIA wording; perform a separate naming, ownership and scope audit before treating them as authoritative UNIVERSALIS registries.
 
+Existing UNIVERSALIS domain repositories currently discoverable in the organization include:
+
+- `The-UNIVERSALIS-Ontology`
+- `The-UNIVERSALIS-Human-Powers`, `The-UNIVERSALIS-Human-Skills`, `The-UNIVERSALIS-Human-Capabilities`, `The-UNIVERSALIS-Human-Knowledge`
+- `The-UNIVERSALIS-Intelligence-Powers`, `The-UNIVERSALIS-Intelligence-Skills`, `The-UNIVERSALIS-Intelligence-Capabilities`, `The-UNIVERSALIS-Intelligence-Knowledge`
+- `The-UNIVERSALIS-Encyclopedias`
+
+These are separate domain/content repositories, not the core product implementation home. Their repository descriptions currently contain legacy GAIA wording. Their contents, canonical names, ownership and maturity require a separate read-only audit before they are wired into UNIVERSALIS. The plural `The-UNIVERSALIS-Encyclopedias` repository must not be conflated with a distinct official GAIA Encyclopedia; no such equivalence is established here.
+
 No additional repository is required for this initial programme. Do not create duplicates or split the product into multiple repositories before dependency and ownership evidence justifies it.
 
 ## 3. Staged implementation roadmap
