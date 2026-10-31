@@ -21,6 +21,15 @@
 
 Existing UNIVERSALIS domain repositories for ontology, human/intelligence powers, skills, capabilities and knowledge should remain taxonomy/content repositories. The product repository should consume approved, versioned domain data through documented interfaces rather than duplicating those corpora.
 
+Existing public domain repositories discovered in the organization are:
+
+- `The-UNIVERSALIS-Ontology`
+- `The-UNIVERSALIS-Human-Powers`, `The-UNIVERSALIS-Human-Skills`, `The-UNIVERSALIS-Human-Capabilities`, `The-UNIVERSALIS-Human-Knowledge`
+- `The-UNIVERSALIS-Intelligence-Powers`, `The-UNIVERSALIS-Intelligence-Skills`, `The-UNIVERSALIS-Intelligence-Capabilities`, `The-UNIVERSALIS-Intelligence-Knowledge`
+- `The-UNIVERSALIS-Encyclopedias`
+
+Treat these as domain/content repositories pending a content and ownership audit. Their descriptions currently retain GAIA wording, so canonical naming and scope must be reconciled before integration. Do not infer that the plural Encyclopedias repository is an official GAIA Encyclopedia or an approved universal source of truth.
+
 Several current repository descriptions retain GAIA wording. Conduct a separate naming, ownership and scope audit before treating them as authoritative UNIVERSALIS registries. Do not mass-rename or modify them as part of this initial research work.
 
 ## GIDEON prototype handling
