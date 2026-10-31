@@ -14,7 +14,7 @@
 |---|---|
 | `Research-for-the-C2O-Ecosystem` | Governing C2O Research Plan and paired technical/Human Tablet source collections. |
 | `Research-for-the-UNIVERSALIS-Ecosystem` | Public UNIVERSALIS research, evidence, reports, requirements, test protocols and review records. |
-| `The-UNIVERSALIS-Ecosystem` | Public product architecture, source code, tests, developer documentation, build workflows, packages and releases. |
+| `The-UNIVERSALIS-Ecosystem` | Public; README initialized, no product implementation yet. Product architecture, source code, tests, developer documentation, build workflows, packages and releases will live here. |
 | `The-C2O-Ecosystem` | Private C2O governance, J.A.R.V.I.S. operations, private infrastructure, internal systems and coupling controls. |
 
 ## Domain repositories
