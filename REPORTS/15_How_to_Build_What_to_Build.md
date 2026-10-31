@@ -17,7 +17,7 @@ Report 13's open research gaps govern what must be learned. Report 14's build/no
 |---|---|---|
 | `Research-for-the-C2O-Ecosystem` | Public; populated | Governing research Plan and paired Tablet source collections. |
 | `Research-for-the-UNIVERSALIS-Ecosystem` | Public; initialized for research | UNIVERSALIS charter, research reports, requirements, source/evidence registers, test records, independent reviews and release evidence. |
-| `The-UNIVERSALIS-Ecosystem` | Public; currently empty | Open-source product architecture, source code, tests, developer documentation, build workflows, packages and releases. |
+| `The-UNIVERSALIS-Ecosystem` | Public; README initialized; no product implementation | Open-source product architecture, source code, tests, developer documentation, build workflows, packages and releases. |
 | `The-C2O-Ecosystem` | Private; populated | C2O company/governance model, J.A.R.V.I.S. operational architecture, private infrastructure, internal systems, and controlled C2O–UNIVERSALIS coupling. |
 
 Existing UNIVERSALIS domain repositories for ontology, human/intelligence powers, skills, capabilities and knowledge remain taxonomy/content repositories. They are not substitutes for the core product repository. Their current descriptions and metadata include legacy GAIA wording; perform a separate naming, ownership and scope audit before treating them as authoritative UNIVERSALIS registries.
