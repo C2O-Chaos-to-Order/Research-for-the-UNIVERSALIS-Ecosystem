@@ -1,0 +1,39 @@
+{
+  "run": 1,
+  "note": "First execution of the five authored cases. Preserved unmodified, including four FAIL outcomes. The model and the harness were not changed between this run and the record of it.",
+  "outcomes": {
+    "SIM-001": "FAIL",
+    "SIM-002": "FAIL",
+    "SIM-003": "FAIL",
+    "SIM-004": "FAIL",
+    "SIM-005": "PASS"
+  },
+  "root_causes": [
+    {
+      "id": "D-01",
+      "severity": "Medium",
+      "affected": [
+        "SIM-001",
+        "SIM-002",
+        "SIM-003",
+        "SIM-004"
+      ],
+      "finding": "Every case recorded FAIL because the model returned a per-step 'trajectory' array that no case had pre-declared. The runner compares the actual value to the declared expectation with exact equality, so an extra undeclared key makes the comparison false even when every declared quantity matches.",
+      "nature": "This is a defect in how I authored the cases, not in the runner. The runner is right to compare exactly: an undeclared output is a change in what the model returns and must not pass silently. The case contract was wrong.",
+      "resolution": "The model now returns only the quantities a case declares, and the full trajectory is written to a separate evidence file so no detail is lost. Run 2 re-executes the same five cases under the corrected contract.",
+      "not_a_silent_correction": "Run 1's four failures remain in results/run_01_original/ unmodified."
+    },
+    {
+      "id": "D-02",
+      "severity": "High",
+      "affected": [
+        "SIM-003"
+      ],
+      "finding": "My pre-declared expectation for SIM-003 was arithmetically wrong in four values: first_step_outside_domain 4 (actual 2), first_step_bound_violated 4 (actual 2), first_step_hypothesis_broken 4 (actual 1), and max_true_error '36' (actual 2^63-1).",
+      "nature": "The model was right and the expectation was wrong. Hand-derived: with F_X(a,b)=(a^2,b^2), phi the mean, start (2,0), x_n=2^(2^n), y_n=1, so err_n = 2^(2^n - 1) - 1. n=1 gives 1, n=2 gives 7, n=3 gives 127, n=4 gives 32767, n=5 gives 2147483647, n=6 gives 9223372036854775807. The trajectory leaves the box at n=2 and the Lipschitz premise fails at n=1, before the bound is violated at n=2.",
+      "resolution": "The expectation is corrected to the hand-derived values, and the correction is recorded here rather than made quietly.",
+      "not_a_silent_correction": "The wrong values stay visible in run 1 and in this record. The corrected case is a new pre-declaration, not an edited history."
+    }
+  ],
+  "what_this_demonstrates": "A pre-declared expectation is only meaningful if it was written before the run and is allowed to fail. Four of five failed here and the failures are kept. One of them was my arithmetic and three were my case contract."
+}

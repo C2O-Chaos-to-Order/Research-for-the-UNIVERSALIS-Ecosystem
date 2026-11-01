@@ -1,0 +1,5 @@
+family,configurations,completed,expectations_matched,scope
+offset_contraction,2,2,2,Exact rational arithmetic on the declared domain.
+published_table_reproduction,1,1,1,Exact rational arithmetic on the declared domain.
+squaring,1,1,1,Exact rational arithmetic on the declared domain.
+translation,1,1,1,Exact rational arithmetic on the declared domain.

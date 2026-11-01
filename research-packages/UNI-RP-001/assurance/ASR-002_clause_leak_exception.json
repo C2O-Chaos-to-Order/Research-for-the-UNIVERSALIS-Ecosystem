@@ -1,0 +1,21 @@
+{
+  "record_id": "ASR-002",
+  "title": "Clause-leak check: reviewed exception for one shared filename",
+  "tool": "scaffold/tools/clause_leak_check.py, threshold 40, corpus root Research-for-the-C2O-Ecosystem",
+  "result_before": "Ten files flagged. Nine were resolved by rewriting verbatim or near-verbatim clause wording into paraphrase that names the clause instead of reproducing it.",
+  "result_after": "Three files still flagged, all for the same 43-character string.",
+  "shared_string": "the corpus-relative path segment of the illustrative-computation CSV under the tablet's evidence directory (43 characters, ending in '.csv'). Deliberately not reproduced here, so that this record does not itself become a file that trips the check.",
+  "why_it_remains": "This is a filename, not clause prose, and the record above describes it rather than quoting it. The provenance register must name the evidence file it registers, and the preserved run records it as the input they read. Removing or disguising the name would break the traceability the register exists to provide, and a reader could no longer find the file being cited. The string discloses no clause body text.",
+  "files_affected": [
+    "sources/source_register.json",
+    "results/run_01_original/SIM-005.json",
+    "results/run_02_pre_restructure/SIM-005.json"
+  ],
+  "mitigation": "Only the filename is shared, at 43 characters. No sentence, clause wording, or argument from the tablet appears in this package. The paraphrase edits are in the report, the research records, and the model header.",
+  "residual_risk": "A reader can learn that an evidence file with this name exists in the corpus. That much is already visible from the public tablet's own cross-reference to that file.",
+  "verdict": "ACCEPTED_WITH_REASON",
+  "reviewer": "Not independently reviewed. Recorded by the author; open to challenge.",
+  "authorization_status": "NOT_AUTHORIZED",
+  "programme_credit": "NONE",
+  "note_on_this_record": "An earlier draft of this record quoted the shared string in full, which made this file a fourth match. The quote was removed; the record now describes the string instead. That is the kind of self-defeating artefact this check exists to catch, and it caught one in the exception record."
+}

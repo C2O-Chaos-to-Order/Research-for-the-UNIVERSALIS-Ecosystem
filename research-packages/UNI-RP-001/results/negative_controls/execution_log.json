@@ -1,0 +1,58 @@
+[
+  {
+    "id": "NEG-001",
+    "command": [
+      "/workspace/work/manuscript-intake/venv/bin/python",
+      "/workspace/work/negctl/simulations/run_one.py",
+      "--case",
+      "NEG-001",
+      "--output",
+      "/workspace/work/negctl/neg_results/NEG-001.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"id\": \"NEG-001\", \"outcome\": \"FAIL\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "NEG-002",
+    "command": [
+      "/workspace/work/manuscript-intake/venv/bin/python",
+      "/workspace/work/negctl/simulations/run_one.py",
+      "--case",
+      "NEG-002",
+      "--output",
+      "/workspace/work/negctl/neg_results/NEG-002.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"id\": \"NEG-002\", \"outcome\": \"FAIL\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "NEG-003",
+    "command": [
+      "/workspace/work/manuscript-intake/venv/bin/python",
+      "/workspace/work/negctl/simulations/run_one.py",
+      "--case",
+      "NEG-003",
+      "--output",
+      "/workspace/work/negctl/neg_results/NEG-003.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"id\": \"NEG-003\", \"outcome\": \"ERROR\", \"execution_status\": \"ERROR\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "NEG-004",
+    "command": [
+      "/workspace/work/manuscript-intake/venv/bin/python",
+      "/workspace/work/negctl/simulations/run_one.py",
+      "--case",
+      "NEG-004",
+      "--output",
+      "/workspace/work/negctl/neg_results/NEG-004.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\"id\": \"NEG-004\", \"outcome\": \"FAIL\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  }
+]

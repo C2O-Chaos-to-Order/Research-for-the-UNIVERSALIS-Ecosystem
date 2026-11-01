@@ -1,0 +1,2 @@
+report_id,path,title,research_ids,simulation_ids
+RPT-001,reports/RPT-001_EMERALD_01E05_TRAJECTORY_BOUND.md,"Emerald 01.E05 trajectory-error bound: reproduction, sharpness and a forward-invariance gap",RES-001; RES-002; RES-003; RES-004; RES-005,SIM-001; SIM-002; SIM-003; SIM-004; SIM-005

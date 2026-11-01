@@ -1,0 +1,217 @@
+[
+  {
+    "id": "SIM-001",
+    "research_record_id": "RES-001",
+    "clause_ids": [
+      "01.E05",
+      "01.H10"
+    ],
+    "source_ids": [
+      "SRC-EMERALD-TECH",
+      "SRC-EMERALD-HUMAN"
+    ],
+    "protocol_version": "1.0.0",
+    "configuration": "exact rational arithmetic; case kind bound_on_declared_domain",
+    "expectation": null,
+    "input": {
+      "kind": "bound_on_declared_domain",
+      "family": "translation",
+      "start": [
+        2,
+        0
+      ],
+      "steps": 5,
+      "epsilon": "0",
+      "L": "1",
+      "domain": [
+        -10,
+        10
+      ]
+    },
+    "expected": {
+      "steps_within_domain": 6,
+      "bound_satisfied_at_every_step": true,
+      "hypothesis_held_at_every_step": true,
+      "max_true_error": "0",
+      "max_claimed_bound": "0",
+      "worst_error_over_bound": "0",
+      "final_true_error": "0"
+    },
+    "limitations": "Zero residual by construction, so the bound is trivially satisfied. A pass on this case establishes only that the harness runs, not that the bound is informative.",
+    "release_classification": "PUBLICLY_CLEARED",
+    "known_answer_check": {
+      "included": true,
+      "case_id": "SIM-005",
+      "detail": "SIM-005 is the negative-control known-answer case."
+    },
+    "checkpoint_id": "CP-04",
+    "family": "translation"
+  },
+  {
+    "id": "SIM-002",
+    "research_record_id": "RES-002",
+    "clause_ids": [
+      "01.E05",
+      "01.H10"
+    ],
+    "source_ids": [
+      "SRC-EMERALD-TECH",
+      "SRC-EMERALD-HUMAN"
+    ],
+    "protocol_version": "1.0.0",
+    "configuration": "exact rational arithmetic; case kind bound_on_declared_domain",
+    "expectation": null,
+    "input": {
+      "kind": "bound_on_declared_domain",
+      "family": "offset_contraction",
+      "start": [
+        2,
+        0
+      ],
+      "steps": 5,
+      "epsilon": "1/4",
+      "L": "1/2",
+      "domain": [
+        -10,
+        10
+      ]
+    },
+    "expected": {
+      "steps_within_domain": 6,
+      "bound_satisfied_at_every_step": true,
+      "hypothesis_held_at_every_step": true,
+      "max_true_error": "31/64",
+      "max_claimed_bound": "31/64",
+      "worst_error_over_bound": "1",
+      "final_true_error": "31/64"
+    },
+    "limitations": "Sharpness is shown only for a family whose residual is a constant. Whether the bound is attained for a residual that varies with x is not tested here.",
+    "release_classification": "PUBLICLY_CLEARED",
+    "checkpoint_id": "CP-04",
+    "family": "offset_contraction"
+  },
+  {
+    "id": "SIM-003",
+    "research_record_id": "RES-003",
+    "clause_ids": [
+      "01.E05",
+      "01.H10"
+    ],
+    "source_ids": [
+      "SRC-EMERALD-TECH",
+      "SRC-EMERALD-HUMAN"
+    ],
+    "protocol_version": "1.0.0",
+    "configuration": "exact rational arithmetic; case kind domain_escape",
+    "expectation": null,
+    "input": {
+      "kind": "domain_escape",
+      "family": "squaring",
+      "start": [
+        2,
+        0
+      ],
+      "steps": 6,
+      "epsilon": "1",
+      "L": "4",
+      "domain": [
+        -10,
+        10
+      ]
+    },
+    "expected": {
+      "first_step_outside_domain": 2,
+      "first_step_bound_violated": 2,
+      "first_step_hypothesis_broken": 1,
+      "hypothesis_broke_before_bound": true,
+      "max_true_error": "9223372036854775807"
+    },
+    "limitations": "The declared domain and the chosen L are both authored inputs. A different L on the same box would change every reported step number. This expectation was CORRECTED after run 1, where my first version (steps 4, 4, 4 and max error 36) was arithmetically wrong. The hand derivation is x_n = 2^(2^n) with phi(x_n) - y_n = 2^(2^n - 1) - 1, giving 1, 7, 127, 32767, 2147483647, 2^63-1. The original wrong values remain recorded in results/run_01_original/ and results/run_01_diagnosis.json.",
+    "release_classification": "PUBLICLY_CLEARED",
+    "checkpoint_id": "CP-04",
+    "family": "squaring"
+  },
+  {
+    "id": "SIM-004",
+    "research_record_id": "RES-004",
+    "clause_ids": [
+      "01.E05",
+      "01.H10"
+    ],
+    "source_ids": [
+      "SRC-EMERALD-TECH",
+      "SRC-EMERALD-HUMAN"
+    ],
+    "protocol_version": "1.0.0",
+    "configuration": "exact rational arithmetic; case kind uniform_budget",
+    "expectation": null,
+    "input": {
+      "kind": "uniform_budget",
+      "family": "offset_contraction",
+      "start": [
+        2,
+        0
+      ],
+      "steps": 5,
+      "epsilon": "1/4",
+      "L": "1/2",
+      "domain": [
+        -10,
+        10
+      ]
+    },
+    "expected": {
+      "geometric_limit": "1/2",
+      "every_step_below_limit": true,
+      "bound_grows_with_duration": true,
+      "max_true_error": "31/64",
+      "final_claimed_bound": "31/64"
+    },
+    "limitations": "The geometric limit bounds the true error here because the residual is constant. For a variable residual the limit would bound only the asymptotic envelope, which this case does not test.",
+    "release_classification": "PUBLICLY_CLEARED",
+    "checkpoint_id": "CP-04",
+    "family": "offset_contraction"
+  },
+  {
+    "id": "SIM-005",
+    "research_record_id": "RES-005",
+    "clause_ids": [
+      "01.E05",
+      "01.H10"
+    ],
+    "source_ids": [
+      "SRC-EMERALD-TECH",
+      "SRC-EMERALD-HUMAN"
+    ],
+    "protocol_version": "1.0.0",
+    "configuration": "exact rational arithmetic; case kind reproduce_published_table",
+    "expectation": null,
+    "input": {
+      "kind": "reproduce_published_table",
+      "published_csv": "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv",
+      "grid": [
+        -2,
+        -1,
+        0,
+        1,
+        2
+      ]
+    },
+    "expected": {
+      "rows_checked": 50,
+      "rows_mismatched": 0,
+      "mismatches": [],
+      "expected_row_count": 50,
+      "row_count_matches_expectation": true
+    },
+    "limitations": "This reproduces the tablet's own arithmetic from its stated formulas. It does not test any scientific claim, and reproducing a published table is not independent verification of it.",
+    "release_classification": "PUBLICLY_CLEARED",
+    "known_answer_check": {
+      "included": true,
+      "case_id": "SIM-005",
+      "detail": "Known-answer control: the published 50-row table must be reproduced value for value."
+    },
+    "checkpoint_id": "CP-04",
+    "family": "published_table_reproduction"
+  }
+]

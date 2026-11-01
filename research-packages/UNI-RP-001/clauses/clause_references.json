@@ -1,0 +1,38 @@
+[
+  {
+    "clause_id": "01.E05",
+    "tablet_number": 1,
+    "clause_number": 5,
+    "side": "technical",
+    "placeholder": false,
+    "note": "Technical clause under study. Trajectory error bound.",
+    "release_classification": "PUBLICLY_CLEARED"
+  },
+  {
+    "clause_id": "01.E01",
+    "tablet_number": 1,
+    "clause_number": 1,
+    "side": "technical",
+    "placeholder": false,
+    "note": "Correspondence contract the bound builds on.",
+    "release_classification": "PUBLICLY_CLEARED"
+  },
+  {
+    "clause_id": "01.E02",
+    "tablet_number": 1,
+    "clause_number": 2,
+    "side": "technical",
+    "placeholder": false,
+    "note": "Residual definition used for the uniform bound assumption.",
+    "release_classification": "PUBLICLY_CLEARED"
+  },
+  {
+    "clause_id": "01.H10",
+    "tablet_number": 1,
+    "clause_number": 10,
+    "side": "human",
+    "placeholder": false,
+    "note": "Human clause X, Of the limit. Declares tolerance over a trajectory, not one step.",
+    "release_classification": "PUBLICLY_CLEARED"
+  }
+]

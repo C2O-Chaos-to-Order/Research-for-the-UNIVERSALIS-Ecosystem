@@ -1,0 +1,46 @@
+{
+  "C2_after_evidence_correction": {
+    "case": "SIM-005",
+    "declared_expectation": {
+      "rows_checked": 50,
+      "rows_mismatched": 0,
+      "mismatches": [],
+      "expected_row_count": 50,
+      "row_count_matches_expectation": true
+    },
+    "observed_after_correction": {
+      "rows_checked": 50,
+      "rows_mismatched": 1,
+      "mismatches": [
+        {
+          "row": "TR-01",
+          "problems": [
+            "discrepancy 0 != 99"
+          ]
+        }
+      ],
+      "expected_row_count": 50,
+      "row_count_matches_expectation": true
+    },
+    "outcome": "FAIL"
+  },
+  "C1_after_premise_correction": {
+    "case": "SIM-003",
+    "change": "declared domain widened from [-10,10] to [-1000,1000]",
+    "declared_expectation": {
+      "first_step_outside_domain": 2,
+      "first_step_bound_violated": 2,
+      "first_step_hypothesis_broken": 1,
+      "hypothesis_broke_before_bound": true,
+      "max_true_error": "9223372036854775807"
+    },
+    "observed_after_correction": {
+      "first_step_outside_domain": 4,
+      "first_step_bound_violated": 2,
+      "first_step_hypothesis_broken": 1,
+      "hypothesis_broke_before_bound": true,
+      "max_true_error": "9223372036854775807"
+    },
+    "outcome": "FAIL"
+  }
+}
