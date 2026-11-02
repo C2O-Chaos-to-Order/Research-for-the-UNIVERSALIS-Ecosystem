@@ -39,6 +39,13 @@ The programme connects the following tracks:
 
 These tracks overlap. No individual or community is reduced to a single category.
 
+## Governance and charter recovery
+
+- [Foundational Charter Recovery and Reconciliation](GOVERNANCE/CHARTER-RECOVERY-AND-RECONCILIATION.md) records the recoverable charter history, missing original wording, and reconciliation status.
+- [Principle and Decision Register](GOVERNANCE/PRINCIPLE-REGISTER.md) distinguishes original principles, owner-selected decisions, owner-approved philosophy, proposals, and research scenarios.
+
+The original charter's complete text and the exact wording of GC-P01–GC-P07 have not yet been recovered. These records do not replace or reconstruct the original charter.
+
 ## Research method
 
 All case studies use the common methods in [METHODS.md](METHODS.md), including:
