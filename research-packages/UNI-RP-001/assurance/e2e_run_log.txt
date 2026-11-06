@@ -1,0 +1,47 @@
+========================================================================
+UNIVERSALIS end-to-end research workflow walkthrough
+========================================================================
+Package under test: /workspace/work/uni_pkg
+
+[PASS] 0. Baseline: the package as published validates
+       all seven checks pass
+
+Working copy: /tmp/uni-e2e-i6pbtzow/pkg
+
+[PASS] 1. A source artefact is registered with provenance
+       SRC-EMERALD-TECH path=C2O Tablets/tablets/01_EMERALD_TABLET.md
+       git blob f01e9812281bd12dad3c704f2712d17566f672f7 at commit 57ddb795f9b7
+       review scope is bounded: Clause 01.E05 only: the stated trajectory-error bound and it...
+[PASS] 2. A copied artefact preserves integrity and is marked derived, not independent
+       copy hash equals original: True
+       independence_from: ['SRC-EMERALD-EVIDENCE']
+[PASS] 3. Records trace to declared clause references
+       declared clauses: ['01.E01', '01.E02', '01.E05', '01.H10']
+       5 research records, all clause links resolve: True
+[PASS] 4. Research record to case to result chain is one-to-one
+       5 records, 5 cases, 5 results, links agree in both directions
+[PASS] 5. Execution is recorded with an actual exit code per case
+       5 log entries, exit codes: 0, 0, 0, 0, 0
+[PASS] 6. Re-executing a case reproduces the recorded result
+       recorded max_true_error=31/64, re-executed=31/64
+       identical: True
+[PASS] 7. A failed run is retained with its root causes, not overwritten
+       run 1 outcomes: {'SIM-001': 'FAIL', 'SIM-002': 'FAIL', 'SIM-003': 'FAIL', 'SIM-004': 'FAIL', 'SIM-005': 'PASS'}
+       D-01 (Medium): Every case recorded FAIL because the model returned a per-step '...
+       D-02 (High): My pre-declared expectation for SIM-003 was arithmetically wrong...
+[PASS] 8. A corrupted result is caught by manifest integrity
+       validator ok=False; first failure: manifest_integrity: MANIFEST_INTEGRITY: hash mismatch for results/SIM-002.json
+[PASS] 9. Recovery: restoring the original file restores validity
+       package validates again after the corruption is reverted
+[PASS] 10. A tampered value with a re-locked manifest is NOT caught (known limit)
+       The validator passes. No check recomputes the simulation. This is why validation
+       is not reproduction, and why an independent party must re-run the model.
+[PASS] 11. A record cannot award itself programme credit
+       validator ok=False; caught by: count_arithmetic, honest_status
+
+========================================================================
+12/12 walkthrough steps behaved as required
+========================================================================
+Scope: this shows the machinery enforces its own rules on this package.
+It does not show that any finding is true, that a human reviewed it, or
+that anything is authorised. Step 10 is the boundary of what it can show.

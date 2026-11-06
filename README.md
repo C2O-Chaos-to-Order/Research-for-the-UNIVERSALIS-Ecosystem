@@ -22,6 +22,12 @@ C2O's private company, governance, infrastructure, credentials, internal data, a
 
 Repository initialized as a research workspace. Initialization does not mean the research programme, requirements, architecture, implementation, validation, or release is complete or authorized.
 
+## Executed research packages
+
+- [`research-packages/UNI-RP-001/`](research-packages/UNI-RP-001/) — Emerald tablet 01, clause E05: the trajectory-error bound, its sharpness, and a forward-invariance gap. Five executed simulation cases, five research records, one report, one candidate requirement (`ULC-01-05`). Checkpoint CP-04 is **in progress at 5 of 9** research and simulation passes, not met. Nothing in it is independently verified, and no programme credit has been awarded.
+
+Each package carries its own manifest, ledgers, execution logs, and an `assurance/` directory recording what the validator catches and what it cannot. A package validating is not evidence that its findings are true.
+
 ## Core deliverables
 
 - Research charter and subject definition.

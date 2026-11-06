@@ -1,0 +1,17 @@
+[
+  {
+    "requirement_id": "ULC-01-05",
+    "objective_question": "Does the trajectory-error bound of 01.E05 remain a guarantee where its premises do not hold, and if not, what must a correspondence guarantee require of the domain?",
+    "candidate_requirement": "A correspondence or approximation guarantee must declare a domain that is closed under iteration and must be checked for forward invariance at each step. A bound that holds only where its premises hold, and whose premises are not re-checked as the state evolves, is not a guarantee over a trajectory.",
+    "research_record_id": "RES-003",
+    "simulation_record_id": "SIM-003",
+    "clause_id": "01.E05",
+    "classification": "candidate_safety_requirement (tablet 01, clause E05)",
+    "implementation": "None. No UNIVERSALIS component implements this requirement. Recording it does not create an implementation, and the prototype does not contain a forward-invariance check.",
+    "production_validation": "NOT_PERFORMED",
+    "evidence_status": "documented",
+    "authorization_status": "NOT_AUTHORIZED",
+    "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
+    "release_classification": "PUBLICLY_CLEARED"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "purpose": "Four controls authored to fail. Each tests a different blindness the harness could have: accepting a wrong declared value, accepting a mismatched input, silently passing an unknown case kind, and failing to notice corrupted source evidence.",
+  "controls": [
+    {
+      "id": "NEG-001",
+      "purpose": "wrong declared value",
+      "required_outcome": "FAIL",
+      "observed_outcome": "FAIL",
+      "passed_as_a_control": true,
+      "note": "Expected. A wrong pre-declared expectation is caught."
+    },
+    {
+      "id": "NEG-002",
+      "purpose": "input changed, expectation stale",
+      "required_outcome": "FAIL",
+      "observed_outcome": "FAIL",
+      "passed_as_a_control": true,
+      "note": "Expected. A stale expectation against new input is caught."
+    },
+    {
+      "id": "NEG-003",
+      "purpose": "unknown case kind",
+      "required_outcome": "ERROR",
+      "observed_outcome": "ERROR",
+      "passed_as_a_control": true,
+      "note": "Expected. An unimplemented case kind raises rather than passing."
+    },
+    {
+      "id": "NEG-004",
+      "purpose": "one corrupted value in the published 50-row table",
+      "required_outcome": "FAIL",
+      "observed_outcome": "FAIL",
+      "passed_as_a_control": true,
+      "note": "Expected. Recomputing from formulas detects a single corrupted value in the source evidence."
+    }
+  ],
+  "all_controls_behaved": true
+}

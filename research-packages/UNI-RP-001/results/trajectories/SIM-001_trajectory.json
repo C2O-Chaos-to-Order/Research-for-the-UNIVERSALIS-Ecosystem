@@ -1,0 +1,98 @@
+[
+  {
+    "n": 0,
+    "x": [
+      "2",
+      "0"
+    ],
+    "y": "1",
+    "phi_x": "1",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  },
+  {
+    "n": 1,
+    "x": [
+      "3",
+      "1"
+    ],
+    "y": "2",
+    "phi_x": "2",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  },
+  {
+    "n": 2,
+    "x": [
+      "4",
+      "2"
+    ],
+    "y": "3",
+    "phi_x": "3",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  },
+  {
+    "n": 3,
+    "x": [
+      "5",
+      "3"
+    ],
+    "y": "4",
+    "phi_x": "4",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  },
+  {
+    "n": 4,
+    "x": [
+      "6",
+      "4"
+    ],
+    "y": "5",
+    "phi_x": "5",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  },
+  {
+    "n": 5,
+    "x": [
+      "7",
+      "5"
+    ],
+    "y": "6",
+    "phi_x": "6",
+    "true_error": "0",
+    "claimed_bound": "0",
+    "residual_here": "0",
+    "inside_domain": true,
+    "bound_satisfied": true,
+    "residual_within_epsilon": true,
+    "hypothesis_intact": true
+  }
+]

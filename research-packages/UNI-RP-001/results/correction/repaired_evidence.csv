@@ -1,0 +1,51 @@
+fixture_id,fixture_model,a,b,initial_mapped_value,transform_then_map,map_then_transform,absolute_discrepancy,epsilon,passes
+TR-01,Common translation,-2,-2,-2,-1,-1,99,0,true
+TR-02,Common translation,-2,-1,-1.5,-0.5,-0.5,0,0,true
+TR-03,Common translation,-2,0,-1,0,0,0,0,true
+TR-04,Common translation,-2,1,-0.5,0.5,0.5,0,0,true
+TR-05,Common translation,-2,2,0,1,1,0,0,true
+TR-06,Common translation,-1,-2,-1.5,-0.5,-0.5,0,0,true
+TR-07,Common translation,-1,-1,-1,0,0,0,0,true
+TR-08,Common translation,-1,0,-0.5,0.5,0.5,0,0,true
+TR-09,Common translation,-1,1,0,1,1,0,0,true
+TR-10,Common translation,-1,2,0.5,1.5,1.5,0,0,true
+TR-11,Common translation,0,-2,-1,0,0,0,0,true
+TR-12,Common translation,0,-1,-0.5,0.5,0.5,0,0,true
+TR-13,Common translation,0,0,0,1,1,0,0,true
+TR-14,Common translation,0,1,0.5,1.5,1.5,0,0,true
+TR-15,Common translation,0,2,1,2,2,0,0,true
+TR-16,Common translation,1,-2,-0.5,0.5,0.5,0,0,true
+TR-17,Common translation,1,-1,0,1,1,0,0,true
+TR-18,Common translation,1,0,0.5,1.5,1.5,0,0,true
+TR-19,Common translation,1,1,1,2,2,0,0,true
+TR-20,Common translation,1,2,1.5,2.5,2.5,0,0,true
+TR-21,Common translation,2,-2,0,1,1,0,0,true
+TR-22,Common translation,2,-1,0.5,1.5,1.5,0,0,true
+TR-23,Common translation,2,0,1,2,2,0,0,true
+TR-24,Common translation,2,1,1.5,2.5,2.5,0,0,true
+TR-25,Common translation,2,2,2,3,3,0,0,true
+SQ-01,Componentwise square versus squared mean,-2,-2,-2,4,4,0,0,true
+SQ-02,Componentwise square versus squared mean,-2,-1,-1.5,2.5,2.25,0.25,0,false
+SQ-03,Componentwise square versus squared mean,-2,0,-1,2,1,1,0,false
+SQ-04,Componentwise square versus squared mean,-2,1,-0.5,2.5,0.25,2.25,0,false
+SQ-05,Componentwise square versus squared mean,-2,2,0,4,0,4,0,false
+SQ-06,Componentwise square versus squared mean,-1,-2,-1.5,2.5,2.25,0.25,0,false
+SQ-07,Componentwise square versus squared mean,-1,-1,-1,1,1,0,0,true
+SQ-08,Componentwise square versus squared mean,-1,0,-0.5,0.5,0.25,0.25,0,false
+SQ-09,Componentwise square versus squared mean,-1,1,0,1,0,1,0,false
+SQ-10,Componentwise square versus squared mean,-1,2,0.5,2.5,0.25,2.25,0,false
+SQ-11,Componentwise square versus squared mean,0,-2,-1,2,1,1,0,false
+SQ-12,Componentwise square versus squared mean,0,-1,-0.5,0.5,0.25,0.25,0,false
+SQ-13,Componentwise square versus squared mean,0,0,0,0,0,0,0,true
+SQ-14,Componentwise square versus squared mean,0,1,0.5,0.5,0.25,0.25,0,false
+SQ-15,Componentwise square versus squared mean,0,2,1,2,1,1,0,false
+SQ-16,Componentwise square versus squared mean,1,-2,-0.5,2.5,0.25,2.25,0,false
+SQ-17,Componentwise square versus squared mean,1,-1,0,1,0,1,0,false
+SQ-18,Componentwise square versus squared mean,1,0,0.5,0.5,0.25,0.25,0,false
+SQ-19,Componentwise square versus squared mean,1,1,1,1,1,0,0,true
+SQ-20,Componentwise square versus squared mean,1,2,1.5,2.5,2.25,0.25,0,false
+SQ-21,Componentwise square versus squared mean,2,-2,0,4,0,4,0,false
+SQ-22,Componentwise square versus squared mean,2,-1,0.5,2.5,0.25,2.25,0,false
+SQ-23,Componentwise square versus squared mean,2,0,1,2,1,1,0,false
+SQ-24,Componentwise square versus squared mean,2,1,1.5,2.5,2.25,0.25,0,false
+SQ-25,Componentwise square versus squared mean,2,2,2,4,4,0,0,true

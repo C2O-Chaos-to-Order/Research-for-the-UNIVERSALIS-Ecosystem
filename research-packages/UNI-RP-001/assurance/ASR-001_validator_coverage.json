@@ -1,0 +1,52 @@
+{
+  "record_id": "ASR-001",
+  "title": "What the programme validator catches, and the one thing it cannot",
+  "purpose": "A validator that reports PASS proves only that the checks it implements agree with each other. This record states which deliberate defects those checks actually caught in this package, and records a defect class they cannot catch, so a pass is not read as more than it is.",
+  "method": "Copy the finished package to a scratch directory. Introduce one defect at a time. Run validate_programme.py against the copy. Restore the copy and confirm it passes again before the next defect. Each defect below was applied to a copy; this package was never modified for the test.",
+  "defects_caught": [
+    {
+      "defect": "A research record relinked to a different simulation case, breaking the one-to-one chain.",
+      "caught": true,
+      "failed_checks": [
+        "traceability",
+        "count_arithmetic"
+      ]
+    },
+    {
+      "defect": "The status file inflated simulation_results from 5 to 6.",
+      "caught": true,
+      "failed_checks": [
+        "count_arithmetic"
+      ]
+    },
+    {
+      "defect": "A research record marked AWARDED programme credit that no owner granted.",
+      "caught": true,
+      "failed_checks": [
+        "count_arithmetic",
+        "honest_status"
+      ]
+    },
+    {
+      "defect": "A recorded result value overwritten in results/SIM-002.json, manifest left untouched.",
+      "caught": true,
+      "failed_checks": [
+        "manifest_integrity"
+      ],
+      "note": "Caught for the right reason: the file no longer hashes to its locked value."
+    }
+  ],
+  "defect_not_caught": {
+    "defect": "A recorded result value overwritten in results/SIM-002.json, and the manifest then re-locked over the edit so every hash agrees again.",
+    "caught": false,
+    "failed_checks": [],
+    "why": "No check recomputes a simulation. The validator compares records to each other and to the locked hashes; it does not re-derive what the run should have produced. Once the hash is re-locked, a falsified number is internally consistent with everything the validator examines.",
+    "what_would_catch_it": "Re-running the simulation from the recorded case configuration and code hash, by a party that did not write the model. That is independent reproduction, and it is a different activity from validation. It has not been performed for this package.",
+    "severity": "High",
+    "status": "OPEN"
+  },
+  "scope_evidence": "The validator states this limit itself in its own scope field: it does not re-execute simulations and does not award programme credit. This record confirms that statement empirically rather than taking it on trust.",
+  "residual_risk_statement": "A PASS from this validator means the evidence package is internally consistent and honestly labelled. It does not mean the numbers are true. Treating a PASS as scientific validation, or as authorization to release, would be a misuse of the tool.",
+  "authorization_status": "NOT_AUTHORIZED",
+  "programme_credit": "NONE"
+}

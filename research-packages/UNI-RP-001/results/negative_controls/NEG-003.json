@@ -1,0 +1,80 @@
+{
+  "programme_unit_id": "UNI-RP-001",
+  "checkpoint_id": "CP-04",
+  "objective_question": "The Emerald technical clause 01.E05 derives a trajectory-error bound e_n <= eps*sum(L^k) under two premises: a uniform residual bound eps over a domain, and an L-Lipschitz fine map on that domain. Does the bound hold on its declared domain, is it sharp, and does its premise survive iteration \u2014 or can a trajectory satisfy the bound while the premise that justifies it has already failed?",
+  "claim_class": "PROPOSED",
+  "relevant_dimensions": "formal_correctness, traceability_and_provenance",
+  "phase": "formalization",
+  "level": "BASE",
+  "method_summary": "Five cases over exact rational arithmetic. Case A tests a map with zero residual. Case B tests a contracting map with constant nonzero residual, where the bound may be attained exactly. Case C tests a non-contracting map whose trajectory leaves the declared domain. Case D tests the uniform geometric limit when L < 1. Case E is a known-answer control that recomputes the tablet's own published 50-row evidence table. Expectations were derived by hand in /workspace/work/derivation/derive.py before simulations/model.py was executed, and that derivation's output is quoted in uncertainty_and_limitations for audit.",
+  "sources_or_inputs": "SRC-EMERALD-TECH (01.E05), SRC-EMERALD-HUMAN (clause X), SRC-EMERALD-COMPENDIUM (01.E01, 01.E02, 01.E05), SRC-EMERALD-EVIDENCE",
+  "assumptions": "X is the real plane and Y the real line, all quantities dimensionless, d_Y the absolute difference, and phi the arithmetic mean, matching the tablet's own worked example in section 5. Delta is taken as F_Y(phi(x)) minus phi(F_X(x)) in absolute value. All arithmetic is exact rationals, so no floating-point tolerance is involved. The declared domain is treated as a closed box in both coordinates.",
+  "acceptance_or_falsification_criteria": "Acceptance: on the declared domain with both premises holding, the true error never exceeds eps*sum(L^k) at any step, and in case B it equals it at every step so the bound is sharp. Falsification: any step where the true error exceeds the bound while both premises hold. Separately, case C falsifies the sufficiency of the bound as an engineering guarantee if the trajectory leaves the declared domain while the reported error still appears within bounds.",
+  "regression_links": "none",
+  "open_obligations": "Independent reproduction by a party that did not write the model. Extension to a family where L is not known in closed form.",
+  "record_id": "NEG-003",
+  "pass_type": "executed_simulation",
+  "research_record_id": "RES-001",
+  "actual_conditions": "Separate subprocess. No network. No authorization.",
+  "outcome_summary": "{\"actual\": null, \"expectation_matched\": false}",
+  "raw_evidence_location": "results/NEG-003.json",
+  "uncertainty_and_limitations": "Zero residual by construction, so the bound is trivially satisfied. A pass on this case establishes only that the harness runs, not that the bound is informative.",
+  "review_note": "Runner record only. No review performed. authorization_status remains NOT_AUTHORIZED.",
+  "evidence_status": "documented",
+  "authorization_status": "NOT_AUTHORIZED",
+  "execution_outcome": "failed",
+  "protocol_version": "1.0.0",
+  "configuration": "exact rational arithmetic; case kind bound_on_declared_domain",
+  "execution_timestamp": "2026-11-01T00:52:22.504367+00:00",
+  "failure_policy": "On a crash the run is recorded with execution_outcome failed, execution_status ERROR, the exception text in error, and exit_code 1. A non-convergent model is treated the same way: no output is silently discarded and no result is back-filled after the fact.",
+  "known_answer_check": {
+    "included": true,
+    "case_id": "SIM-005",
+    "detail": "SIM-005 is the negative-control known-answer case."
+  },
+  "mcse_or_precision_note": "This case is deterministic and single-run. No Monte Carlo estimate is made, so no MCSE applies; precision is exact for the authored input and is not a statement about any wider population.",
+  "environment": {
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.41"
+  },
+  "input": {
+    "kind": "kind_that_does_not_exist",
+    "family": "translation",
+    "start": [
+      2,
+      0
+    ],
+    "steps": 5,
+    "epsilon": "0",
+    "L": "1",
+    "domain": [
+      -10,
+      10
+    ]
+  },
+  "expected": {
+    "steps_within_domain": 6,
+    "bound_satisfied_at_every_step": true,
+    "hypothesis_held_at_every_step": true,
+    "max_true_error": "0",
+    "max_claimed_bound": "0",
+    "worst_error_over_bound": "0",
+    "final_true_error": "0"
+  },
+  "actual": null,
+  "expectation_matched": false,
+  "execution_status": "ERROR",
+  "outcome": "ERROR",
+  "error": "ValueError: unknown case kind: 'kind_that_does_not_exist'",
+  "started_at": "2026-11-01T00:52:22.504367+00:00",
+  "ended_at": "2026-11-01T00:52:22.506436+00:00",
+  "duration_seconds": 0.005721934998291545,
+  "exit_code": 1,
+  "code_path": "simulations/model.py",
+  "code_sha256": "9062d74779b7888f1941085f66695b89fc1beff821e134915360470115ad3428",
+  "fixtures_sha256": "55c75c5d5b73974051845be5589c83cfa07c39b3bbde7c0f6e31ac709510b0c0",
+  "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
+  "independent_review": "NOT_PERFORMED",
+  "randomness": "none",
+  "release_classification": "PUBLICLY_CLEARED"
+}
