@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """End-to-end walkthrough of UNIVERSALIS research machinery.
 
-This script is the demonstration. It exercises the ten steps of the research
+This script is the demonstration. It exercises the twelve steps of the research
 workflow against a throwaway copy of the package, including the failure paths.
 Reading a claim that a step works is not the same as watching it work; run this
 and read its output.
