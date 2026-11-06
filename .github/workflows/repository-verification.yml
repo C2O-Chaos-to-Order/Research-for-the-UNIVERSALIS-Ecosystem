@@ -1,0 +1,105 @@
+name: Repository Verification
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+  push:
+    branches:
+      - verification/**
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  changed-content:
+    name: Changed documentation and data checks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+
+      - name: Install pinned YAML parser
+        run: python -m pip install --disable-pip-version-check PyYAML==6.0.2
+
+      - name: Validate changed text, Markdown links, JSON, CSV, YAML, and Python syntax
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: python .github/scripts/verify_changed_files.py
+
+  research-package:
+    name: UNI-RP-001 structure, execution, and walkthrough
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Check out the pinned UNIVERSALIS programme validator
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem
+          ref: 3c521a82ee1404bd09d219c59ff6a466cb0721d0
+          path: The-UNIVERSALIS-Ecosystem
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+
+      - name: Validate UNI-RP-001 package records and manifest
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
+        run: python The-UNIVERSALIS-Ecosystem/scaffold/tools/validate_programme.py research-packages/UNI-RP-001
+
+      - name: Re-execute all UNI-RP-001 cases in a clean output directory
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
+        env:
+          RUNNER_TEMP: ${{ runner.temp }}
+        run: python research-packages/UNI-RP-001/simulations/run_all.py --output-dir "$RUNNER_TEMP/UNI-RP-001-reproduction"
+
+      - name: Compare regenerated results with committed research results
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
+        env:
+          RUNNER_TEMP: ${{ runner.temp }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          package = Path("research-packages/UNI-RP-001")
+          generated = Path(os.environ["RUNNER_TEMP"]) / "UNI-RP-001-reproduction"
+          cases = json.loads((package / "simulations/scenarios.json").read_text(encoding="utf-8"))
+          fields = (
+              "expected", "actual", "expectation_matched", "execution_status",
+              "execution_outcome", "outcome", "exit_code", "code_sha256",
+              "fixtures_sha256",
+          )
+          for case in cases:
+              case_id = case["id"]
+              recorded = json.loads((package / "results" / f"{case_id}.json").read_text(encoding="utf-8"))
+              rerun = json.loads((generated / f"{case_id}.json").read_text(encoding="utf-8"))
+              mismatches = [field for field in fields if recorded.get(field) != rerun.get(field)]
+              if mismatches:
+                  raise SystemExit(f"{case_id}: rerun differs in {', '.join(mismatches)}")
+              print(f"PASS: {case_id} stable result fields match")
+          print(f"PASS: {len(cases)} simulation outputs match the committed stable result fields")
+          PY
+
+      - name: Run the 12-step assurance walkthrough
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
+        env:
+          UNIVERSALIS_TOOLS: ${{ github.workspace }}/The-UNIVERSALIS-Ecosystem/scaffold/tools
+        run: python research-packages/UNI-RP-001/assurance/e2e_walkthrough.py
