@@ -47,7 +47,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
 
       - name: Check out the pinned UNIVERSALIS programme validator
-        if: ${exprHash}
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem
@@ -60,17 +60,17 @@ jobs:
           python-version: "3.11"
 
       - name: Validate UNI-RP-001 package records and manifest
-        if: ${exprHash}
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
         run: python The-UNIVERSALIS-Ecosystem/scaffold/tools/validate_programme.py research-packages/UNI-RP-001
 
       - name: Re-execute all UNI-RP-001 cases in a clean output directory
-        if: ${exprHash}
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
         env:
           RUNNER_TEMP: ${{ runner.temp }}
         run: python research-packages/UNI-RP-001/simulations/run_all.py --output-dir "$RUNNER_TEMP/UNI-RP-001-reproduction"
 
       - name: Compare regenerated results with committed research results
-        if: ${exprHash}
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
         env:
           RUNNER_TEMP: ${{ runner.temp }}
         run: |
@@ -99,7 +99,7 @@ jobs:
           PY
 
       - name: Run the 12-step assurance walkthrough
-        if: ${exprHash}
+        if: ${{ hashFiles('research-packages/UNI-RP-001/README.md') != '' }}
         env:
           UNIVERSALIS_TOOLS: ${{ github.workspace }}/The-UNIVERSALIS-Ecosystem/scaffold/tools
         run: python research-packages/UNI-RP-001/assurance/e2e_walkthrough.py
