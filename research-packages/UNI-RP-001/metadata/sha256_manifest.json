@@ -3,7 +3,7 @@
   "assurance/ASR-001_validator_coverage.json": "80712caee31d102290675283d2a6f19f033e1d50a4ee0704fa3c51247324afdb",
   "assurance/ASR-002_clause_leak_exception.json": "c512793f775f0ce0a07f6fdae4c4026ca5fe4aebf6a30f4a9e755f6e4fb408f6",
   "assurance/e2e_run_log.txt": "d9fc9f34cae0eb6b4e2de09ae98897e8705c2bca33047b3beae5b030c98c58eb",
-  "assurance/e2e_walkthrough.py": "8b8c5ccab4c81327e0e657e3fbf8aa3188a90595e874702c002e44850ec5d1e9",
+  "assurance/e2e_walkthrough.py": "f03c0eda0fd07e6e6974f3a1748350a5aee49ed58856330e12bd840e5857edbf",
   "clauses/clause_references.json": "bc109dafebfced965eb7935fd3a592979479c52014c0d9c34d8f10a28d4771a9",
   "decisions/README.md": "9be7e7d91e82b43d1962007b8ca25c5863e9328bace2c0ad7ebe92b142a93f46",
   "ledgers/checkpoint_schedule.csv": "6fe09d65175c5cca615b570d94b756a9ac0b91cae3f2690bd963406372e9642b",
