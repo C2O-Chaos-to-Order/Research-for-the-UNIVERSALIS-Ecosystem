@@ -95,7 +95,7 @@ A component PASS is not a system PASS. A system PASS is not release authorizatio
 - Public product architecture, code, tests, developer docs and releases: `The-UNIVERSALIS-Ecosystem`.
 - Private C2O governance, J.A.R.V.I.S., private infrastructure and coupling controls: `The-C2O-Ecosystem`.
 
-The public UNIVERSALIS product repository has now been initialized with a repository README only; product architecture specifications and implementation code have not yet been added. It should receive implementation only after the applicable requirements and build stages are accepted. It should receive implementation only after the applicable requirements and build stages are accepted. The private C2O GIDEON prototype is a separate experimental reference and must not be copied wholesale into the public product.
+The public UNIVERSALIS product repository's current main branch contains its README, scaffold tooling, prototype code, and tests. Their presence does not establish that the proposed product capability is accepted, production-ready, or release-authorized. Further implementation and release scope must remain tied to accepted requirements and build-stage gates. The private C2O GIDEON prototype is a separate experimental reference and must not be copied wholesale into the public product.
 
 ## 8. Disposition
 
