@@ -59,3 +59,17 @@ clearance or a release authorization.
   labels produce `CLASSIFICATION_GATE`.
 
 This record does not authorize public release.
+
+## Addendum 2026-11-09 (same card t46s633; gap closed after the first relabel)
+
+The file `sources/source_register.json` was still classified PUBLICLY_CLEARED
+after the source-record and vendored-CSV relabel, even though that file holds
+the private-repository citations. That file classification is now
+INTERNAL_CANDIDATE. Prior rows in the table above are unchanged.
+
+| Item | Prior classification | Classification as of this addendum |
+|---|---|---|
+| file `sources/source_register.json` | PUBLICLY_CLEARED (authoring default at `8c3b789`; left unchanged in the first relabel) | INTERNAL_CANDIDATE |
+
+`metadata/programme_status.json` `release_classification` remains PUBLICLY_CLEARED
+(not changed; recorded here only). Labels alone do not authorize public release.

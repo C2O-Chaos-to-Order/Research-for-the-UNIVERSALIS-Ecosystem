@@ -82,6 +82,6 @@
   "simulations/run_all.py": "PUBLICLY_CLEARED",
   "simulations/run_one.py": "PUBLICLY_CLEARED",
   "simulations/scenarios.json": "PUBLICLY_CLEARED",
-  "sources/source_register.json": "PUBLICLY_CLEARED",
+  "sources/source_register.json": "INTERNAL_CANDIDATE",
   "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv": "INTERNAL_CANDIDATE"
 }

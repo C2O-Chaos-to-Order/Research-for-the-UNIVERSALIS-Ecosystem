@@ -44,10 +44,21 @@ class SourceClassificationRelabelTests(unittest.TestCase):
         for source_id in SOURCE_IDS:
             self.assertIn(source_id, text)
         self.assertIn(CSV, text)
+        self.assertIn("sources/source_register.json", text)
 
     def test_package_declares_its_own_repository(self):
         status = json.loads((PACKAGE / "metadata" / "programme_status.json").read_text())
         self.assertEqual(status.get("repository"), "Research-for-the-UNIVERSALIS-Ecosystem")
+
+    def test_source_register_file_is_internal_candidate(self):
+        classes = json.loads((PACKAGE / "metadata" / "classifications.json").read_text())
+        self.assertEqual(classes["sources/source_register.json"], "INTERNAL_CANDIDATE")
+
+    def test_dated_record_includes_source_register_file_addendum(self):
+        text = (PACKAGE / RECORD).read_text(encoding="utf-8")
+        self.assertIn("sources/source_register.json", text)
+        self.assertIn("Addendum 2026-11-09", text)
+        self.assertIn("private-repository citations", text)
 
 
 if __name__ == "__main__":
