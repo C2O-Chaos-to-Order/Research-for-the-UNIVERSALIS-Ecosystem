@@ -60,6 +60,17 @@ class SourceClassificationRelabelTests(unittest.TestCase):
         self.assertIn("Addendum 2026-11-09", text)
         self.assertIn("private-repository citations", text)
 
+    def test_programme_status_release_classification_is_internal_candidate(self):
+        status = json.loads((PACKAGE / "metadata" / "programme_status.json").read_text())
+        self.assertEqual(status["release_classification"], "INTERNAL_CANDIDATE")
+
+    def test_dated_record_includes_programme_status_relabel_addendum(self):
+        text = (PACKAGE / RECORD).read_text(encoding="utf-8")
+        self.assertIn("t46s642", text)
+        self.assertIn("Kyle Steen", text)
+        self.assertIn("`metadata/programme_status.json` `release_classification`", text)
+        self.assertIn("INTERNAL_CANDIDATE", text)
+
 
 if __name__ == "__main__":
     unittest.main()

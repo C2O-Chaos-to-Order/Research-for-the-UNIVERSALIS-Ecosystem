@@ -73,3 +73,21 @@ INTERNAL_CANDIDATE. Prior rows in the table above are unchanged.
 
 `metadata/programme_status.json` `release_classification` remains PUBLICLY_CLEARED
 (not changed; recorded here only). Labels alone do not authorize public release.
+
+## Addendum 2026-11-09 15:49 CT (card t46s642)
+
+**Decision:** Kyle Steen (owner), card t46s642, answered 2026-11-09 15:49 CT
+(America/Chicago): change UNI-RP-001 `metadata/programme_status.json`
+`release_classification` from PUBLICLY_CLEARED to INTERNAL_CANDIDATE.
+
+This addendum is additive. Prior rows and the source-register file addendum
+above are unchanged. Locators are not rewritten here.
+
+| Item | Prior classification | Classification as of this addendum |
+|---|---|---|
+| `metadata/programme_status.json` `release_classification` | PUBLICLY_CLEARED (authoring default at `8c3b789`; left unchanged in the t46s633 source-record, vendored-CSV, and source-register file relabels) | INTERNAL_CANDIDATE |
+
+The file classification of `metadata/programme_status.json` in
+`metadata/classifications.json` remains PUBLICLY_CLEARED (not changed;
+recorded here only). `release_authorized` remains false. Labels alone do
+not authorize public release.
