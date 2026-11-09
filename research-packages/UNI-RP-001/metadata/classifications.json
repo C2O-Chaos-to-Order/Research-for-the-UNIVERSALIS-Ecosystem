@@ -81,5 +81,6 @@
   "simulations/scenarios.json": "PUBLICLY_CLEARED",
   "sources/source_register.json": "PUBLICLY_CLEARED",
   "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv": "PUBLICLY_CLEARED",
-  "assurance/K03_classification_relabel_2026-11-09.md": "INTERNAL_CANDIDATE"
+  "assurance/K03_classification_relabel_2026-11-09.md": "INTERNAL_CANDIDATE",
+  "assurance/N12_D09_fixture_migration_2026-11-09.md": "PUBLICLY_CLEARED"
 }

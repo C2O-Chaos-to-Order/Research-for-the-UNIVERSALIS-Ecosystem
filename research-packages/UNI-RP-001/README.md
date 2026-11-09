@@ -88,7 +88,8 @@ directory.
 ## Provenance
 
 Tablet clause 01.E05 and its paired Human clause X are registered in
-`sources/source_register.json` with git blob hashes and the commit they were read at. The tablet's
-published computation is vendored at `sources/vendored/` and hashes identically to the original.
+`sources/source_register.json` with the D09 locator fields `repository`, path, commit, and
+blob hash. The tablet's published computation is vendored at `sources/vendored/`, pinned to
+this repository at the commit that added it, and hashes identically to the original.
 The tablet is treated as a **proposed specification to be tested**, never as established
 mathematics.

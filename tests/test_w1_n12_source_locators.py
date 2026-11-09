@@ -87,5 +87,74 @@ class SourceLocatorTest(unittest.TestCase):
                             vendored["blob_sha"])
 
 
+def _walk_dicts(value):
+    if isinstance(value, dict):
+        yield value
+        for item in value.values():
+            yield from _walk_dicts(item)
+    elif isinstance(value, list):
+        for item in value:
+            yield from _walk_dicts(item)
+
+
+def _git_pinned(entry: dict) -> bool:
+    return any(entry.get(field) not in (None, "") for field in ("commit", "blob_sha"))
+
+
+class OldFormatRegressionTest(unittest.TestCase):
+    """Fails if an old-format locator reappears in a valid fixture.
+
+    Old format: a git-pinned source (commit or blob_sha present) without a
+    repository field, or a this-repository source still using a package-relative
+    path such as sources/vendored/...
+    """
+
+    def test_published_register_uses_d09_format(self):
+        for src in sources():
+            if not _git_pinned(src):
+                continue
+            with self.subTest(src=src["id"]):
+                self.assertTrue(
+                    src.get("repository"),
+                    "old-format locator: git-pinned source without repository",
+                )
+                self.assertTrue(src.get("path"), "git-pinned source without path")
+                self.assertTrue(src.get("commit"), "git-pinned source without commit")
+                self.assertTrue(src.get("blob_sha"), "git-pinned source without blob_sha")
+                if src.get("repository") == THIS_REPOSITORY:
+                    self.assertTrue(
+                        src["path"].startswith("research-packages/UNI-RP-001/"),
+                        "this-repository path must be repository-relative, not package-relative",
+                    )
+
+    def test_checked_in_json_fixtures_have_no_old_format_locators(self):
+        offenders = []
+        roots = [PACKAGE, REPO_ROOT / "tests"]
+        for root in roots:
+            if not root.exists():
+                continue
+            for path in root.rglob("*.json"):
+                if "__pycache__" in path.parts:
+                    continue
+                try:
+                    data = json.loads(path.read_text(encoding="utf-8"))
+                except (OSError, UnicodeDecodeError, json.JSONDecodeError):
+                    continue
+                for obj in _walk_dicts(data):
+                    if _git_pinned(obj) and not obj.get("repository"):
+                        rel = path.relative_to(REPO_ROOT)
+                        offenders.append(f"{rel} id={obj.get('id')}")
+        self.assertEqual(offenders, [])
+
+    def test_e2e_walkthrough_requires_the_d09_repository_field(self):
+        text = (PACKAGE / "assurance" / "e2e_walkthrough.py").read_text(encoding="utf-8")
+        self.assertIn(
+            '("repository", "path", "blob_sha", "commit", "review_scope")',
+            text,
+        )
+
+
+
+
 if __name__ == "__main__":
     unittest.main()

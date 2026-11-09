@@ -125,13 +125,14 @@ def main() -> int:
     sources = {entry["id"]: entry for entry in register}
     tech = sources.get("SRC-EMERALD-TECH", {})
     has_provenance = all(
-        tech.get(field) for field in ("path", "blob_sha", "commit", "review_scope")
+        tech.get(field)
+        for field in ("repository", "path", "blob_sha", "commit", "review_scope")
     )
     blob_ok = len(tech.get("blob_sha", "")) == 40
     record(
         "1. A source artefact is registered with provenance",
         has_provenance and blob_ok,
-        f"{tech.get('id')} path={tech.get('path')}\n"
+        f"{tech.get('id')} repository={tech.get('repository')} path={tech.get('path')}\n"
         f"git blob {tech.get('blob_sha')} at commit {str(tech.get('commit'))[:12]}\n"
         f"review scope is bounded: {tech.get('review_scope', '')[:60]}...",
     )
