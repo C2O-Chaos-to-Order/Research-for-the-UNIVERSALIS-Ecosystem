@@ -70,8 +70,13 @@ def record(step: str, ok: bool, evidence: str) -> None:
 
 
 def validate(root: Path) -> tuple[bool, list[str], dict]:
+    # 2026-11-09 (card t44s607): the K03 re-execution files are
+    # INTERNAL_CANDIDATE, so the historical default profile (PUBLICLY_CLEARED
+    # only) would fail classification_gate. The walkthrough checks evidence
+    # discipline, not public release, and therefore uses internal-candidate.
     proc = subprocess.run(
-        [PYTHON, str(VALIDATOR), str(root)], capture_output=True, text=True
+        [PYTHON, str(VALIDATOR), str(root), "--profile", "internal-candidate"],
+        capture_output=True, text=True
     )
     try:
         data = json.loads(proc.stdout)

@@ -4,7 +4,7 @@
   "assurance/ASR-001_validator_coverage.json": "80712caee31d102290675283d2a6f19f033e1d50a4ee0704fa3c51247324afdb",
   "assurance/ASR-002_clause_leak_exception.json": "c512793f775f0ce0a07f6fdae4c4026ca5fe4aebf6a30f4a9e755f6e4fb408f6",
   "assurance/e2e_run_log.txt": "d9fc9f34cae0eb6b4e2de09ae98897e8705c2bca33047b3beae5b030c98c58eb",
-  "assurance/e2e_walkthrough.py": "f03c0eda0fd07e6e6974f3a1748350a5aee49ed58856330e12bd840e5857edbf",
+  "assurance/e2e_walkthrough.py": "1640eb5d7d3e5ec9c985c24c093e0e98957b21570cb5903fa32a976f3dbe6ed5",
   "assurance/reexecute_all.py": "cb073824937f9d49444f986f0bff93bac3ab75927e2a2a1e329429a58339039d",
   "clauses/clause_references.json": "bc109dafebfced965eb7935fd3a592979479c52014c0d9c34d8f10a28d4771a9",
   "decisions/README.md": "9be7e7d91e82b43d1962007b8ca25c5863e9328bace2c0ad7ebe92b142a93f46",
@@ -18,7 +18,7 @@
   "ledgers/requirements.csv": "4cf4b3a2d8318363d8a6faf645756cca26c1675ea596370b8982b212d8052056",
   "ledgers/research_ledger.csv": "2062eb9a54a0c32156f263410ec532ab19e6b2b5e0577025c63518658fa52dc8",
   "ledgers/simulation_ledger.csv": "448f13f4ea5839da3d350169ccd38f84823db8ddd0ca0faf63db9c291211718e",
-  "metadata/classifications.json": "ce93854a58ea1323084c35c2fd7130bc3ce19c2dd3a5f9d1d6f9a8b4e3b493b2",
+  "metadata/classifications.json": "730f945fcdf33375ba793d76759c4fd20fe006d6d74b4b49f57e30213990cef1",
   "metadata/environment.json": "757c7c2681489f1ae8b34478f26b11b3996967fb2150715bcfef973dededdaa9",
   "metadata/programme_status.json": "c7296044fe1c235ad6081c846167a87791bddca05ba65d1c25eea94e606bd066",
   "reports/RPT-001_EMERALD_01E05_TRAJECTORY_BOUND.md": "7fd2b38d636f58e5820507b3415a4c82c4331158b6ca148d8b33c3870634e4b9",
@@ -79,5 +79,6 @@
   "simulations/run_one.py": "420b2c18554a0493d04386527e39fa2e8323f4dfae06396aee10e50a8544fdc0",
   "simulations/scenarios.json": "af61dcb345b4c00eb2dda06b59a64a993ee44878b299d6d0875b94f95300d33f",
   "sources/source_register.json": "e527e92639f54ad58cc937f7f58ccb6cd5b1a6a8c0750428e71c2e608e3a0021",
-  "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv": "047850b10b7f3b13d702241137eac5fbdc524ad453dc1552730eeae95837cc15"
+  "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv": "047850b10b7f3b13d702241137eac5fbdc524ad453dc1552730eeae95837cc15",
+  "assurance/K03_classification_relabel_2026-11-09.md": "d75909d4cab0651921c66383dcd2395dd051904768951e1e0642a9e54921c054"
 }

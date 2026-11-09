@@ -91,10 +91,11 @@ class ReexecutionGateTest(unittest.TestCase):
         tools = os.environ.get("UNIVERSALIS_TOOLS")
         if tools:
             structural = subprocess.run(
-                [sys.executable, str(Path(tools) / "validate_programme.py"), str(self.pkg)],
+                [sys.executable, str(Path(tools) / "validate_programme.py"), str(self.pkg),
+                 "--profile", "internal-candidate"],
                 capture_output=True, text=True, timeout=300)
             self.assertEqual(structural.returncode, 0,
-                             "precondition: structural validation still passes on tamper+relock\n" + structural.stdout[-2000:])
+                             "precondition: internal-candidate validation still passes on tamper+relock\n" + structural.stdout[-2000:])
         code, report = self.gate()
         self.assertNotEqual(code, 0, "tamper + re-lock must fail the re-execution gate")
         self.assertEqual(report["status"], "MISMATCH")
@@ -153,6 +154,62 @@ class ReexecutionGateTest(unittest.TestCase):
         after = {p.relative_to(self.pkg): p.read_bytes() for p in self.pkg.rglob("*")
                  if p.is_file() and "__pycache__" not in p.parts}
         self.assertEqual(before, after)
+
+    def test_new_reexecution_files_are_internal_candidate(self):
+        classes = json.loads((self.pkg / "metadata" / "classifications.json").read_text(encoding="utf-8"))
+        for rel in (
+            "assurance/reexecute_all.py",
+            "assurance/ASR-001_closure_2026-11-08.json",
+            "assurance/K03_classification_relabel_2026-11-09.md",
+        ):
+            with self.subTest(rel=rel):
+                self.assertTrue((self.pkg / rel).is_file(), rel)
+                self.assertEqual(classes[rel], "INTERNAL_CANDIDATE")
+        record = (self.pkg / "assurance" / "K03_classification_relabel_2026-11-09.md").read_text(encoding="utf-8")
+        self.assertIn("2026-11-09", record)
+        self.assertIn("t44s607", record)
+        self.assertIn("Kyle Steen", record)
+        self.assertIn("PUBLICLY_CLEARED", record)  # prior label preserved in the record
+        self.assertIn("not independent verification", record)
+
+
+class ReexecutionClassificationProfileTest(unittest.TestCase):
+    """Release-profile check for the relabelled K03 files (needs UNIVERSALIS_TOOLS)."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.tools = os.environ.get("UNIVERSALIS_TOOLS")
+        if not cls.tools:
+            raise unittest.SkipTest("UNIVERSALIS_TOOLS not set")
+
+    def _validate(self, *profile):
+        proc = subprocess.run(
+            [sys.executable, str(Path(self.tools) / "validate_programme.py"), str(PACKAGE), *profile],
+            capture_output=True, text=True, timeout=300,
+        )
+        try:
+            payload = json.loads(proc.stdout)
+        except json.JSONDecodeError:
+            payload = {"raw": proc.stdout, "stderr": proc.stderr}
+        return proc.returncode, payload
+
+    def test_internal_candidate_profile_passes(self):
+        code, payload = self._validate("--profile", "internal-candidate")
+        self.assertEqual(code, 0, payload)
+        self.assertTrue(payload.get("ok"), payload)
+        self.assertFalse(payload.get("release_ready"), payload)
+
+    def test_public_release_profile_is_not_authorized(self):
+        code, payload = self._validate("--profile", "public-release")
+        self.assertNotEqual(code, 0)
+        self.assertFalse(payload.get("ok"), payload)
+        self.assertFalse(payload.get("release_ready"), payload)
+        blob = json.dumps(payload)
+        self.assertIn("RELEASE_NOT_AUTHORIZED", blob)
+        self.assertIn("INTERNAL_CANDIDATE", blob)
+        for rel in ("assurance/reexecute_all.py", "assurance/ASR-001_closure_2026-11-08.json"):
+            self.assertIn(rel, blob)
+
 
 
 if __name__ == "__main__":
