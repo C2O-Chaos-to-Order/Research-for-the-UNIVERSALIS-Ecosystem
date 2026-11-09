@@ -16,6 +16,16 @@ ran. It cannot reach ``tested``, ``verified``, ``independently_reproduced``,
 not do. A failed run still reaches ``documented``: what is documented is that
 the run failed.
 
+Output isolation (Wave 1 remediation N05). The record is written to
+``--output`` and the per-step trajectory, if any, to
+``<output dir>/trajectories/<case>_trajectory.json``. Nothing is written
+anywhere else, so a scratch or failed run cannot alter the canonical
+``results/`` tree. An existing record or trajectory is never overwritten unless
+``--replace-existing`` is given explicitly; the run is refused with exit 2
+(``OUTPUT_EXISTS``) before the model executes. ``raw_evidence_location`` names
+the path this run actually wrote: relative to the package root when inside it,
+absolute otherwise.
+
 ``authorization_status`` is always ``NOT_AUTHORIZED``. This script does not
 award programme credit and does not infer authorization from any evidence
 state, including ``evidence_status: authorized``.
@@ -76,6 +86,11 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Run one simulation case and write its evidence record.")
     parser.add_argument("--case", required=True)
     parser.add_argument("--output", required=True)
+    parser.add_argument(
+        "--replace-existing",
+        action="store_true",
+        help="Explicitly allow overwriting an existing record/trajectory at --output.",
+    )
     args = parser.parse_args(argv)
     root = Path(__file__).resolve().parents[1]
     scenarios_path = root / "simulations" / "scenarios.json"
@@ -96,13 +111,38 @@ def main(argv: list[str] | None = None) -> int:
             file=sys.stderr,
         )
         return 2
+    destination = Path(args.output)
+    if not destination.is_absolute():
+        destination = Path.cwd() / destination
+    trajectory_path = destination.parent / "trajectories" / f"{case['id']}_trajectory.json"
+    if not args.replace_existing:
+        existing = [str(p) for p in (destination, trajectory_path) if p.exists()]
+        if existing:
+            print(
+                "OUTPUT_EXISTS: refusing to overwrite existing evidence "
+                f"({', '.join(existing)}); write to a new location or pass "
+                "--replace-existing explicitly",
+                file=sys.stderr,
+            )
+            return 2
+    try:
+        raw_location = destination.resolve().relative_to(root).as_posix()
+    except ValueError:
+        raw_location = str(destination.resolve())
     code_hash = sha256_file(code_path)
     fixtures_hash = sha256_file(scenarios_path)
     started = datetime.now(timezone.utc)
     clock = time.perf_counter()
+    trajectory = None
     try:
         model = load_model(code_path)
-        actual = model.run_case(case)
+        # model.run_case() spills the trajectory to a hard-coded package path
+        # (results/trajectories). Changing model.py would change the recorded
+        # code_sha256 of every stored result, so the runner calls the dispatch
+        # step directly and writes the trajectory beside its own output.
+        full = model._dispatch(case)
+        trajectory = full.pop("trajectory", None)
+        actual = full
         matched = actual == case.get("expected")
         execution_status = "COMPLETED"
         outcome = "PASS" if matched else "FAIL"
@@ -155,7 +195,7 @@ def main(argv: list[str] | None = None) -> int:
                 sort_keys=True,
                 default=str,
             ),
-            "raw_evidence_location": f"results/{case['id']}.json",
+            "raw_evidence_location": raw_location,
             "uncertainty_and_limitations": case.get("limitations")
             or research.get("uncertainty_and_limitations")
             or "Limitations were not stated on the case.",
@@ -216,10 +256,10 @@ def main(argv: list[str] | None = None) -> int:
             "release_classification": "PUBLICLY_CLEARED",
         }
     )
-    destination = Path(args.output)
-    if not destination.is_absolute():
-        destination = Path.cwd() / destination
     destination.parent.mkdir(parents=True, exist_ok=True)
+    if trajectory is not None:
+        trajectory_path.parent.mkdir(parents=True, exist_ok=True)
+        trajectory_path.write_text(json.dumps(trajectory, indent=2) + "\n", encoding="utf-8")
     destination.write_text(json.dumps(record, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"id": case["id"], "outcome": outcome, "execution_status": execution_status}))
     return 0 if outcome == "PASS" else 1

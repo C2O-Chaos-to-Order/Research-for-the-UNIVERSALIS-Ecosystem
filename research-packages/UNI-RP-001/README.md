@@ -70,9 +70,17 @@ that.
 ## Reproducing this work
 
 ```
-python3 simulations/run_all.py --output-dir reproduction_results
+python3 simulations/run_all.py --output-dir /tmp/uni-rp-001-reproduction
 python3 assurance/e2e_walkthrough.py
 ```
+
+Runs never overwrite existing evidence (Wave 1 remediation N05). Each record and its
+trajectory are written only under the chosen output location, and a location that already
+holds a record, trajectory or execution log is refused with exit 2 unless
+`--replace-existing` is passed explicitly. The checked-in `reproduction_results/` directory is
+therefore not reused by default; choose a new directory. `simulations/model.py` itself is
+unchanged, so the recorded `code_sha256` values still apply; calling `model.run_case()` directly
+(outside the runner) still writes to `results/trajectories/`.
 
 The cases resolve their inputs against the package root, so they behave the same from any working
 directory.
