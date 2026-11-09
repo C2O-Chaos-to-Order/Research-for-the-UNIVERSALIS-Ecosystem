@@ -1,9 +1,11 @@
 {
   "README.md": "PUBLICLY_CLEARED",
+  "assurance/ASR-001_closure_2026-11-08.json": "PUBLICLY_CLEARED",
   "assurance/ASR-001_validator_coverage.json": "PUBLICLY_CLEARED",
   "assurance/ASR-002_clause_leak_exception.json": "PUBLICLY_CLEARED",
   "assurance/e2e_run_log.txt": "PUBLICLY_CLEARED",
   "assurance/e2e_walkthrough.py": "PUBLICLY_CLEARED",
+  "assurance/reexecute_all.py": "PUBLICLY_CLEARED",
   "clauses/clause_references.json": "PUBLICLY_CLEARED",
   "decisions/README.md": "PUBLICLY_CLEARED",
   "ledgers/checkpoint_schedule.csv": "PUBLICLY_CLEARED",
