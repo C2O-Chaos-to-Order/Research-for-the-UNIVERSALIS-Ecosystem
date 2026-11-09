@@ -5,6 +5,7 @@
     "source_role": "other",
     "review_scope": "Clause 01.E05 only: the stated trajectory-error bound and its two premises. No other clause of this tablet was examined for this record.",
     "independence_from": [],
+    "repository": "Research-for-the-C2O-Ecosystem",
     "path": "C2O Tablets/tablets/01_EMERALD_TABLET.md",
     "blob_sha": "f01e9812281bd12dad3c704f2712d17566f672f7",
     "commit": "57ddb795f9b726eaecc007dc4ebcecf135eda0cb",
@@ -17,6 +18,7 @@
     "source_role": "other",
     "review_scope": "Paired human-collection clause X ('Of the limit') only.",
     "independence_from": [],
+    "repository": "Research-for-the-C2O-Ecosystem",
     "path": "Human Tablets/tablets/01_EMERALD_HUMAN.md",
     "blob_sha": "1b00580d4cd0225ea2691dbf5baf967cf87a0661",
     "commit": "57ddb795f9b726eaecc007dc4ebcecf135eda0cb",
@@ -31,6 +33,7 @@
     "independence_from": [
       "SRC-EMERALD-TECH"
     ],
+    "repository": "Research-for-the-C2O-Ecosystem",
     "path": "C2O Tablets/EQUATION-COMPENDIUM.md",
     "blob_sha": "cb99ee7d7b6693fc7cb139d4085922761caaa2e8",
     "commit": "57ddb795f9b726eaecc007dc4ebcecf135eda0cb",
@@ -45,6 +48,7 @@
     "independence_from": [
       "SRC-EMERALD-TECH"
     ],
+    "repository": "Research-for-the-C2O-Ecosystem",
     "path": "C2O Tablets/evidence/01_EMERALD_TABLET_COMPUTATION.csv",
     "blob_sha": "75c2601ed0d4b67e834c81cdd32f2f424aac3b5d",
     "commit": "57ddb795f9b726eaecc007dc4ebcecf135eda0cb",
@@ -59,10 +63,11 @@
     "independence_from": [
       "SRC-EMERALD-EVIDENCE"
     ],
-    "path": "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv",
+    "repository": "Research-for-the-UNIVERSALIS-Ecosystem",
+    "path": "research-packages/UNI-RP-001/sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv",
     "blob_sha": "75c2601ed0d4b67e834c81cdd32f2f424aac3b5d",
-    "commit": "9211d9b546174064255e628e4fdaafb7a3fd422c",
+    "commit": "8c3b7895068958d7518c3c6099209624de5352a9",
     "release_classification": "PUBLICLY_CLEARED",
-    "note": "Copy only. It adds no evidentiary weight beyond the original it copies."
+    "note": "Copy only. It adds no evidentiary weight beyond the original it copies. Locator corrected 2026-11-08 (Wave 1 N12): the earlier commit 9211d9b546174064255e628e4fdaafb7a3fd422c belongs to the C2O source repository, where this path does not exist; the copy is now pinned to the commit in this repository that added it. Blob unchanged."
   }
 ]

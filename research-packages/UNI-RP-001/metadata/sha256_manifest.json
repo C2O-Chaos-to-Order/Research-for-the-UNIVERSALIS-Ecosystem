@@ -78,6 +78,6 @@
   "simulations/run_all.py": "67e916b2a3b9920a80e57bfa75c079998eb656cbbc3bd96084edd346dbab5a05",
   "simulations/run_one.py": "420b2c18554a0493d04386527e39fa2e8323f4dfae06396aee10e50a8544fdc0",
   "simulations/scenarios.json": "af61dcb345b4c00eb2dda06b59a64a993ee44878b299d6d0875b94f95300d33f",
-  "sources/source_register.json": "e527e92639f54ad58cc937f7f58ccb6cd5b1a6a8c0750428e71c2e608e3a0021",
+  "sources/source_register.json": "ba43ed4547a628672b65bb524c95e5f79aa735f56fe7310928d840fc1d728711",
   "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv": "047850b10b7f3b13d702241137eac5fbdc524ad453dc1552730eeae95837cc15"
 }
