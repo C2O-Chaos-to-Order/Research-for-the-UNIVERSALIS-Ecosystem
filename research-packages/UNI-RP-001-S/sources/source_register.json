@@ -1,0 +1,37 @@
+[
+  {
+    "id": "SRC-SYN-BOUND",
+    "kind": "synthetic_bound_text",
+    "source_role": "other",
+    "review_scope": "SYN-BND-001 additive envelope statement only.",
+    "independence_from": [],
+    "repository": "Research-for-the-UNIVERSALIS-Ecosystem",
+    "path": "research-packages/UNI-RP-001-S/sources/SYN-BND-001.md",
+    "release_classification": "INTERNAL_CANDIDATE",
+    "note": "Freshly written for this package. This source does not test any C2O clause."
+  },
+  {
+    "id": "SRC-SYN-TABLE",
+    "kind": "generated_dataset",
+    "source_role": "dataset",
+    "review_scope": "The 50-row synthetic envelope table only.",
+    "independence_from": [
+      "SRC-SYN-GENERATOR"
+    ],
+    "repository": "Research-for-the-UNIVERSALIS-Ecosystem",
+    "path": "research-packages/UNI-RP-001-S/sources/generated/synthetic_envelope_table.csv",
+    "release_classification": "INTERNAL_CANDIDATE",
+    "note": "Produced by sources/generate_synthetic_table.py. Not a corpus extract."
+  },
+  {
+    "id": "SRC-SYN-GENERATOR",
+    "kind": "generation_software",
+    "source_role": "software",
+    "review_scope": "The table generation script only.",
+    "independence_from": [],
+    "repository": "Research-for-the-UNIVERSALIS-Ecosystem",
+    "path": "research-packages/UNI-RP-001-S/sources/generate_synthetic_table.py",
+    "release_classification": "INTERNAL_CANDIDATE",
+    "note": "Writes the synthetic table from the same comparison map used by the model."
+  }
+]

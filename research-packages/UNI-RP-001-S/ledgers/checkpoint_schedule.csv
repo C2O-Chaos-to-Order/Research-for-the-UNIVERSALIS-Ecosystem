@@ -1,0 +1,2 @@
+checkpoint,name,required_research,recorded_desktop_assessments,required_simulations,executed_simulations,matched_expectations,owner_accepted_research_credits,owner_accepted_simulation_credits,status
+SYN-CP-01,Synthetic envelope x5,5,5,5,5,5,0,0,RECORDS_PRESENT_REVIEW_PENDING
