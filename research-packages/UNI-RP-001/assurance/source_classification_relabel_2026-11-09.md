@@ -91,3 +91,26 @@ The file classification of `metadata/programme_status.json` in
 `metadata/classifications.json` remains PUBLICLY_CLEARED (not changed;
 recorded here only). `release_authorized` remains false. Labels alone do
 not authorize public release.
+
+## Addendum 2026-11-09 20:13 CT (card t49s657)
+
+**Decision:** Kyle Steen (owner), card t49s657, answered 2026-11-09 20:13 CT
+(America/Chicago): relabel the file classification of
+`metadata/programme_status.json` and of
+`assurance/source_classification_relabel_2026-11-09.md` from PUBLICLY_CLEARED
+to INTERNAL_CANDIDATE.
+
+This addendum is additive. Prior rows and earlier addenda are unchanged and
+remain the historical record, including the t46s642 note that the
+`programme_status.json` file classification was still PUBLICLY_CLEARED at that
+time. Locators are not rewritten here.
+
+| Item | Prior classification | Classification as of this addendum |
+|---|---|---|
+| file `metadata/programme_status.json` | PUBLICLY_CLEARED (authoring default at `8c3b789`; left unchanged through the t46s633 and t46s642 relabels, which changed only `release_classification`) | INTERNAL_CANDIDATE |
+| file `assurance/source_classification_relabel_2026-11-09.md` (this record) | PUBLICLY_CLEARED (label at creation, first table above) | INTERNAL_CANDIDATE |
+
+The file now names private-repository citations and records an INTERNAL_CANDIDATE
+package-level field, so keeping its own file classification PUBLICLY_CLEARED
+was inconsistent with its content. `release_authorized` remains false. Labels
+alone do not authorize public release.

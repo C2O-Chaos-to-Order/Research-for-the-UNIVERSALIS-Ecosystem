@@ -71,6 +71,22 @@ class SourceClassificationRelabelTests(unittest.TestCase):
         self.assertIn("`metadata/programme_status.json` `release_classification`", text)
         self.assertIn("INTERNAL_CANDIDATE", text)
 
+    def test_programme_status_file_is_internal_candidate(self):
+        classes = json.loads((PACKAGE / "metadata" / "classifications.json").read_text())
+        self.assertEqual(classes["metadata/programme_status.json"], "INTERNAL_CANDIDATE")
+
+    def test_this_relabel_record_file_is_internal_candidate(self):
+        classes = json.loads((PACKAGE / "metadata" / "classifications.json").read_text())
+        self.assertEqual(classes[RECORD], "INTERNAL_CANDIDATE")
+
+    def test_dated_record_includes_t49s657_file_class_addendum(self):
+        text = (PACKAGE / RECORD).read_text(encoding="utf-8")
+        self.assertIn("t49s657", text)
+        self.assertIn("Kyle Steen", text)
+        self.assertIn("file `metadata/programme_status.json`", text)
+        self.assertIn("file `assurance/source_classification_relabel_2026-11-09.md`", text)
+        self.assertIn("Addendum 2026-11-09 20:13 CT", text)
+
 
 if __name__ == "__main__":
     unittest.main()
