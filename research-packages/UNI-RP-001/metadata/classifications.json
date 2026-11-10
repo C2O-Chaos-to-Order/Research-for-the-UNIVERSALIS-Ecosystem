@@ -4,6 +4,7 @@
   "assurance/ASR-001_validator_coverage.json": "PUBLICLY_CLEARED",
   "assurance/ASR-002_clause_leak_exception.json": "PUBLICLY_CLEARED",
   "assurance/K03_classification_relabel_2026-11-09.md": "INTERNAL_CANDIDATE",
+  "assurance/N05_run_case_spill_fix_2026-11-09.md": "INTERNAL_CANDIDATE",
   "assurance/N12_D09_fixture_migration_2026-11-09.md": "PUBLICLY_CLEARED",
   "assurance/e2e_run_log.txt": "PUBLICLY_CLEARED",
   "assurance/e2e_walkthrough.py": "PUBLICLY_CLEARED",

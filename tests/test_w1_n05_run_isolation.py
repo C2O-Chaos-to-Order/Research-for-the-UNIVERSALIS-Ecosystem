@@ -130,5 +130,32 @@ class W1N05RunIsolationTest(unittest.TestCase):
         self.assertEqual(_tree_hashes(self.pkg / "results"), self.canonical_before)
 
 
+
+    def test_run_case_does_not_mutate_the_canonical_package_tree(self):
+        """Direct model.run_case() must not write into the package (t49s657)."""
+        import importlib.util
+
+        def hashes(root: Path) -> dict:
+            return {
+                str(path.relative_to(root)): hashlib.sha256(path.read_bytes()).hexdigest()
+                for path in sorted(root.rglob("*"))
+                if path.is_file() and "__pycache__" not in path.parts
+            }
+
+        before = hashes(self.pkg)
+        cases = json.loads((self.pkg / "simulations" / "scenarios.json").read_text(encoding="utf-8"))
+        case = next(item for item in cases if item["id"] == "SIM-003")
+        spec = importlib.util.spec_from_file_location("n05_model", self.pkg / "simulations" / "model.py")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        module.run_case(case)
+        self.assertEqual(hashes(self.pkg), before)
+        isolated = self.tmp / "isolated-trajectories"
+        module.run_case(case, trajectory_dir=isolated)
+        self.assertTrue((isolated / "SIM-003_trajectory.json").is_file())
+        self.assertIsInstance(json.loads((isolated / "SIM-003_trajectory.json").read_text()), list)
+        self.assertEqual(hashes(self.pkg), before)
+
+
 if __name__ == "__main__":
     unittest.main()

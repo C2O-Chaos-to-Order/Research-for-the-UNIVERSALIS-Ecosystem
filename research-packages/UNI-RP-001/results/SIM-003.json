@@ -75,7 +75,7 @@
   "duration_seconds": 0.005711076999432407,
   "exit_code": 0,
   "code_path": "simulations/model.py",
-  "code_sha256": "d21c2613b01655726d0c7b6e6cd3efaba3b652a9bfd1ec1c9f90dd5f383ac453",
+  "code_sha256": "72c94c8f3be6c86d24b7a1c7626437b68d532742663176cf8dee805a3561b220",
   "fixtures_sha256": "af61dcb345b4c00eb2dda06b59a64a993ee44878b299d6d0875b94f95300d33f",
   "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
   "independent_review": "NOT_PERFORMED",

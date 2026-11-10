@@ -136,13 +136,12 @@ def main(argv: list[str] | None = None) -> int:
     trajectory = None
     try:
         model = load_model(code_path)
-        # model.run_case() spills the trajectory to a hard-coded package path
-        # (results/trajectories). Changing model.py would change the recorded
-        # code_sha256 of every stored result, so the runner calls the dispatch
-        # step directly and writes the trajectory beside its own output.
-        full = model._dispatch(case)
-        trajectory = full.pop("trajectory", None)
-        actual = full
+        # As of t49s657, run_case() no longer spills into results/trajectories.
+        # It writes the trajectory only to trajectory_dir (beside --output).
+        # Prior behaviour and the code-hash change are recorded in
+        # assurance/N05_run_case_spill_fix_2026-11-09.md.
+        actual = model.run_case(case, trajectory_dir=trajectory_path.parent)
+        trajectory = None  # written by run_case when a trajectory exists
         matched = actual == case.get("expected")
         execution_status = "COMPLETED"
         outcome = "PASS" if matched else "FAIL"

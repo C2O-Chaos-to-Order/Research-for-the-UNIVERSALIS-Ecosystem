@@ -263,27 +263,43 @@ def _dispatch(case):
     raise ValueError(f"unknown case kind: {kind!r}")
 
 
-def run_case(case):
-    """Return the declared summary only; spill the trajectory beside the result.
+def run_case(case, trajectory_dir=None):
+    """Return the declared summary only; write the trajectory only if asked.
 
     The wrapper exists so the comparison value and the evidence artefact can
     differ. The comparison must equal exactly what the case declared. The
     evidence must keep everything, including per-step detail, because a summary
     without the steps cannot be re-checked.
+
+    Prior behaviour (N05 defect, until owner decision t49s657 on 2026-11-09):
+    ``_spill`` wrote the per-step trajectory to the package's
+    ``results/trajectories/`` directory using a hard-coded path resolved from
+    this file. Calling ``run_case`` therefore mutated the canonical tree even
+    when the runner wrote its record somewhere else. The N05 runners
+    (``run_one.py``, ``run_all.py``, ``reexecute_all.py``) already avoided that
+    path by calling ``_dispatch`` directly and writing beside ``--output``.
+    Changing this function was deferred because it changes the recorded
+    ``code_sha256`` of every stored result.
+
+    Current behaviour: the trajectory is written only when the caller supplies
+    ``trajectory_dir`` (the isolated run output, typically
+    ``<output-dir>/trajectories``). If ``trajectory_dir`` is omitted, this
+    function does not write a trajectory file. It never writes into
+    ``results/trajectories``.
     """
     full = _dispatch(case)
     trajectory = full.pop("trajectory", None)
-    if trajectory is not None:
-        _spill(case["id"], trajectory)
+    if trajectory is not None and trajectory_dir is not None:
+        _spill(case["id"], trajectory, trajectory_dir)
     return full
 
 
-def _spill(case_id: str, trajectory: list) -> None:
-    """Write the per-step trajectory next to the results, never silently dropping it."""
+def _spill(case_id: str, trajectory: list, trajectory_dir) -> None:
+    """Write the per-step trajectory into the caller-supplied isolated directory."""
     import json
     from pathlib import Path as _Path
 
-    destination = _Path(__file__).resolve().parents[1] / "results" / "trajectories"
+    destination = _Path(trajectory_dir)
     destination.mkdir(parents=True, exist_ok=True)
     (destination / f"{case_id}_trajectory.json").write_text(
         json.dumps(trajectory, indent=2) + "\n", encoding="utf-8"
