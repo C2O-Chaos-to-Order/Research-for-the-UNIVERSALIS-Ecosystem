@@ -1,0 +1,16 @@
+requirement_id,tablet_pairs,requirement,initial_scope,acceptance_evidence,status
+UNI-001,"T00/H00;T01/H01","Preserve system boundaries and typed relationships; mappings must not imply identity or erase differences.","architecture","Boundary and mapping tests; documented exclusions",PROPOSED
+UNI-002,"T07/H07;T08/H08","Declare initialization state, environment prerequisites, and readiness separately from authorization.","core","Initialization and readiness tests",PROPOSED
+UNI-003,"T09/H09;T18/H18","Persist records only under explicit durability, capacity, provenance, and retention contracts.","memory","Crash/restart and retention/deletion tests",PROPOSED
+UNI-004,"T16/H16;T13/H13","Enforce identity, purpose, scope, permission, provenance, and resource limits before retrieval or disclosure.","retrieval","Positive/negative access tests; leakage tests",PROPOSED
+UNI-005,"T18/H18;T23/H23","Preserve event, record, ingestion, and applicability time and governed correction/retraction history.","memory","Temporal and branching-history tests",PROPOSED
+UNI-006,"T17/H17;T19/H19;T20/H20;T22/H22","Declare measurement and inference assumptions; expose uncertainty and support abstention.","epistemic","Calibration, uncertainty, invalid-input and abstention tests",PROPOSED
+UNI-007,"T21/H21;T00/H00","Expose missing, disputed, stale, invalidated, inaccessible, and incomplete information with full denominators.","interface","Coverage and accessibility tests",PROPOSED
+UNI-008,"T23/H23;T24/H24;T25/H25","Separate readiness, authorization, invariant compatibility, commit, failure, recovery, acceptance and release.","governance","State-transition, failure-injection and rollback tests",PROPOSED
+UNI-009,"T26/H26","Preserve consent, privacy, refusal, withdrawal, non-coercion, and human accountability.","human-interface","Policy tests and approved human evaluation",PROPOSED
+UNI-010,"T27/H27;T10/H10;T11/H11","Monitor capability sharing, resource use, performance and ongoing integrity without self-certification.","operations","Resource benchmarks, least-privilege and monitoring review",PROPOSED
+UNI-011,"T02/H02;T19/H19","Separate event chronology, observation, coordinate description, inference and causal claims.","data-model","Temporal semantics and claim-type tests",PROPOSED
+UNI-012,"T04/H04;T17/H17","Do not use quantum or entropy terminology outside a declared model and valid domain.","modeling","Domain/type validation and terminology review",PROPOSED
+UNI-013,"T14/H14;T15/H15","Keep chemical/biological models within their evidenced domain; do not infer software life or consciousness from analogy.","scope","Claim classification and review",PROPOSED
+UNI-014,"T24/H24;T25/H25","Preserve failure evidence and versioned acceptance history; later regression or revocation changes current eligibility without erasing history.","assurance","Incident, rollback, revocation and audit tests",PROPOSED
+UNI-015,"T26/H26;T27/H27","Prevent coercive dependency and ensure capability sharing remains bounded, revocable, and overseen.","governance","Abuse-case and dependency review",PROPOSED
