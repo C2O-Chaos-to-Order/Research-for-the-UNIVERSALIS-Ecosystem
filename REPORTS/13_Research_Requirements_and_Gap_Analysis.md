@@ -9,7 +9,7 @@
 
 Further research is required before claiming a secure, useful, real-world UNIVERSALIS continuity and knowledge service.
 
-The existing GIDEON research package is useful candidate evidence. Its 107 research assessments and 107 recorded finite-model executions have internally consistent ledger, scenario, and execution-log mappings. This does not make the records independent studies, independent reproductions, empirical validation, or owner-accepted programme credits. The 107 scenarios span 11 model families.
+Earlier UNIVERSALIS continuity research records, some historically labelled GIDEON, are candidate evidence. GIDEON is a historical working label and fictional inspiration, not a runtime identity or current product name. The package's 107 research assessments and 107 recorded finite-model executions have internally consistent ledger, scenario, and execution-log mappings. This does not make the records independent studies, independent reproductions, empirical validation, or owner-accepted programme credits. The 107 scenarios span 11 model families.
 
 The first build decision should remain a bounded, read-only, locally testable prototype. No public pilot or consequential action capability is justified by the current evidence alone.
 
@@ -18,9 +18,9 @@ The first build decision should remain a bounded, read-only, locally testable pr
 The current evidence base includes:
 - A proposed 28-pair technical/Human Tablet collection (IDs 00–27).
 - A governing C2O Research Plan with Do No Harm, risk elimination/reduction, universal subject research, verification, and source-boundary requirements.
-- A GIDEON/UNIVERSALIS research package with 15 reports, 107 research records, 107 scenario configurations, and 107 execution-log records.
+- A UNIVERSALIS continuity research package, historically labelled GIDEON in some earlier records, with 15 reports, 107 research records, 107 scenario configurations, and 107 execution-log records.
 - Finite synthetic models for retrieval, approvals, temporal history, forecasting, replay, state projection, and integration.
-- A bounded GIDEON continuity-core reference implementation in the private C2O ecosystem integration branch. It is experimental and must not be copied wholesale into the public product repository.
+- Private C2O prototype material is excluded from this public evidence base; no private code, branch details, credentials, configuration, or operational records are included or relied upon.
 - Existing architecture documents describing C2O and UNIVERSALIS as distinct parent environments with a governed coupling boundary.
 
 The package's original execution records are candidate evidence. They require independent reproduction, oracle review, and owner disposition before formal programme credit is awarded.
