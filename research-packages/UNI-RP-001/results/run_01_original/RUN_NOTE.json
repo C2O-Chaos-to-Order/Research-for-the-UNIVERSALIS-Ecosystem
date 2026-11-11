@@ -1,0 +1,8 @@
+{
+  "record_id": "RUN-NOTE-001",
+  "what_this_is": "The first execution of the five authored cases. Four failed. Preserved unmodified in substance.",
+  "edit_applied": "An absolute path into the author's corpus checkout was replaced with the corpus-relative path it denotes. No outcome, value, timestamp or diagnosis was altered; the substitution is textual and was verified to leave every other field identical.",
+  "why": "A published package must not carry paths into a private working copy.",
+  "authorization_status": "NOT_AUTHORIZED",
+  "programme_credit": "NONE"
+}

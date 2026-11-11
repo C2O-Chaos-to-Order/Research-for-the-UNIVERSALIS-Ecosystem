@@ -1,0 +1,198 @@
+{
+  "programme_unit_id": "UNI-RP-001",
+  "checkpoint_id": "CP-04",
+  "objective_question": "The Emerald technical clause 01.E05 derives a trajectory-error bound e_n <= eps*sum(L^k) under two premises: a uniform residual bound eps over a domain, and an L-Lipschitz fine map on that domain. Does the bound hold on its declared domain, is it sharp, and does its premise survive iteration \u2014 or can a trajectory satisfy the bound while the premise that justifies it has already failed?",
+  "claim_class": "PROPOSED",
+  "relevant_dimensions": "formal_correctness, traceability_and_provenance",
+  "phase": "formalization",
+  "level": "BASE",
+  "method_summary": "Five cases over exact rational arithmetic. Case A tests a map with zero residual. Case B tests a contracting map with constant nonzero residual, where the bound may be attained exactly. Case C tests a non-contracting map whose trajectory leaves the declared domain. Case D tests the uniform geometric limit when L < 1. Case E is a known-answer control that recomputes the tablet's own published 50-row evidence table. Expectations were derived by hand in /workspace/work/derivation/derive.py before simulations/model.py was executed, and that derivation's output is quoted in uncertainty_and_limitations for audit.",
+  "sources_or_inputs": "SRC-EMERALD-TECH (01.E05), SRC-EMERALD-HUMAN (clause X), SRC-EMERALD-COMPENDIUM (01.E01, 01.E02, 01.E05), SRC-EMERALD-EVIDENCE",
+  "assumptions": "X is the real plane and Y the real line, all quantities dimensionless, d_Y the absolute difference, and phi the arithmetic mean, matching the tablet's own worked example in section 5. Delta is taken as F_Y(phi(x)) minus phi(F_X(x)) in absolute value. All arithmetic is exact rationals, so no floating-point tolerance is involved. The declared domain is treated as a closed box in both coordinates.",
+  "acceptance_or_falsification_criteria": "Acceptance: on the declared domain with both premises holding, the true error never exceeds eps*sum(L^k) at any step, and in case B it equals it at every step so the bound is sharp. Falsification: any step where the true error exceeds the bound while both premises hold. Separately, case C falsifies the sufficiency of the bound as an engineering guarantee if the trajectory leaves the declared domain while the reported error still appears within bounds.",
+  "regression_links": "none",
+  "open_obligations": "Independent reproduction by a party that did not write the model. Extension to a family where L is not known in closed form.",
+  "record_id": "SIM-003",
+  "pass_type": "executed_simulation",
+  "research_record_id": "RES-001",
+  "actual_conditions": "Separate subprocess. No network. No authorization.",
+  "outcome_summary": "{\"actual\": {\"first_step_bound_violated\": 2, \"first_step_hypothesis_broken\": 1, \"first_step_outside_domain\": 2, \"hypothesis_broke_before_bound\": true, \"max_true_error\": \"9223372036854775807\", \"trajectory\": [{\"bound_satisfied\": true, \"claimed_bound\": \"0\", \"hypothesis_intact\": true, \"inside_domain\": true, \"n\": 0, \"phi_x\": \"1\", \"residual_here\": \"1\", \"residual_within_epsilon\": true, \"true_error\": \"0\", \"x\": [\"2\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": true, \"claimed_bound\": \"1\", \"hypothesis_intact\": false, \"inside_domain\": true, \"n\": 1, \"phi_x\": \"2\", \"residual_here\": \"4\", \"residual_within_epsilon\": false, \"true_error\": \"1\", \"x\": [\"4\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": false, \"claimed_bound\": \"5\", \"hypothesis_intact\": false, \"inside_domain\": false, \"n\": 2, \"phi_x\": \"8\", \"residual_here\": \"64\", \"residual_within_epsilon\": false, \"true_error\": \"7\", \"x\": [\"16\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": false, \"claimed_bound\": \"21\", \"hypothesis_intact\": false, \"inside_domain\": false, \"n\": 3, \"phi_x\": \"128\", \"residual_here\": \"16384\", \"residual_within_epsilon\": false, \"true_error\": \"127\", \"x\": [\"256\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": false, \"claimed_bound\": \"85\", \"hypothesis_intact\": false, \"inside_domain\": false, \"n\": 4, \"phi_x\": \"32768\", \"residual_here\": \"1073741824\", \"residual_within_epsilon\": false, \"true_error\": \"32767\", \"x\": [\"65536\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": false, \"claimed_bound\": \"341\", \"hypothesis_intact\": false, \"inside_domain\": false, \"n\": 5, \"phi_x\": \"2147483648\", \"residual_here\": \"4611686018427387904\", \"residual_within_epsilon\": false, \"true_error\": \"2147483647\", \"x\": [\"4294967296\", \"0\"], \"y\": \"1\"}, {\"bound_satisfied\": false, \"claimed_bound\": \"1365\", \"hypothesis_intact\": false, \"inside_domain\": false, \"n\": 6, \"phi_x\": \"9223372036854775808\", \"residual_here\": \"85070591730234615865843651857942052864\", \"residual_within_epsilon\": false, \"true_error\": \"9223372036854775807\", \"x\": [\"18446744073709551616\", \"0\"], \"y\": \"1\"}]}, \"expectation_matched\": false}",
+  "raw_evidence_location": "results/SIM-003.json",
+  "uncertainty_and_limitations": "The declared domain and the chosen L are both authored inputs. A different L on the same box would change every reported step number.",
+  "review_note": "Runner record only. No review performed. authorization_status remains NOT_AUTHORIZED.",
+  "evidence_status": "documented",
+  "authorization_status": "NOT_AUTHORIZED",
+  "execution_outcome": "executed",
+  "protocol_version": "1.0.0",
+  "configuration": "exact rational arithmetic; case kind domain_escape",
+  "execution_timestamp": "2026-11-01T00:51:48.836211+00:00",
+  "failure_policy": "On a crash the run is recorded with execution_outcome failed, execution_status ERROR, the exception text in error, and exit_code 1. A non-convergent model is treated the same way: no output is silently discarded and no result is back-filled after the fact.",
+  "known_answer_check": {
+    "included": false,
+    "case_id": null,
+    "detail": "No known-answer or negative-control case is defined for this authored fixture, so none was run. The recorded comparison is against the pre-authored expectation on this case only."
+  },
+  "mcse_or_precision_note": "This case is deterministic and single-run. No Monte Carlo estimate is made, so no MCSE applies; precision is exact for the authored input and is not a statement about any wider population.",
+  "environment": {
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.41"
+  },
+  "input": {
+    "kind": "domain_escape",
+    "family": "squaring",
+    "start": [
+      2,
+      0
+    ],
+    "steps": 6,
+    "epsilon": "1",
+    "L": "4",
+    "domain": [
+      -10,
+      10
+    ]
+  },
+  "expected": {
+    "first_step_outside_domain": 4,
+    "first_step_bound_violated": 4,
+    "first_step_hypothesis_broken": 4,
+    "hypothesis_broke_before_bound": true,
+    "max_true_error": "36"
+  },
+  "actual": {
+    "first_step_outside_domain": 2,
+    "first_step_bound_violated": 2,
+    "first_step_hypothesis_broken": 1,
+    "hypothesis_broke_before_bound": true,
+    "max_true_error": "9223372036854775807",
+    "trajectory": [
+      {
+        "n": 0,
+        "x": [
+          "2",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "1",
+        "true_error": "0",
+        "claimed_bound": "0",
+        "residual_here": "1",
+        "inside_domain": true,
+        "bound_satisfied": true,
+        "residual_within_epsilon": true,
+        "hypothesis_intact": true
+      },
+      {
+        "n": 1,
+        "x": [
+          "4",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "2",
+        "true_error": "1",
+        "claimed_bound": "1",
+        "residual_here": "4",
+        "inside_domain": true,
+        "bound_satisfied": true,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      },
+      {
+        "n": 2,
+        "x": [
+          "16",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "8",
+        "true_error": "7",
+        "claimed_bound": "5",
+        "residual_here": "64",
+        "inside_domain": false,
+        "bound_satisfied": false,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      },
+      {
+        "n": 3,
+        "x": [
+          "256",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "128",
+        "true_error": "127",
+        "claimed_bound": "21",
+        "residual_here": "16384",
+        "inside_domain": false,
+        "bound_satisfied": false,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      },
+      {
+        "n": 4,
+        "x": [
+          "65536",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "32768",
+        "true_error": "32767",
+        "claimed_bound": "85",
+        "residual_here": "1073741824",
+        "inside_domain": false,
+        "bound_satisfied": false,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      },
+      {
+        "n": 5,
+        "x": [
+          "4294967296",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "2147483648",
+        "true_error": "2147483647",
+        "claimed_bound": "341",
+        "residual_here": "4611686018427387904",
+        "inside_domain": false,
+        "bound_satisfied": false,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      },
+      {
+        "n": 6,
+        "x": [
+          "18446744073709551616",
+          "0"
+        ],
+        "y": "1",
+        "phi_x": "9223372036854775808",
+        "true_error": "9223372036854775807",
+        "claimed_bound": "1365",
+        "residual_here": "85070591730234615865843651857942052864",
+        "inside_domain": false,
+        "bound_satisfied": false,
+        "residual_within_epsilon": false,
+        "hypothesis_intact": false
+      }
+    ]
+  },
+  "expectation_matched": false,
+  "execution_status": "COMPLETED",
+  "outcome": "FAIL",
+  "error": null,
+  "started_at": "2026-11-01T00:51:48.836211+00:00",
+  "ended_at": "2026-11-01T00:51:48.838376+00:00",
+  "duration_seconds": 0.005274552997434512,
+  "exit_code": 1,
+  "code_path": "simulations/model.py",
+  "code_sha256": "99aaff9cef29e0db0daedbf68b929dcd731fe9f5b4fb62e61a825d35730446df",
+  "fixtures_sha256": "074859f69d12c64d0758a4abfe39611be2f65eb5395317a1cd922ac9890ca3ee",
+  "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
+  "independent_review": "NOT_PERFORMED",
+  "randomness": "none",
+  "release_classification": "PUBLICLY_CLEARED"
+}

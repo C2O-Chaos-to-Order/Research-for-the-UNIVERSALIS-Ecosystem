@@ -1,0 +1,14 @@
+{
+  "record_id": "ASR-001-CLOSURE-2026-11-08",
+  "closes": "ASR-001 defect_not_caught (tamper of a recorded result + manifest re-lock)",
+  "original_record": "assurance/ASR-001_validator_coverage.json (unchanged; its status field still reads OPEN as the historical record of 2026-11-01)",
+  "owner_decision": "Kyle Steen, 2026-11-08: the re-execution check re-runs EVERY simulation (Wave 1 K03).",
+  "control_added": "assurance/reexecute_all.py re-runs every case in the union of simulations/scenarios.json, ledgers/simulation_ledger.csv and results/SIM-*.json into a scratch directory outside the package and compares every non-volatile record field and the trajectory bytes with the recorded evidence. Missing cases or runs are BLOCKED, never skipped. Exit 0 REPRODUCED, 1 MISMATCH, 2 BLOCKED.",
+  "excluded_nondeterministic_fields": ["duration_seconds", "ended_at", "environment", "execution_timestamp", "raw_evidence_location", "started_at"],
+  "demonstration": "tests/test_w1_k03_reexecution_gate.py (repository root): results/SIM-002.json actual.max_true_error 31/64 -> 1/64 with the manifest re-locked. Structural validation still passes (shown when UNIVERSALIS_TOOLS is set); the re-execution gate reports SIM-002 MISMATCH and exits non-zero. Untouched package: 5/5 REPRODUCED.",
+  "status": "CLOSED_FOR_TAMPER_PLUS_RELOCK",
+  "residual_risk": "This is same-code, same-environment reproduction by the package author's tooling. It does not catch an error in model.py itself, a wrong expectation, or a tamper that also edits model.py consistently with a re-recorded code hash and results; independent reproduction by a party that did not write the model has not been performed.",
+  "verification_level": "internal local runs only; not independent verification",
+  "authorization_status": "NOT_AUTHORIZED",
+  "programme_credit": "NONE"
+}

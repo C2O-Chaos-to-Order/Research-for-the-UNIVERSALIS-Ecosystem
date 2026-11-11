@@ -1,0 +1,22 @@
+{
+  "record_id": "RUN-NOTE-002",
+  "what_this_is": "The second full execution of the simulation suite, made after the two defects from run 1 were repaired and before the package was restructured so that research records, simulation cases and simulation results form a one-to-one chain.",
+  "why_it_is_kept": "The restructure changed which research record each case is attached to. Comparing this run against the post-restructure run shows whether that change altered any numerical result. It did not. Keeping both makes that check reproducible instead of asserted.",
+  "difference_from_current_results": "Linkage and descriptive text only. The 'actual' object and the 'outcome' field are identical for all five cases.",
+  "verification": {
+    "method": "For each of SIM-001..SIM-005, load this directory's result and results/SIM-00N.json and compare the 'actual' dict and the 'outcome' string.",
+    "cases_compared": 5,
+    "cases_with_identical_actual_and_outcome": 5,
+    "cases_with_differing_actual_or_outcome": 0
+  },
+  "superseded_by": [
+    "results/SIM-001.json",
+    "results/SIM-002.json",
+    "results/SIM-003.json",
+    "results/SIM-004.json",
+    "results/SIM-005.json"
+  ],
+  "authorization_status": "NOT_AUTHORIZED",
+  "programme_credit": "NONE",
+  "note": "This directory is a preserved run record, not a second source of results. Where this directory and results/ disagree on any number, results/ governs and the disagreement is a defect to be recorded, not reconciled by hand."
+}

@@ -1,0 +1,80 @@
+{
+  "programme_unit_id": "UNI-RP-001",
+  "checkpoint_id": "CP-04",
+  "objective_question": "Does the tablet's own published 50-row illustrative computation reproduce from the formulas the tablet states, and is a single corrupted value in that table detected?",
+  "claim_class": "PROPOSED",
+  "relevant_dimensions": "traceability_and_provenance",
+  "phase": "formalization",
+  "level": "BASE",
+  "method_summary": "Recompute every row of the published evidence table from the two stated fixture models and compare discrepancy and pass/fail value for value. A separate adversarial control repeats the comparison against a copy with one value corrupted.",
+  "sources_or_inputs": "SRC-EMERALD-TECH (01.E05), SRC-EMERALD-HUMAN (clause X), SRC-EMERALD-COMPENDIUM (01.E01, 01.E02, 01.E05), SRC-EMERALD-EVIDENCE",
+  "assumptions": "X is the real plane and Y the real line, all quantities dimensionless, d_Y the absolute difference, and phi the arithmetic mean, matching the tablet's own worked example in section 5. Delta is taken as F_Y(phi(x)) minus phi(F_X(x)) in absolute value. All arithmetic is exact rationals, so no floating-point tolerance is involved. The declared domain is treated as a closed box in both coordinates.",
+  "acceptance_or_falsification_criteria": "Acceptance: all 50 rows reproduce, and the corrupted copy yields exactly one detected mismatch naming the altered row. Falsification: any row that does not reproduce, or a corrupted copy that passes.",
+  "regression_links": "none",
+  "open_obligations": "None. This is a control, not a substantive claim.",
+  "record_id": "SIM-005",
+  "pass_type": "executed_simulation",
+  "research_record_id": "RES-005",
+  "actual_conditions": "Separate subprocess. No network. No authorization.",
+  "outcome_summary": "{\"actual\": {\"expected_row_count\": 50, \"mismatches\": [], \"row_count_matches_expectation\": true, \"rows_checked\": 50, \"rows_mismatched\": 0}, \"expectation_matched\": true}",
+  "raw_evidence_location": "results/SIM-005.json",
+  "uncertainty_and_limitations": "This reproduces the tablet's own arithmetic from its stated formulas. It does not test any scientific claim, and reproducing a published table is not independent verification of it.",
+  "review_note": "Runner record only. No review performed. authorization_status remains NOT_AUTHORIZED.",
+  "evidence_status": "documented",
+  "authorization_status": "NOT_AUTHORIZED",
+  "execution_outcome": "executed",
+  "protocol_version": "1.0.0",
+  "configuration": "exact rational arithmetic; case kind reproduce_published_table",
+  "execution_timestamp": "2026-11-01T01:02:29.444065+00:00",
+  "failure_policy": "On a crash the run is recorded with execution_outcome failed, execution_status ERROR, the exception text in error, and exit_code 1. A non-convergent model is treated the same way: no output is silently discarded and no result is back-filled after the fact.",
+  "known_answer_check": {
+    "included": true,
+    "case_id": "SIM-005",
+    "detail": "Known-answer control: the published 50-row table must be reproduced value for value."
+  },
+  "mcse_or_precision_note": "This case is deterministic and single-run. No Monte Carlo estimate is made, so no MCSE applies; precision is exact for the authored input and is not a statement about any wider population.",
+  "environment": {
+    "python": "3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.41"
+  },
+  "input": {
+    "kind": "reproduce_published_table",
+    "published_csv": "sources/vendored/01_EMERALD_TABLET_COMPUTATION.csv",
+    "grid": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  "expected": {
+    "rows_checked": 50,
+    "rows_mismatched": 0,
+    "mismatches": [],
+    "expected_row_count": 50,
+    "row_count_matches_expectation": true
+  },
+  "actual": {
+    "rows_checked": 50,
+    "rows_mismatched": 0,
+    "mismatches": [],
+    "expected_row_count": 50,
+    "row_count_matches_expectation": true
+  },
+  "expectation_matched": true,
+  "execution_status": "COMPLETED",
+  "outcome": "PASS",
+  "error": null,
+  "started_at": "2026-11-01T01:02:29.444065+00:00",
+  "ended_at": "2026-11-01T01:02:29.448052+00:00",
+  "duration_seconds": 0.007938636001199484,
+  "exit_code": 0,
+  "code_path": "simulations/model.py",
+  "code_sha256": "72c94c8f3be6c86d24b7a1c7626437b68d532742663176cf8dee805a3561b220",
+  "fixtures_sha256": "af61dcb345b4c00eb2dda06b59a64a993ee44878b299d6d0875b94f95300d33f",
+  "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
+  "independent_review": "NOT_PERFORMED",
+  "randomness": "none",
+  "release_classification": "PUBLICLY_CLEARED"
+}
