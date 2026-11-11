@@ -13,9 +13,15 @@ release. Labels alone do not authorize release.
 
 ## Bound in brief
 
-While (u, v, z) stays inside a working box and the per-step drive stays at
-most Delta, the comparison error at step n is at most n * Delta. The
-comparison map is psi(u, v) = (3u + v) / 4.
+The comparison map is psi(u, v) = (3u + v) / 4. If the per-step error drive
+satisfies |e_k - e_(k-1)| <= Delta, the corrected additive envelope is
+
+    e_n <= e_0 + n * Delta.
+
+The shorter form e_n <= n * Delta requires the additional initial condition
+e_0 = 0. The current five authored cases all start at zero error, so their
+existing numeric outcomes are unchanged by this correction. A negative-control
+test now covers a stationary sequence with nonzero initial error.
 
 ## Cases
 
