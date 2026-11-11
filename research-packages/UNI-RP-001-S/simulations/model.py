@@ -1,9 +1,8 @@
 """Synthetic additive envelope used by UNI-RP-001-S.
 
-This model does not test any C2O clause. It implements SYN-BND-001, a freshly
-written bound: while a triple (u, v, z) stays inside a working box and the
-per-step drive stays at most Delta, the comparison error at step n is at most
-n * Delta.
+This model does not test any C2O clause. It implements the corrected
+SYN-BND-001 additive envelope e_n <= e_0 + n * Delta. The separate working-box
+width consequence is documented in sources/SYN-BND-001.md.
 """
 
 from __future__ import annotations
@@ -31,8 +30,8 @@ def comparison_error(u: Fraction, v: Fraction, z: Fraction) -> Fraction:
     return abs(comparison_map(u, v) - z)
 
 
-def claimed_bound(step: int, delta: Fraction) -> Fraction:
-    return step * delta
+def claimed_bound(step: int, delta: Fraction, initial_error: Fraction = Fraction(0)) -> Fraction:
+    return initial_error + step * delta
 
 
 def in_interval(value: Fraction, box) -> bool:
@@ -65,13 +64,14 @@ def iterate(case_input: dict) -> list[dict]:
     ambient = case_input["ambient_box"]
     rows = []
     previous = comparison_error(u, v, z)
+    initial_error = previous
     for n in range(steps + 1):
         if n > 0:
             u, v, z = step_family(family, u, v, z, delta)
         current = comparison_error(u, v, z)
         drive = abs(current - previous) if n > 0 else Fraction(0)
         previous = current
-        bound = claimed_bound(n, delta)
+        bound = claimed_bound(n, delta, initial_error)
         rows.append(
             {
                 "step": n,
@@ -144,8 +144,9 @@ def reproduce_table(root: Path, table_csv: str, expected_row_count: int) -> dict
         u, v, z = q(row["u"]), q(row["v"]), q(row["z"])
         delta = q(row["delta"])
         next_u, next_v, next_z = step_family(family, u, v, z, delta)
+        initial_error = comparison_error(u, v, z)
         computed_error = comparison_error(next_u, next_v, next_z)
-        computed_bound = claimed_bound(1, delta)
+        computed_bound = claimed_bound(1, delta, initial_error)
         computed_holds = computed_error <= computed_bound
         recorded_error = q(row["after_step_error"])
         recorded_bound = q(row["claimed_bound"])
