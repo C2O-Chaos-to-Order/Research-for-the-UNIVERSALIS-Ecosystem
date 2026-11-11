@@ -32,11 +32,9 @@ Treat these as domain/content repositories pending a content and ownership audit
 
 Several current repository descriptions retain GAIA wording. Conduct a separate naming, ownership and scope audit before treating them as authoritative UNIVERSALIS registries. Do not mass-rename or modify them as part of this initial research work.
 
-## GIDEON prototype handling
+## Private-source exclusion
 
-The GIDEON Continuity Core v0.1.0 was merged into the private C2O repository's `integration/human-technical-tablets-gideon-jarvis-v1-0-0` branch, not into that repository's `main` branch. It is an experimental local reference implementation with explicit security, privacy, persistence, concurrency and deployment limitations.
-
-It is evidence and a design reference, not an approved public product release. Do not copy it wholesale into the public UNIVERSALIS repository. Derive public implementation from approved requirements and independently reviewed design. Any specific code transfer requires source classification, licensing/IP, dependency, secret and security review and explicit owner approval.
+No private C2O prototype code, branch names, credentials, configuration, data, operational records, or infrastructure details are included in this public proposal or used as evidence for its claims. Any future proposal to derive public implementation from private C2O material requires source classification, licensing/IP, dependency, secret and security review, and explicit owner release approval. Public UNIVERSALIS repositories must not acquire ambient access to C2O private resources.
 
 ## C2O–UNIVERSALIS interface
 
