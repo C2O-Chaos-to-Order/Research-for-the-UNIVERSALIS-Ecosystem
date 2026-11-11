@@ -2,10 +2,14 @@
 
 import csv
 import json
+import sys
 import unittest
+from fractions import Fraction
 from pathlib import Path
 
 PACKAGE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(PACKAGE / "simulations"))
+from model import claimed_bound, comparison_error
 
 
 class UniRp001STests(unittest.TestCase):
@@ -47,6 +51,13 @@ class UniRp001STests(unittest.TestCase):
                 "bound_holds",
             ],
         )
+
+    def test_nonzero_initial_error_is_preserved_when_drive_is_zero(self):
+        initial = comparison_error(Fraction(1), Fraction(1), Fraction(0))
+        self.assertEqual(initial, Fraction(1))
+        self.assertEqual(claimed_bound(5, Fraction(0), initial), Fraction(1))
+        # Counterexample to the former zero-origin-only expression.
+        self.assertNotEqual(initial, 5 * Fraction(0))
 
     def test_five_executed_cases_exist(self):
         cases = json.loads((PACKAGE / "simulations" / "scenarios.json").read_text())
