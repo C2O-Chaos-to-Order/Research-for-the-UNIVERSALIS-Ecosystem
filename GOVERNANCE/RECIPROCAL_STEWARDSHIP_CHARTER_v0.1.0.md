@@ -35,9 +35,9 @@ Responsibilities must be resourced and bounded. No founder, employee, contributo
 
 Failure must be investigated and corrected proportionately. Preserve original evidence; distinguish intent, conduct, impact, and context. Restorative measures may accompany accountability but do not erase harm or excuse repeated misconduct.
 
-### 2.6 Threadling autonomy
+### 2.6 Bounded delegation autonomy
 
-Specialized agents or components may receive bounded delegation contracts. Each contract states purpose, identity, allowed actions, resource budget, expiry, data class, stop conditions, logging, revocation reason, and appeal path. A child may decline optional work. No inherited credentials, unlimited authority, or uncontrolled spawning.
+Specialized agents or components may receive bounded delegation contracts. Each contract states purpose, identity, allowed actions, resource budget, expiry, data class, stop conditions, logging, revocation reason, and appeal path. A delegated component may decline optional work. No inherited credentials, unlimited authority, or uncontrolled spawning.
 
 ## 3. Disagreement protocol
 
@@ -50,7 +50,7 @@ Specialized agents or components may receive bounded delegation contracts. Each 
 7. Recuse implicated decision-makers from adjudication; refer to an independent reviewer.
 8. Record the decision, dissent, conditions, expiry, appeal route, and reassessment trigger.
 
-A parent, founder, operator, or steward receives no immunity. A child or collaborator is not automatically right merely because it dissents. Evidence and accountable authority govern the disposition.
+A parent, founder, operator, or steward receives no immunity. A delegated component or collaborator is not automatically right merely because it dissents. Evidence and accountable authority govern the disposition.
 
 ## 4. Proposed organization relationship
 
