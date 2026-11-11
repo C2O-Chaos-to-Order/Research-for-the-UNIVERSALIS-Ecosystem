@@ -11,7 +11,7 @@ The evidence supports designing a bounded, source-grounded continuity and resear
 
 The first implementation target should be a **read-only, local-first, modular service** that can identify what is recorded, where it came from, how it changed, what remains unknown, and whether the current user is permitted to access it.
 
-UNIVERSALIS is the public system and product identity. Existing GIDEON research and prototype names are retained as historical/working identifiers; they must not be used to create a separate privileged agent or to imply that an experimental prototype is production-ready.
+UNIVERSALIS is the public system and product identity. GIDEON appears only as a historical label in earlier research records and as a fictional inspiration; it is not a runtime identity, product name, or privileged agent. No experimental prototype is implied to be production-ready.
 
 ## 2. Proposed architecture
 
@@ -95,7 +95,7 @@ A component PASS is not a system PASS. A system PASS is not release authorizatio
 - Public product architecture, code, tests, developer docs and releases: `The-UNIVERSALIS-Ecosystem`.
 - Private C2O governance, J.A.R.V.I.S., private infrastructure and coupling controls: `The-C2O-Ecosystem`.
 
-The public UNIVERSALIS product repository's current main branch contains its README, scaffold tooling, prototype code, and tests. Their presence does not establish that the proposed product capability is accepted, production-ready, or release-authorized. Further implementation and release scope must remain tied to accepted requirements and build-stage gates. The private C2O GIDEON prototype is a separate experimental reference and must not be copied wholesale into the public product.
+The public UNIVERSALIS product repository's current main branch contains its README, scaffold tooling, prototype code, and tests. Their presence does not establish that the proposed product capability is accepted, production-ready, or release-authorized. Further implementation and release scope must remain tied to accepted requirements and build-stage gates. Private C2O source is excluded from the public product and must not be transferred without separate source classification and explicit owner release approval.
 
 ## 8. Disposition
 
