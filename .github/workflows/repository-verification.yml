@@ -51,7 +51,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem
-          ref: 3c521a82ee1404bd09d219c59ff6a466cb0721d0
+          ref: a2b969d9c734932c53fdfc9aad3c2b7e6b59d2f0
           path: The-UNIVERSALIS-Ecosystem
 
       - name: Set up Python
