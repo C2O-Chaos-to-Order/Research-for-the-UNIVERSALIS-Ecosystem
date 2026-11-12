@@ -18,10 +18,10 @@ At this review, the four documents are fully inventoried below. The foundational
 
 | Source document | C2O owner | UNIVERSALIS owner | Basic executable foundation |
 |---|---|---|---|
-| Human Knowledge | [The-C2O-Human-Knowledge](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Knowledge/tree/implementation/repository-foundation-2026-11-12) | [The-UNIVERSALIS-Human-Knowledge](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/tree/implementation/repository-foundation-2026-11-12) | Provenance/bi-temporal record contract, six versioned MCP request/response tool definitions, validator, synthetic fixture, CI |
-| Powers / Energy | [The-C2O-Powers](https://github.com/C2O-Chaos-to-Order/The-C2O-Powers/tree/implementation/repository-foundation-2026-11-12) | [The-UNIVERSALIS-Intelligence-Powers](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/tree/implementation/repository-foundation-2026-11-12) | Measurement, task receipt, attenuable energy-budget grant, synergy evaluation, validator, synthetic fixtures, CI |
-| Human Capabilities | [The-C2O-Human-Capabilities](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Capabilities/tree/implementation/repository-foundation-2026-11-12) | [The-UNIVERSALIS-Human-Capabilities](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/tree/implementation/repository-foundation-2026-11-12) | Portable capability evidence record, consent/proctor/attestation gates, validator, synthetic fixture, CI |
-| Mapping / Matrix / Organization | [The-C2O-Ecosystem](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/tree/implementation/repository-foundation-2026-11-12) | [The-UNIVERSALIS-Ecosystem](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/tree/implementation/repository-foundation-2026-11-12) | Typed architecture graph, provenance-bearing nodes/edges, matrix entries, reviewed proposals, validator, synthetic fixture, CI |
+| Human Knowledge | C2O private owner repository (not exposed through this public register) | [The-UNIVERSALIS-Human-Knowledge](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/tree/implementation/repository-foundation-2026-11-12) | Provenance/bi-temporal record contract, six versioned MCP request/response tool definitions, validator, synthetic fixture, CI |
+| Powers / Energy | C2O private Powers owner repository (not exposed through this public register) | [The-UNIVERSALIS-Intelligence-Powers](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/tree/implementation/repository-foundation-2026-11-12) | Measurement, task receipt, attenuable energy-budget grant, synergy evaluation, validator, synthetic fixtures, CI |
+| Human Capabilities | C2O private Human Capabilities owner repository (not exposed through this public register) | [The-UNIVERSALIS-Human-Capabilities](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/tree/implementation/repository-foundation-2026-11-12) | Portable capability evidence record, consent/proctor/attestation gates, validator, synthetic fixture, CI |
+| Mapping / Matrix / Organization | C2O private ecosystem owner repository (not exposed through this public register) | [The-UNIVERSALIS-Ecosystem](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/tree/implementation/repository-foundation-2026-11-12) | Typed architecture graph, provenance-bearing nodes/edges, matrix entries, reviewed proposals, validator, synthetic fixture, CI |
 
 ### Canonical source documents
 
@@ -91,7 +91,7 @@ No production graph database, temporal query engine, source connector, ontology 
 - Kepler pod/container attribution.
 - NVIDIA Management Library (NVML) GPU sampling.
 - InfluxDB as the time-series store in the supplied reference pattern (not a mandated central shared database).
-- One-second / 1 Hz sampling target where the hardware and collector genuinely support it.
+- One-second / 1 Hz sampling target where the hardware and collector genuinely support it; GPU power integration using the trapezoidal rule over the full decision window, including inference, tool execution, and communication delays.
 - Forecast-before-action record, carbon/energy receipt, Joule-compatible response-header mapping, and PACT Passport as a proposed attenuable capability-token substrate.
 - S-v1 synergy factor computed locally from portable receipts; no central synergy oracle.
 
