@@ -232,3 +232,8 @@ The public implementation includes only portable schemas, synthetic fixtures, RD
 
 ### Implementation limits
 CI checks JSON contracts, semantic invariants and Turtle syntax only. It does not execute OWL reasoning, SHACL validation over ontology data, Lean proof checking, graph-store operations, bitemporal queries, cryptographic verification, or schema deployment. No external product is marked integrated. The canonical UNIVERSALIS master ontology text remains unchanged.
+
+
+### Final tightened ontology gate evidence — 2026-11-12
+
+The final tested ontology validator enforces the reviewer/evidence requirements for accepted crosswalks and applied schema changes, the resolution evidence requirement for resolved conflicts, blank-node fact reference requirements, and non-empty evidence on every admission receipt. The final ontology contract workflows and repository quality baselines linked above passed all jobs and steps. C2O additionally passed the private admission validator; the public run contains only shared portable contracts and synthetic RDF fixtures.
