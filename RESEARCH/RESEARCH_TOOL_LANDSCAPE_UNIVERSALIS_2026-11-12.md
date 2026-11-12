@@ -77,3 +77,28 @@ No weighted score or pass threshold is assigned in this intake. Define and appro
 - UNIVERSALIS implementation destination: [The UNIVERSALIS Ecosystem](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem)
 - C2O research counterpart: [Research for the C2O Ecosystem](https://github.com/C2O-Chaos-to-Order/Research-for-the-C2O-Ecosystem)
 - C2O implementation destination: [The C2O Ecosystem](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem)
+
+
+## Follow-up primary-source discovery — 2026-11-12
+
+A first source-discovery pass found the following project-maintained repositories or primary papers. This confirms identifiable source material, not production readiness or independent validation of every reported result.
+
+| Candidate | Source | What is supported at this stage |
+|---|---|---|
+| FS-Researcher | https://arxiv.org/abs/2602.01566 ; https://aclanthology.org/2026.acl-long.288/ ; https://github.com/Ignoramus0817/FS-Researcher | ACL Anthology paper and source repository describe a dual-agent filesystem workspace with persistent notes and archived raw sources. Benchmark superiority remains paper-reported pending reproduction. |
+| DeerFlow 2.0 | https://github.com/bytedance/deer-flow | Official repository describes an open-source long-horizon agent harness with subagents, memory, sandboxes, tools and skills; v2 is a ground-up rewrite relative to v1. |
+| PARNESS | https://arxiv.org/abs/2605.05258 ; https://github.com/gtrhythm/PARNESS | Paper and repository describe declarative DAG workflows, full-text PDF indexing, typed objects, and cross-run knowledge. Verify current implementation and license before adoption. |
+| chitta-research | https://github.com/genomewalker/chitta-research ; https://research.vaklab.dev/ | Project repository and maintained overview describe a Rust research system with typed belief graph, agent loop and artifact provenance. Important qualification: README says reconsolidation is exposed as a library function and is not automatically called in the current agent loop; do not overstate automatic correction propagation. |
+| Research OS (research-panel) | https://pypi.org/project/research-panel/ | Package description documents a project-local `.research/` substrate, canonical text records, SQLite index, CLI/TUI/API/MCP interfaces and remote/HPC support. Validate source repository, license, release integrity, and schema/migration constraints before adoption. |
+
+Not located in this first pass: a sufficiently clear primary source for the specific FS-Researcher-adjacent claims beyond the cited paper, Research Vault, AutoSearch, Gigaxity, Harness Research, Apify Research MCP Server, and NAVA. Keep these entries unverified; absence from this limited search is not proof of nonexistence.
+
+## Source discovery references
+- FS-Researcher paper: https://arxiv.org/abs/2602.01566
+- FS-Researcher ACL Anthology record: https://aclanthology.org/2026.acl-long.288/
+- FS-Researcher repository: https://github.com/Ignoramus0817/FS-Researcher
+- DeerFlow official repository: https://github.com/bytedance/deer-flow
+- PARNESS paper: https://arxiv.org/abs/2605.05258
+- PARNESS repository: https://github.com/gtrhythm/PARNESS
+- chitta-research repository: https://github.com/genomewalker/chitta-research
+- Research OS package: https://pypi.org/project/research-panel/
