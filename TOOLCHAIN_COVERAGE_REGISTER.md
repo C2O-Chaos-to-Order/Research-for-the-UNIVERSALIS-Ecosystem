@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This document adds the fifth Intelligence Capabilities toolchain.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This document consolidates the fifth Intelligence Capabilities and sixth Intelligence Skills toolchains after the original four source inventories.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -120,7 +120,7 @@ Cross-domain reuse to reconcile rather than duplicate: SkillSeal and Cupel were 
 
 - **Documented:** candidate and function recorded.
 - **Basic contract implemented:** schema, fixture, and semantic code authored on this implementation branch.
-- **CI passed:** exact workflow revision and run confirmed; not yet established for this sixth source.
+- **CI passed:** exact workflow revision and run confirmed for all six source implementations where run IDs are recorded; the Intelligence Skills receipts are linked below.
 - **Integrated:** a real adapter/service is connected and exercised; no external candidate is currently marked integrated.
 
 
