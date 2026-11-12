@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS toolchain coverage for the original four toolchain documents plus the subsequently supplied Intelligence Capabilities document.  
+**Scope:** Public UNIVERSALIS toolchain coverage for six owner-supplied inventories: the original four, Intelligence Capabilities, and Intelligence Skills.  
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
