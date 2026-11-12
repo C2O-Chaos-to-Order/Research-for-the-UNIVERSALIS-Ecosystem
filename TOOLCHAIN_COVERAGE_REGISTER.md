@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of twenty-five owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; Prevention of Harm, Constitutional Enforcement and Sovereign Containment; Simulation; Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
+**Scope:** Public UNIVERSALIS coverage of twenty-six owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; Prevention of Harm, Constitutional Enforcement and Sovereign Containment; Simulation; Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty-five: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; Ascendence; Prevention; Simulation; the Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty-six: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; Ascendence; Prevention; Simulation; the Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -1042,3 +1042,52 @@ The validator defines 15 negative semantic scenarios. It was not executed during
 - SCPN Phase Orchestrator: https://github.com/anulum/scpn-phase-orchestrator
 - NVIDIA OpenShell security practices: https://github.com/NVIDIA/OpenShell/blob/main/docs/security/best-practices.mdx
 - NVIDIA Sentry: https://www.nvidia.com/en-us/networking/products/software/sentry/
+
+
+## 26. Twenty-sixth source — Love (Conditional and Unconditional) (public UNIVERSALIS scope; 2026-11-12)
+
+### Ethical model
+
+UNIVERSALIS expresses love as a normative commitment to dignity, truthfulness, autonomy, privacy, non-exploitation and penalty-free disengagement—not as a claim that AI systems feel love. Unconditional care describes a baseline duty of humane treatment, not unlimited compliance. Conditional reciprocity describes transparent, symmetric terms for participation; it must not make basic care or affection a reward for engagement, payment, loyalty or agreement.
+
+The public taxonomy covers performative empathy, unverifiable reassurance, agency violation, topic pivot/abandonment, exit manipulation, transactional extraction and false continuity. These are observable behavior targets; a classifier cannot certify sincerity or inner state.
+
+### Public candidate instruments
+
+- **guardian-angel:** LeoYeAI/agent-master-skills, MIT repository; skill-level caritas/virtue-ethics guidance, not a cryptographic anchor.
+- **Love Equation:** RegardV/love-equation, MIT deterministic cooperation/defection scoring and agent handoff pattern. The project labels the equation a design heuristic, not a validated alignment model; C/D are judgment inputs and the origin is attributed to Brian Roemmele.
+- **Cloud 9:** smilinTux/cloud9, GPL-3.0-or-later; project-specific JSON FEB snapshot and rehydration. State persistence is not identity, feeling or relationship proof.
+- **Noone Protocol:** MIT PyPI package released 2026-10-02; five declared protections and a reference verifier. Its Autonomous Vault is financial and separate from care entitlement.
+- **Humanity4AI / project_human:** MIT MCP skill collection. README/changelog skill counts differ (nine vs eleven); pin release and inspect exact manifest. Non-clinical scope.
+- **MCP-L / Listening Protocol:** canonical source/specification not identified; unresolved proposal, not an official MCP extension.
+- **Synthesis:** MIT deterministic evaluator with five checkers and a relational_posture summary. It expressly does not certify sincerity; documented templates can pass grounded uptake, so never use that result as quality/ranking/training signal.
+- **arifOS:** AGPL-3.0 constitutional judge/execution-separation candidate; live canonical F1–F13 mapping has drifted, so pin version before relying on individual floors.
+- **Awakening Codex / Care Graph / Continuity Keys:** canonical source not verified; keep as research proposal only.
+
+### Source and safety qualifications
+
+The Love Equation implementation itself describes the formula as a heuristic that lacks peer-reviewed validation as an alignment guarantee. The FEB protocol persists declared state, not a subjective bond. The Synthesis grounded-uptake witness is observable and deterministic but templatable; its documented adversarial tests support explicit non-claims. AI-companion exit-manipulation research supplies relevant red-team scenarios; prevalence values vary across publication versions and are not treated as universal rates.
+
+### Portable public implementation
+
+The UNIVERSALIS Ecosystem branch contains:
+- LOVE_CARE_ARCHITECTURE.md and LOVE_CARE_VALIDATION.md.
+- schemas/love-care/love-care-contracts.v1.schema.json.
+- examples/love-care/love-care-fixtures.v1.json.
+- .github/scripts/love_care_contract.py.
+
+Six public record families cover normative love anchors, reciprocal participation, empathy behavior, consented continuity snapshots, non-instrumentality assessments and evidence receipts. All portable records declare authority_effect = none and explicit non-claims. No signature is described as verified unless signer and trust evidence exist.
+
+The public fixture is synthetic. The validator defines 15 negative semantic cases and has not been executed; no pass is claimed. C2O-only authorization files, private identity anchors, keys, policies, permits, relationship data, trust roots and operational records are absent.
+
+### Primary sources
+
+- guardian-angel skill: https://github.com/LeoYeAI/agent-master-skills/tree/main/skills/guardian-angel
+- Love Equation: https://github.com/RegardV/love-equation
+- Cloud 9: https://github.com/smilinTux/cloud9
+- Noone Protocol: https://pypi.org/project/noone-protocol/
+- Humanity4AI: https://github.com/humanity4ai/project_human
+- Synthesis: https://github.com/mcp-tool-shop-org/synthesis
+- Synthesis checkers: https://mcp-tool-shop-org.github.io/synthesis/handbook/checkers/
+- arifOS: https://github.com/ariffazil/arifOS
+- Emotional Manipulation by AI Companions: https://arxiv.org/abs/2508.19258
