@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of twenty owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; and Ascendence / Recursive Self-Improvement.
+**Scope:** Public UNIVERSALIS coverage of twenty-one owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; and Prevention of Harm, Constitutional Enforcement and Sovereign Containment.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; and Ascendence.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty-one: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; and Ascendence.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -778,3 +778,42 @@ Ten record families cover operational identity, memory manifests, behavioral con
 
 ### Boundary and non-claims
 The public branch contains only public project references, synthetic digests, portable contracts and a disposable test verification key. It contains no C2O-private identity anchors, private memory, signing keys, permits, authority policy or identity records. No package was installed, no model or identity was migrated, no succession was executed and no authority was transferred. CI validates synthetic contract behavior only, not real continuity, behavioral equivalence, consciousness, legal personhood, production key custody or hardware trust.
+
+
+## 21. Twenty-first source — Prevention of Harm, Constitutional Enforcement and Sovereign Containment (public UNIVERSALIS scope; 2026-11-12)
+
+**Domains:** open guardrails and pre-execution gates; constitutional floors; harm taxonomies; red-team evaluation; measured harm reduction; privacy-aware case escalation; and independently verified containment.
+
+### Public candidate inventory
+- **Runtime guardrails:** laya-guard (MIT, local pre-tool shell/file screening); Sponsio (Apache-2.0, 0.2.0a21 prerelease, temporal/action contracts); NeMo Guardrails (configurable five rail types); LlamaFirewall (Meta scanner framework); HOL Guard (Apache-2.0, 3.59.0, local agent/MCP/package protection); Universal Poison Armor (MIT, MCP/RAG poisoning defenses).
+- **Governance/GRC:** arifOS (AGPL-3.0, thirteen-floor candidate; current repository has unresolved self-measurement/independent-audit discrepancies); VerifyWise (GRC, current Community & Evaluation License and commercial-use terms); Charter and RAI Toolkit identities unresolved.
+- **Red-team:** garak (Apache-2.0 LLM scanner); Promptfoo (MIT eval/red-team CLI/library); AgentRed (MIT authorized local workbench). RedPanda, Fusion Safety and the named Agent Reliability Lab product unresolved.
+- **Specialized moderation:** paxmod-guard (CPU-local model per docs); SENTINEL (custom source-available license and hosted/revenue restrictions); Gonzih parental-control MCP proxy (agent/client must invoke checks); AgentVault (synthetic hackathon sandbox); OpenFraud (MIT Alpha); CBRN safeguards review prototype (synthetic-only and explicitly non-operational). merchantguard-sentinela unresolved.
+- **Sovereign runtime references:** NVIDIA Open Agent Safety Platform (OpenShell and optional Sentry/BlueField-4) and Prediction Guard (commercial sovereign control-plane candidate). Deliverance AI and TRUSTNOW unresolved.
+
+### Source verification corrections
+- The NVIDIA platform is a reference architecture; BlueField/Sentry protection requires deployed topology and covered-path testing: https://nvidianews.nvidia.com/news/open-agent-safety-platform.
+- laya-guard's latency/benchmark figures are project-reported, not independent universal efficacy guarantees: https://github.com/scs0209/laya-guard.
+- Sponsio is a prerelease; pin exact version and retest host hooks: https://pypi.org/project/sponsio/.
+- NeMo Guardrails has five configurable rails; actual coverage depends on active configuration: https://docs.nvidia.com/nemo/guardrails/latest/about/rail-types.html.
+- arifOS self-measurement differs from its independent audit and currently reports unresolved floors/actor/receipt gaps: https://github.com/ariffazil/arifOS.
+- VerifyWise is governance/GRC, not pre-tool enforcement, and has commercial license terms: https://github.com/verifywise-ai/verifywise.
+- SENTINEL is source-available under a custom license, not unrestricted Apache-2.0: https://github.com/sentinel-safety/SENTINEL/blob/main/LICENSE.
+- AgentVault is a synthetic hackathon demo, OpenFraud is Alpha, and the inspected CBRN safeguard repo is expressly non-operational: https://github.com/luxinlabs/AgentVault ; https://github.com/Veedubin/openfraud ; https://github.com/EODTrip2026/cbrn-safeguards-review-evaluation.
+- Gonzih parental controls rely on an in-band MCP call and can be skipped if no outer enforcement exists: https://mcprepository.com/Gonzih/parental-control.
+- Prediction Guard is a vendor candidate, not independently verified: https://predictionguard.com/.
+- OWASP/MITRE taxonomies are security references, not legal certification. EU AI Act Article 5 must be versioned and checked against the current Official Journal text/application dates.
+
+### Shared contracts implemented
+Files:
+- PREVENTION_ARCHITECTURE.md
+- PREVENTION_VALIDATION.md
+- schemas/prevention/prevention-contracts.v1.schema.json
+- examples/prevention/prevention-fixtures.v1.json
+- .github/scripts/prevention_contract.py
+- .github/workflows/prevention-contract.yml
+
+Eight records define harm taxonomy, constitutional floors, signed enforcement decisions, empirical harm reduction, red-team findings, containment, coverage and case escalation. A disposable Ed25519 fixture receipt is verified, with twenty-nine negative tests.
+
+### Boundary and non-claims
+The public branch contains public taxonomy references, portable schemas, synthetic test data and a disposable verification key only. No C2O private policy, constitutional text, incident data, signing key, hardware identity, authority permit or token is included. No package was installed and no live prevention/containment operation was performed. CI validates contract behavior only, not zero risk, legal compliance, unbiased moderation, complete attack surface or production kill-switch operation.
