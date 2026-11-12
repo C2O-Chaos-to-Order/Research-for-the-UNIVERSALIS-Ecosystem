@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of thirteen owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure (seven domains), and Websites.
+**Scope:** Public UNIVERSALIS coverage of eighteen owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure (seven domains), and Websites.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through thirteenth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure, and Websites.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through eighteenth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure, and Websites.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -652,3 +652,40 @@ The public repository includes only opaque synthetic references, public-source l
 ### Limitations
 
 No product was installed or invoked. No real principal, agent, key, wallet, trust record, private data, hardware enclave, pledge or revocation was accessed. CI validates synthetic contract behavior and fixture signatures only; it does not establish identity, legal authority, real-world loyalty, universal revocation or compliance.
+
+
+## 18. Eighteenth source — Convergence, Consensus, Negotiation, Reconciliation and Dispute Resolution (public UNIVERSALIS scope; 2026-11-12)
+
+**Domains:** shared intent; satisfaction-bounded consensus; negotiation/mediation; knowledge-graph merge; ontology alignment; formal argumentation; dispute/arbitration outcomes.
+
+### Open candidate inventory
+- **Shared intent / consensus:** ACCORD; CONCORD; Aragora Debate Module; Aegean Consensus Protocol (exact primary source not pinned).
+- **Negotiation / mediation:** OANP; Ophir Protocol; Accord Engine (exact upstream not pinned); negmas-llm; Peacethinking MCP Server (exact upstream not pinned).
+- **Knowledge graph / memory:** Graph Merge / TypeGraph (exact API/upstream not pinned); Mycelium; @unrdf/kgc-runtime (exact upstream not pinned); DrugAgent (exact upstream not pinned).
+- **Semantic / ontology alignment:** DOA (exact upstream not pinned); Automated Agent-to-Agent Ontology Reconciliation draft; Agent-OM; open-ontologies alignment.
+- **Argumentation / conflict:** ArgRE; Debate as Coordination Protocol (exact upstream not pinned); AetherFlow (the located AetherFlow source is a Rust actor runtime, not the described merge-queue system; exact identity unresolved).
+- **Dispute / arbitration:** AgentCourt and Internet Court (canonical upstreams not pinned); AgentOath TrustReceipt and OC Pledge outcome states are adjacent reusable evidence patterns already recorded in source 17.
+
+### Source verification corrections and qualifications
+- Cisco Outshift reports ACCORD moving its tested shared-understanding case from 13% to 67% (54 percentage points); CONCORD's satisfaction-bar findings cover four evaluated decisions. These are scoped vendor-reported experiments, not universal guarantees. A companion article identifies delivery/handoff integrity as a separate weakness (57% intact delivery in the described test): https://outshift.cisco.com/blog/ai-ml/cognition-protocols-make-agents-think-together and https://outshift.cisco.com/blog/ai-ml/four-agents-one-webex-space-zero-decisions.
+- Ophir documents Ed25519-signed negotiation agreements, twelve lifecycle states, SLA checks and Solana USDC escrow. Its settlement path is an external-chain dependency: https://github.com/Ophir-Protocol/ophir.
+- OANP documents open ontology-grounded multi-party negotiation with typed moves and mediation modes. Its supplied MIT competition claim is not independently verified here: https://github.com/cemphlvn/OANP.
+- Mycelium documents provenance and contradiction handling but supports threshold-based auto-merge; users must review that policy before relying on it: https://github.com/harishkotra/mycelium.
+- ArgRE provides a research artifact for argumentation-based requirements negotiation: https://arxiv.org/abs/2604.23124 and https://github.com/haowei614/ArgRE-code.
+- Agent-OM is a PVLDB 2025 ontology-matching system, not a complete agent-to-agent reconciliation protocol: https://github.com/qzc438/ontology-llm.
+- draft-janz-nmrg-ontology-reconciliation-01 is an individual Informational Internet-Draft published 6 July 2026, not an RFC. It explicitly requires recording unbridgeable semantic gaps instead of fabricating equivalence and recommends provenance, confidence, authorization, audit and human review: https://datatracker.ietf.org/doc/draft-janz-nmrg-ontology-reconciliation/.
+- Exact source/release remains unpinned for Aegean Consensus, Graph Merge / TypeGraph API, Accord Engine, @unrdf/kgc-runtime, DrugAgent, DOA, Peacethinking, AgentCourt, Internet Court and the described AetherFlow merge-queue implementation. These remain candidates, not adopted integrations.
+
+### Shared convergence contracts implemented
+Files:
+- CONVERGENCE_ARCHITECTURE.md
+- CONVERGENCE_VALIDATION.md
+- schemas/convergence/convergence-contracts.v1.schema.json
+- examples/convergence/convergence-fixtures.v1.json
+- .github/scripts/convergence_contract.py
+- .github/workflows/convergence-contract.yml
+
+Seven record types cover shared intent, participant satisfaction, negotiation, graph-merge plans, ontology alignment, argumentation and dispute outcomes. The synthetic fixture includes a DSSE/in-toto signed evidence bundle using a disposable Ed25519 key. Fourteen negative tests cover missing participant intent, below-bar consensus, non-unanimous agreement, unverified BATNA, merge approval/conflict/staleness, ontology review and round-trip validation, argumentation integrity, settlement arithmetic, enforcement authority and signature tampering.
+
+### Boundary and non-claims
+The public register contains public candidate references, portable schemas and synthetic opaque evidence only. It contains no private resolution policy, principal, negotiation preferences, BATNA, signing key, permit, or operational data. No third-party tool was installed or adopted; no live consensus, graph mutation, ontology migration, settlement or arbitration was executed. Passing CI establishes fixture/schema behavior only, not truth, fairness, legal enforceability, Pareto optimality or production interoperability.
