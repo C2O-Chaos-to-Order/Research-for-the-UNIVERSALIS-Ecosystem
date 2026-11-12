@@ -817,3 +817,48 @@ Eight records define harm taxonomy, constitutional floors, signed enforcement de
 
 ### Boundary and non-claims
 The public branch contains public taxonomy references, portable schemas, synthetic test data and a disposable verification key only. No C2O private policy, constitutional text, incident data, signing key, hardware identity, authority permit or token is included. No package was installed and no live prevention/containment operation was performed. CI validates contract behavior only, not zero risk, legal compliance, unbiased moderation, complete attack surface or production kill-switch operation.
+
+
+## 22. Twenty-second source — Simulation, Open Environments and Verifiable World Models (2026-11-12)
+
+**Domains:** agentic execution and RL; synthetic database-backed tool worlds; social/multi-agent simulation; Monte Carlo/decision analysis; FEM/PDE/physics; manufacturing digital twins; provenance; hash-chained traces; signed replay; independent world-model validation.
+
+### Open instrument inventory
+
+- **Agentic RL / execution:** [OpenEnv](https://github.com/openenv/OpenEnv) provides Gymnasium-style `reset`/`step`/`state`, sync/async WebSocket interfaces, Docker environments and MCP tool serving; upstream currently advertises 40+ environments. [Snowflake Agent World Model](https://github.com/Snowflake-Labs/agent-world-model) publishes 1,000 executable SQL-backed synthetic MCP environments and an ICML 2026 paper. YAIFS remains an unresolved candidate pending exact upstream/release identification.
+- **Social / multi-agent:** [AgentSociety 2](https://github.com/tsinghua-fib-lab/AgentSociety) (Apache-2.0 v2.11.0 docs; async research runtime, JSONL replay and DuckDB result access); [GASim](https://aclanthology.org/2026.acl-long.569/) (ACL 2026 hybrid LLM/ABM research; paper reports 9.94× speedup and less than 20% baseline tokens for its evaluated setup); [Concordia](https://github.com/google-deepmind/concordia) (open generative social simulation library); AgoraSim (2026 paper-level hybrid ABM candidate; maintained public code release was not pinned here).
+- **Monte Carlo / decision analysis:** simengine-mcp remains unresolved until a primary upstream and release are pinned. The supplied tool count, dependency count, historical backtest size, scoring and CVaR/chance-constraint claims are not accepted as verified.
+- **Physics / PDE / FEM:** [openPASO](https://github.com/open-PASO/openPASO), formerly OASiS (MIT MCP server; nine FEM/multiphysics solver integrations); [AgentFEM](https://github.com/haoming-luo/agentfem) (Apache-2.0 Python FEM workflow, package version pinning required); [PDE-Agents](https://github.com/MatPro-IFE/pde-agents) (research prototype using local LLMs, LangGraph, DOLFINx and GraphRAG); [PhysBox](https://physbox.io/) (browser simulation tools with an MCP companion; current site lists 256 MCP tools across Volt, Mesh, Etch and Flux preview); Genesis-Gemini-MCP and MCP World Model remain unresolved/prototype candidates.
+- **Manufacturing digital twin:** [MABDT Engine](https://zenodo.org/records/20755232) is an open research artifact for hierarchical statechart manufacturing agents, MQTT event bridging, read-only state records and dashboards. WorldSim AI remains unresolved pending unique upstream, release and license proof.
+
+### Verification corrections and evidence qualifications
+
+- Synthetic database-backed AWM environments provide controlled state transitions for RL, not proof of physical/social world fidelity: https://github.com/Snowflake-Labs/agent-world-model and https://proceedings.mlr.press/v306/wang26jh.html.
+- OpenEnv's MCP production tools and Gymnasium-style training interface are different use modes; container policies/network access must be reviewed per environment: https://github.com/openenv/OpenEnv.
+- AgentSociety 2 replay output is append-only JSONL; workspace checkpoint persistence is a separate recovery mechanism. MCP is documented for literature-search integration, not necessarily the entire simulation control plane: https://agentsociety2.readthedocs.io/en/latest/storage.html and https://agentsociety2.readthedocs.io/en/latest/.
+- GASim paper results are experiment-specific, not general performance guarantees or external-world validity evidence: https://aclanthology.org/2026.acl-long.569/.
+- Concordia upstream confirms an open-source library; the supplied 38-template no-code web product claim was not confirmed: https://github.com/google-deepmind/concordia.
+- openPASO is the current project name for OASiS; former OASiS releases/papers refer to the same project: https://github.com/open-PASO/openPASO and https://open-paso.github.io/openPASO/cite/.
+- AgentFEM's package metadata reports Apache-2.0 and Python >=3.11; align package, source and docs versions when testing: https://github.com/haoming-luo/agentfem and https://pypi.org/project/agentfem/.
+- PDE-Agents remains a research stack; performance claims require independent reproduction on the exact model/solver/mesh/hardware: https://github.com/MatPro-IFE/pde-agents.
+- PhysBox current website advertises 256 tools and Flux in preview; earlier README material differs on counts and Flux status. Counts are release-sensitive: https://physbox.io/ and https://github.com/physbox-io/physbox-mcp.
+- YAIFS, simengine-mcp, MCP World Model, WorldSim AI and Genesis-Gemini-MCP were not pinned to a unique authoritative current implementation/release. AgoraSim is a paper-level candidate pending a reproducible code release: https://arxiv.org/abs/2607.05999.
+
+### Shared portable simulation contracts implemented
+
+Files in the public ecosystem repository:
+- `SIMULATION_ARCHITECTURE.md` and `SIMULATION_VALIDATION.md`
+- `schemas/simulation/simulation-contracts.v1.schema.json`
+- `examples/simulation/simulation-fixtures.v1.json`
+- `.github/scripts/simulation_contract.py`
+
+Eight record families define simulation identity/model/environment/solver/geometry/parameter digests; evidence provenance; hash-chained events; structured agent decisions bound to trace actions; signed replay receipts; risk/uncertainty decision receipts; independent critic verdicts; and external world-model validation with observed/measured reference evidence and holdout.
+
+### Local validation evidence and limits
+
+- Draft 2020-12 schema passed; 10 synthetic records across eight record collections passed; trace order and SHA-256 chain verified; disposable Ed25519 replay signature verified; 24 negative tests rejected tampering, broken references, false world-validity claims, holdout leakage, self-approval and authority implication.
+- Runtime: Python 3.13.5; `jsonschema 4.26.0`; `cryptography 46.0.4`. Command: `python .github/scripts/simulation_contract.py`.
+- The public fixture contains synthetic data only and an ephemeral test public key. No private datasets, keys, permits, model details, identity or authority state are included.
+- No candidate package was installed, no MCP server connected, no physics/FEM solver run, no empirical reference dataset used and no world-model external validation completed. Local results prove contract and fixture semantics only—not simulator accuracy, scientific validity, production replay or interoperability.
+- Governing distinction: an executable or replayable model can still be wrong about the external world. External-world validity requires independent observed/measured reference data, holdout separation, uncertainty and a bounded domain. MCP, hashes, signatures and replay are not substitutes for that validation.
+- No Actions workflow was added or dispatched for this inventory.
