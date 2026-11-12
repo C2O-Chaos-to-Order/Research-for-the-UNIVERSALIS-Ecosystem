@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of twenty-one owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; and Prevention of Harm, Constitutional Enforcement and Sovereign Containment.
+**Scope:** Public UNIVERSALIS coverage of twenty-three owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; and Prevention of Harm, Constitutional Enforcement and Sovereign Containment.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -866,3 +866,55 @@ Eight record families define simulation identity/model/environment/solver/geomet
 
 ### Source-identity and compatibility caveat
 The owner-supplied CAEL `SimulationContract.ts` / `CAELTrace.ts` geometry-hash and replay primitives were not pinned to an authoritative canonical upstream repository and release in this review. The implemented v1 JSON Schema is therefore a newly authored, language-neutral portable contract with analogous digest/provenance/replay semantics; it is not asserted to be wire-compatible with CAEL or to contain CAEL code. Likewise, the portable `agent_decision` record is a proposed generic interchange record, not a verified drop-in AgoraSim decision-object schema. Exact AgoraSim source/API compatibility remains unverified.
+
+## 23. Twenty-third source — Eight-Stratum Capability Ladder (public UNIVERSALIS scope; 2026-11-12)
+
+**Canonical order:** Base → Meta → Super → Hyper → Ultra → Magic → Quantum → Transformative. The ladder organizes capability layers; it is not a maturity, quality, authority or safety ranking.
+
+### Open / inspectable candidate inventory
+
+- **Base — substrate:** OpenShell (Apache-2.0 sandbox, CNCF Sandbox; not certification); Stoa (Apache-2.0 local-first knowledge graph/wiki and MCP); Tur (MIT public Alpha persistent agent state/MCP); Omnigent (Apache-2.0 Alpha, also Meta). OpenQuantum is a commercial SDK/QPU job platform rather than an all-in-one open-source workspace. khy-os is source-available with commercial restrictions; Alexandria remains unresolved.
+- **Meta — orchestration:** Omnigent (independent project; not established as a Databricks product); Qualixar OS (upstream claims 13 topologies and 25 CLI commands, subject to exact-release testing); MetaMCP (MIT MCP aggregator/gateway with branch/maintenance status requiring pinning).
+- **Super — autonomous frameworks:** `LofiSu/deepseek-super-agent` (MIT independent implementation, not official DeepSeek); SuperAGI (MIT, older release cadence); SuperAgentX (MIT Python agent framework with human approval/audit features); SwarmClaw (MIT self-hosted agent runtime with memory, schedules, delegation and MCP; provider count varies by release).
+- **Hyper — executable composition:** HyperTool (2026 research paper on code-block invocation over tools; reported benchmark gains are paper/configuration-specific and a maintained canonical product release was not pinned); Hyper by ASI Flow (commercial cloud engineering platform, not an open-source package).
+- **Ultra — models/routing:** Nemotron 3 Ultra (550B total / 55B active); open-ultra (Apache-2.0 self-training route proxy with a shadow lane); Muse Spark Open (816B total / 42B active open weights under Muse Model License, not unrestricted OSI open source; BF16 weights about 1.65 TB, NVFP4 about 537 GB excluding runtime overhead).
+- **Magic — application generation:** `polterguy/magic` (MIT, self-hostable full-stack app/agent generation with Hyperlambda and MCP); `dtyq/super-magic` (Magic license based on Apache-2.0 with additional restrictions); Magetools unresolved.
+- **Quantum — quantum-classical:** Pasqal Neutral-Atom Agentic Toolkit (`pasqal-io/agent-marketplace`, Apache-2.0; specify/implement/emulate, human-approved shot quote then remote QPU submission); TensorCircuit-NG (Apache-2.0); Qiskit Machine Learning; QuOptuna (Apache-2.0); Classiq MCP as a vendor integration. QuTiP, Qiskit, Cirq, PennyLane, PyQuil and CUDA-Q are separate projects, not one automatically interoperable toolkit.
+- **Transformative — systemic applications:** Isaac Lab 3.0; Isaac Lab-Arena 0.3 (Apache-2.0 Alpha, not for production; Isaac Sim dependencies separately licensed); DORA Community Edition (Apache-2.0 research drafting assistant); ETRI Tango (announced as an open-source no-code AI development tool on 2026-11-09; exact public source/release not yet pinned); GR00T 2 announced, with source availability scheduled for December 2026, not released as of 2026-11-12. Muse Spark Open also spans use cases here but is listed in Ultra.
+
+### Standards and interface semantics
+
+MCP is tool-server/client interaction; A2A is agent-to-agent; ACP is agent-to-client. OCI image compatibility is not universal runtime/hardware/policy compatibility. Agent Skills `SKILL.md` is an artifact format, not a transport or authorization protocol. OpenAI-compatible inference endpoints do not guarantee model equivalence, data residency or sovereignty. OpenQASM, Qiskit QPY, PennyLane and Cirq are distinct circuit representations and require tested converters. Hyperlambda and project-specific session / `SOUL.md` / `IDENTITY.md` files are not treated as universal schemas by assertion alone.
+
+### Shared portable contracts implemented
+
+Public files:
+- `STRATIFIED_CAPABILITY_ARCHITECTURE.md` and `STRATIFIED_CAPABILITY_VALIDATION.md`
+- `schemas/strata/stratified-capability-contracts.v1.schema.json`
+- `examples/strata/stratified-capability-fixtures.v1.json`
+- `.github/scripts/stratified_capability_contract.py`
+
+Fourteen record families cover canonical strata, component/license/maturity metadata, protocol profiles, orchestration and lifecycle, proactive action receipts, code composition and signed execution, model routing and egress, application provenance, quantum execution, robot-policy evaluation, sovereign-deployment evidence and reviewed claims.
+
+### Local validation and limitations
+
+- Draft 2020-12 schema passed; 21 synthetic records across 14 collections; canonical strata and MCP/A2A/ACP semantics checked; disposable Ed25519 signature verified; 20 negative tests passed.
+- No third-party tool installed, no live interoperability profile tested, no frontier model downloaded, no application published, no QPU submitted, no robot actuated and no sovereign deployment independently audited. No C2O-private schema, fixture, policy, model, permit, key, identity, telemetry or authority state is present.
+- A portable schema, signature or compatibility label proves only its declared evidence. It does not certify product behavior, scientific correctness, deployment sovereignty, safety, regulation or authority.
+
+### Source verification references
+
+- OpenShell/CNCF/Landlock: https://www.cncf.io/projects/openshell/ ; https://github.com/NVIDIA/OpenShell.
+- Omnigent: https://github.com/omnigent-ai/omnigent.
+- Qualixar: https://github.com/qualixar/qualixar-os.
+- ACP/A2A: https://agentclientprotocol.com/ ; https://a2a-protocol.org/latest/.
+- DeepSeek Super-Agent (independent): https://github.com/LofiSu/deepseek-super-agent.
+- Muse Spark Open: https://huggingface.co/meta-models/Muse-Spark-Open-816B-A42B ; https://dev.meta.ai/docs/muse-spark-open.
+- Nemotron 3 Ultra: https://research.nvidia.com/labs/nemotron/Nemotron-3-Ultra/.
+- Pasqal: https://github.com/pasqal-io/agent-marketplace.
+- TensorCircuit-NG: https://github.com/tensorcircuit/tensorcircuit-ng.
+- QuOptuna: https://github.com/Qentora/quoptuna.
+- Magic: https://github.com/polterguy/magic ; SuperMagic: https://github.com/dtyq/super-magic.
+- Isaac Lab-Arena: https://github.com/isaac-sim/IsaacLab-Arena.
+- DORA: https://github.com/insilicomedicine/DORA.
+- Vendor announcements/research papers remain qualified as such; Thales HexaForce, Alexandria and Magetools require unique source/release pinning.
