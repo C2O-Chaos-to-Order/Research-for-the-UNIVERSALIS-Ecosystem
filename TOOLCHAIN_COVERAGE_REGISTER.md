@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of nine owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers and Ontologies.
+**Scope:** Public UNIVERSALIS coverage of ten owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers and Ontologies.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through ninth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, and Ontologies.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through tenth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies and Encyclopedias.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -194,7 +194,7 @@ No production consent store, identity wallet, cryptographic verifier, accessibil
 The Human Powers v1 model includes a portable data-subject-rights request record for access, rectification, erasure, restriction, portability, objection, and consent withdrawal. This is a request/evidence contract only, not a legal compliance service. The Intelligence Powers contract also tests parent-to-child capability containment and additional review/escalation outcomes. The latest public contract and quality workflows for both domains passed all steps.
 
 
-## 9. Ontology toolchain and schema governance — public UNIVERSALIS scope
+## 9. Ninth source — Ontologies — public UNIVERSALIS scope
 
 ### Open candidate inventory
 - **Engine / reasoning:** open-ontologies (fabio-rovai); Ontosphere; graph-mcp-driver.
@@ -237,3 +237,42 @@ CI checks JSON contracts, semantic invariants and Turtle syntax only. It does no
 ### Final tightened ontology gate evidence — 2026-11-12
 
 The final tested ontology validator enforces the reviewer/evidence requirements for accepted crosswalks and applied schema changes, the resolution evidence requirement for resolved conflicts, blank-node fact reference requirements, and non-empty evidence on every admission receipt. The final ontology contract workflows and repository quality baselines linked above passed all jobs and steps. C2O additionally passed the private admission validator; the public run contains only shared portable contracts and synthetic RDF fixtures.
+
+
+## 10. Encyclopedias — open UNIVERSALIS coverage
+
+### Open candidate inventory
+- **Compiled wiki / local knowledge:** Alexandria; WikiNow; MeMex (Zero-RAG); Stoa.
+- **Ingestion / document processing:** Flexible GraphRAG; docsiq; llm-wiki-compiler.
+- **Citation integrity / research validation:** CiteGuard; retractionwatch-mcp; Panda Research Tools.
+- **Verifiable memory / evidence:** verifiable-memory; DocImprint; answerproof; ember-custody.
+- **Encyclopedia aggregation:** mcai-knowledge; cite-citadel; llm-wiki-plugin.
+- **Standards / exchange:** OKF 0.2, JSON-LD 1.1, RFC 9162 Merkle inclusion proofs, SHA-256 and SHA3-256 content digests.
+
+These are owner-supplied candidates/reference patterns, not installed integrations. Tool counts and supported formats must be pinned to an exact canonical release and configuration.
+
+### Portable contract foundation
+Eleven top-level positive record types cover source metadata/rights, content-addressed ingestion manifests/chunks, citation anchors/proof receipts, citation quality/coverage, individual editorial-status records, batch citation-integrity sweeps, knowledge assets, OKF/JSON-LD export manifests, content-addressed evidence bundles, correction events, and answer-evidence receipts. The nested proof record follows RFC 9162 SHA-256 domain separation. Source/chunk digests may be SHA-256 or SHA3-256, but SHA3 content digests are committed inside the RFC 9162 SHA-256 Merkle leaf and do not change the Merkle algorithm.
+
+### Owner implementation and CI
+- [Open UNIVERSALIS encyclopedia architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/blob/implementation/repository-foundation-2026-11-12/ENCYCLOPEDIA_TOOLCHAIN_ARCHITECTURE.md).
+- [Portable encyclopedia schemas](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/tree/implementation/repository-foundation-2026-11-12/schemas/encyclopedia).
+- [Synthetic fixtures](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/tree/implementation/repository-foundation-2026-11-12/examples/encyclopedias).
+- [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/blob/implementation/repository-foundation-2026-11-12/ENCYCLOPEDIA_TOOLCHAIN_VALIDATION.md).
+- Contract workflow: [passed — 43263322363](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43263322363).
+- Repository quality baseline: [passed — 43263330408](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43263330408).
+
+The public shared schema, fixture and validator blobs are byte-identical to the C2O shared counterparts. The public branch contains no C2O-only private schema, private corpus, policy, authority data or private signing key.
+
+### Source caveats
+- llm-wiki-compiler v0.11.0 changelog (2026-06-16) lists 11 MCP tools; use release-specific counts.
+- CiteGuard currently identifies as early-development/MVP.
+- Flexible GraphRAG support counts vary by backend/version/configuration.
+- MeMex's “zero hallucination” label does not mean all source or claim truth is mathematically guaranteed.
+- DocImprint's optional chain anchoring publishes hashes; it does not notarize legal truth.
+- TrustChain-RAG is a research paper/framework, not an installable runtime verified by this repository.
+- QuanCog is a commercial/vendor platform candidate, not integrated.
+- Product-specific counts and behavior for Alexandria, WikiNow, docsiq, Panda Research Tools, verifiable-memory, answerproof, ember-custody, mcai-knowledge, cite-citadel and llm-wiki-plugin remain unverified until exact releases and licenses are pinned.
+
+### Implementation limits
+CI checks JSON Schema records, semantic invariants and the synthetic RFC 9162 proof only. It does not deploy a wiki compiler, live ingest engine, source-rights system, OCR pipeline, graph store, citation database connector, signature/key service or correction propagation. Merkle inclusion is not claim truth, source authenticity or corpus completeness. No third-party candidate is claimed integrated; public examples contain synthetic data only.
