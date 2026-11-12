@@ -343,7 +343,7 @@ CI validates JSON schemas, semantic invariants and a synthetic RFC 9162 proof pl
 
 ## 12. Twelfth source — Platform and Construction Infrastructure (public UNIVERSALIS scope)
 
-This owner-supplied inventory closes seven infrastructure gaps beneath and around the prior intelligence, knowledge and security domains: OS/substrate; application development; workflow construction; DevOps/CI-CD; observability/control; networking/gateways; and storage/memory/evaluation.
+This owner-supplied inventory closes seven infrastructure gaps beneath and around the prior intelligence, knowledge and security domains: OS/substrate; application development; build/DevOps (workflow construction, blueprints and CI/CD); observability/control; networking/gateways; storage/memory; and evaluation/testing.
 
 ### Open and independently inspectable candidates
 
