@@ -609,3 +609,46 @@ No third-party tool is installed or adopted. No real agent trace, cloud account,
 The v1 contract contains evidence-tiered threat models, resistance attestations, containment receipts, sourced/nonviolent seven-stage campaign-plan metadata, and signed in-toto/DSSE attestations. Fixtures include one record of each portable type, three signed attestations and twelve negative tests. The C2O-private authorization package is absent from UNIVERSALIS.
 
 No product or simulator was installed or invoked. No real campaign, live trace, incident, baseline, device, identity registry or control plane was accessed. No containment or shutdown action was performed. CI validates synthetic examples only, not production security, compliance or hardware guarantees.
+
+
+## 17. Seventeenth source — Allegiance, Principal Binding, Oaths, Fidelity and Revocation (public UNIVERSALIS scope; 2026-11-12)
+
+**Domains:** principal identity and proof-of-control; beneficiary binding; scoped delegation; sworn commitments; pledge resolution; fidelity measurement; loyalty evaluation; trust-state transport; constitutional command; revocation cascades.
+
+### Open/public candidates and research
+
+- **Principal identity/delegation/revocation:** Agent Passport System (Apache-2.0; Ed25519 passports, monotonic scope narrowing, three-signature chain, cascade revocation); AgentOath (Apache-2.0; DID-compatible identities, signed receipts, peer-to-peer and hosted trust surfaces).
+- **Sworn commitment:** OC Pledge (MIT v1.0; BIP-322 and public resolution; bond remains in wallet, no slashing); OATH Protocol, Ârc Align MCP, VOW and Source Cult (canonical primary sources unresolved).
+- **Fidelity/loyalty evaluation:** PrincipalBench (75-item multi-turn benchmark); SovereignNegotiation-Bench (1,764 paired scenarios and five agency duties); LoyalAgent-Bench (10,298 samples); Tatemae (108 tool-selection alignment-faking scenarios); Fidelity Probe (APS issue #7, not confirmed as released stable feature); black-box and narrow secret-loyalty research.
+- **Trust/constitutional command:** ATTP, NBTP and Progressive Trust (individual IETF Internet-Drafts, not IETF standards); arifOS (AGPL-3.0 MCP constitutional kernel, project-reported 13 floors); mdash/Longarc (commitment, TEE and ZK package; simulated fallback must not be mistaken for hardware attestation).
+- **Unresolved supplied candidates:** loyal-agent-evals, PDR and crewai-verigent (exact upstream/release not pinned).
+
+### Source verification corrections
+
+- APS's own FAQ says cascade revocation is complete only once each receiving gateway enforces it; “immediate everywhere” is deployment-dependent, not a blanket guarantee.
+- AgentOath distinguishes peer-to-peer `did:trust:agent:` from its hosted registry's `did:agentoath:` namespace/wire format.
+- OC Pledge's own site says it never holds or slashes coins; breach is public-record exposure. Its v1 spec returned to draft after 2026-10-29 dispute-rule changes. Kept, broken, expired_unresolved and disputed must remain distinguishable.
+- OATH MCP, Ârc Align, VOW and Source Cult primary sources were not pinned in this review; do not call them adopted implementations.
+- Fidelity Probe is described in an open APS issue; verify code/release before claiming production availability.
+- PrincipalBench, SovereignNegotiation-Bench and LoyalAgent-Bench are research/evaluation resources, not trust authorities or legal certifications. Keep task utility and over-refusal visible alongside principal-interest protection.
+- Tatemae's detection rates are paper results with substantial remaining miss rates.
+- Black-box secret-loyalty research shows that hidden objectives can evade audits; this intake does not produce or deploy secret-loyalty model organisms.
+- arifOS constitutional-floor capabilities are project claims; independently test before adoption. ATTP/NBTP/Progressive Trust are individual IETF drafts, not adopted RFCs. mdash simulated TEE fallback is not hardware attestation.
+- A key fingerprint is not, by itself, proof of real-world principal identity or authority to delegate.
+
+### Shared public contract files implemented
+
+- ALLEGIANCE_ARCHITECTURE.md
+- ALLEGIANCE_VALIDATION.md
+- schemas/allegiance/allegiance-contracts.v1.schema.json
+- examples/allegiance/allegiance-fixtures.v1.json
+- .github/scripts/allegiance_contract.py
+- .github/workflows/allegiance-contract.yml
+
+The v1 package includes principal binding/delegation, oath receipt, external fidelity attestation, pledge outcome, revocation cascade, verifier-local trust state, loyalty evaluation, constitutional verdict and signed in-toto/DSSE evidence-bundle record types. Eleven synthetic records and fourteen negative tests are included. Delegation can only narrow; an effective cascade requires acknowledgements from every declared receiver; a trust state is not authority; expired_unresolved is neither kept nor broken; authority elevation requires an explicit human mandate.
+
+The public repository includes only opaque synthetic references, public-source links and a deliberately non-production fixture public key. It does not include C2O principals, private keys, mandates, authority decisions, trust histories, private oaths or operational revocation topology.
+
+### Limitations
+
+No product was installed or invoked. No real principal, agent, key, wallet, trust record, private data, hardware enclave, pledge or revocation was accessed. CI validates synthetic contract behavior and fixture signatures only; it does not establish identity, legal authority, real-world loyalty, universal revocation or compliance.
