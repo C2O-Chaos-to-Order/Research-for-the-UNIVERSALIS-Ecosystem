@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of eleven owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, and Security and Cybersecurity.
+**Scope:** Public UNIVERSALIS coverage of twelve owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, and Platform / Construction Infrastructure (seven subdomains).
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through eleventh inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, and Security and Cybersecurity.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through twelfth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, and Platform / Construction Infrastructure.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -339,3 +339,68 @@ The public schema, synthetic fixture and validator blobs are byte-identical to t
 ### Implementation limits
 
 CI validates JSON schemas, semantic invariants and a synthetic RFC 9162 proof plus a SHA-256 audit-chain record. Ten negative tests check tampered proof, deny/execute contradictions, containment independence, scope gates, false certification, chain integrity, unsafe reproduction, invented scan results and sandbox pass without testing. No scanner, gateway, BPF program, sandbox, DPU, SBOM generator, red-team tool or signature service is installed or invoked. Public fixtures contain synthetic references only; they contain no C2O-private data.
+
+
+## 12. Twelfth source — Platform and Construction Infrastructure (public UNIVERSALIS scope)
+
+This owner-supplied inventory closes seven infrastructure gaps beneath and around the prior intelligence, knowledge and security domains: OS/substrate; application development; workflow construction; DevOps/CI-CD; observability/control; networking/gateways; and storage/memory/evaluation.
+
+### Open and independently inspectable candidates
+
+**OS / substrate**
+- **khy-os** — hand-written C OS-kernel candidate combined with an agentic CLI and multi-provider AI gateway; [PyPI project](https://pypi.org/project/khy-os/). Verify source repository, release contents, boot reproducibility, architecture, license and kernel security.
+- **Agent-OS-Kernel** — conceptual OS scheduling/context/memory/process pattern for agent infrastructure; exact source and executable implementation remain unpinned.
+- **airisos** — candidate agent-company control plane with lifecycle, RBAC, budgets and plugin patterns; canonical upstream remains unresolved.
+- **MaragingLoop** — [GistNoesis/MaragingLoop](https://github.com/GistNoesis/MaragingLoop), autonomous bare-metal OS/kernel construction loop using compilation and VM interaction. This is a development tool, not an OS runtime.
+
+**Application development**
+- **Vercel AI SDK 6** — TypeScript app/agent toolkit; [release announcement](https://vercel.com/blog/ai-sdk-6) and [official documentation](https://vercel.com/ai-sdk).
+- **Google ADK** — open agent development kit; [official documentation](https://google.github.io/adk-docs/). Pin language-specific support and package release.
+- **agentic-ai-sdk** — owner-described Microsoft Agent Framework-based SDK; exact repository/package and license require confirmation.
+- **a2abase** — owner-described Python agent SDK; exact upstream, tool/integration counts and provider coverage require confirmation.
+
+**Workflow construction and build orchestration**
+- **UnifAI** — [redhat-community-ai-tools/UnifAI](https://github.com/redhat-community-ai-tools/UnifAI), open graph/blueprint orchestration candidate with LangGraph/Temporal patterns and MCP/A2A support.
+- **Primeagent** — visual and code-first workflow builder candidate; exact project identity remains unresolved.
+- **AAMAD** — context-engineering/multi-agent construction candidate; exact upstream remains unresolved.
+- **Microsoft Agent Framework** — [microsoft/agent-framework](https://github.com/microsoft/agent-framework), open agent SDK/runtime candidate.
+
+**DevOps and CI/CD**
+- **Harness MCP server** — [harness/mcp-server](https://github.com/harness/mcp-server), official Harness MCP integration. Tool allowlisting and scoped credentials are required.
+- **Semaphore MCP server** — pipeline interface candidate; official source and operation permissions remain to be pinned.
+- **DuploCloud** — vendor DevSecOps/infrastructure automation candidate; not classified as an open self-hosted substrate without a specific component.
+- **AWS DevOps Agent** — vendor-operated investigation/automation service candidate; [MCP integration documentation](https://docs.aws.amazon.com/devopsagent/latest/userguide/configuring-integrations-and-knowledge-connecting-mcp-servers.html). Not an open self-hosted runtime.
+
+**Observability and lifecycle control**
+- **Riva** — [riva-labs-ai/riva](https://github.com/riva-labs-ai/riva), local-first agent discovery, lifecycle, resource and event/OTLP observability. Its project description distinguishes observation from agent execution.
+- **AgentOps Replay** and **lumen-ai** — replay, causal-trace, failure and spend-observability candidates; exact upstream identities and replay fidelity remain unresolved.
+
+**Networking and agent gateways**
+- **agentgateway** — open AI-native gateway candidate; [project overview](https://www.solo.io/products/agentgateway) and [documentation](https://docs.solo.io/agentgateway/standalone/latest/documentation/about/introduction/). Performance figures remain source-reported until reproduced.
+- **IBM ContextForge** — [IBM/mcp-context-forge](https://github.com/IBM/mcp-context-forge), open registry/proxy candidate federating MCP, A2A and REST/gRPC APIs with governance, discovery and observability.
+
+**Storage and memory**
+- **zleap-sag** — composable relational/vector storage candidate. Pin exact package, repository and license. Do not conflate with [Zleap-AI/SAG](https://github.com/Zleap-AI/SAG) without source evidence.
+- **memg-core** — Qdrant/Kuzu vector-and-graph storage candidate; exact upstream remains unresolved.
+- **Azure Cosmos DB** — vector/search/cache/checkpoint-capable managed service candidate; it is vendor-operated, not open-source or self-hosted. [Official vector search documentation](https://learn.microsoft.com/azure/cosmos-db/vector-search).
+
+**Evaluation and testing**
+- **Strands Evals** — [strands-agents/evals](https://github.com/strands-agents/evals), agent/application output, trajectory, tool-use and interaction evaluation candidate.
+- **Inspect** — [UK AI Security Institute documentation](https://inspect.aisi.org.uk/), open evaluation framework and sandbox integrations.
+- **MCPEval** — MCP-specific generation and verification candidate; canonical repository/release remains to be pinned.
+
+### Portable platform contracts implemented
+
+The shared v1 schema defines nine record types: OS/container artifact; runtime profile; Agent Skills manifest reference; workflow blueprint graph; CI/CD event; redacted telemetry observation; network route; storage interface; and evaluation receipt. Records use opaque references and digests, not C2O-private or other private credentials, raw telemetry, policy bodies, secrets or datasets.
+
+The public fixture contains nine synthetic records. The semantic validator checks bootable/container distinction, graph node/edge integrity and acyclicity, approval references, CI/evaluation result arithmetic, telemetry redaction, allow-route authentication/authorization/egress scope, deny-before-execution, and encryption requirements for confidential/secret storage. Ten negative cases are defined.
+
+### Source and deployment classification
+
+The catalog distinguishes open-source/self-hostable candidates from managed vendor services. Azure Cosmos DB, AWS DevOps Agent and DuploCloud are external managed/vendor service options, not UNIVERSALIS-owned open infrastructure. Harness and Semaphore integrations require scoped accounts and credentials. Agent-OS-Kernel, airisos, agentic-ai-sdk, a2abase, Primeagent, AAMAD, Semaphore MCP, AgentOps Replay, lumen-ai, memg-core and MCPEval remain unresolved until canonical sources and licenses are pinned.
+
+OCI describes container artifacts, not bootable OS interoperability. MCP tool interaction and A2A agent interaction are distinct protocols. Agent Skills manifests do not grant execution authority. Generic YAML blueprints require explicit runtime adapters and semantic equivalence tests. OpenTelemetry-compatible records must be redacted before export.
+
+### Implementation status and limits
+
+The public architecture, shared schema, synthetic fixture, semantic validator, validation record and CI workflow are present on this owner implementation branch. No OS/kernel was built or booted, no SDK/runtime/workflow/gateway/CI service was installed, no storage backend was provisioned, and no external evaluation benchmark was run. The schema and ten negative tests validate the proposed interchange representation only; they do not establish production compatibility, performance, safety, compliance or deployment.
