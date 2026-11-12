@@ -259,8 +259,8 @@ Eleven top-level positive record types cover source metadata/rights, content-add
 - [Portable encyclopedia schemas](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/tree/implementation/repository-foundation-2026-11-12/schemas/encyclopedia).
 - [Synthetic fixtures](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/tree/implementation/repository-foundation-2026-11-12/examples/encyclopedias).
 - [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/blob/implementation/repository-foundation-2026-11-12/ENCYCLOPEDIA_TOOLCHAIN_VALIDATION.md).
-- Contract workflow: [passed — 43263322363](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43263322363).
-- Repository quality baseline: [passed — 43263330408](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43263330408).
+- Contract workflow: [passed — 43264360375](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43264360375).
+- Repository quality baseline: [passed — 43264360278](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Encyclopedias/actions/runs/43264360278).
 
 The public shared schema, fixture and validator blobs are byte-identical to the C2O shared counterparts. The public branch contains no C2O-only private schema, private corpus, policy, authority data or private signing key.
 
