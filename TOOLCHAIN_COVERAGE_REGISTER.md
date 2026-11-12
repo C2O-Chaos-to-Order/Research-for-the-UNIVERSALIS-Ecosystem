@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of twenty-three owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; and Prevention of Harm, Constitutional Enforcement and Sovereign Containment; Simulation; and the Eight-Stratum Capability Ladder.
+**Scope:** Public UNIVERSALIS coverage of twenty-five owner-supplied inventories: the original four; Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development Suite; Divergence Detection, Attribution and Reconciliation; Insurgence, Resistance and Defensive Threat Modeling; Allegiance, Principal Binding and Revocation; Convergence, Consensus and Dispute Resolution; Ascendence / Recursive Self-Improvement; Prevention of Harm, Constitutional Enforcement and Sovereign Containment; Simulation; Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty-three: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; Ascendence; Prevention; Simulation; and the Eight-Stratum Capability Ladder.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status and CI receipts for the first four inventories. This register consolidates inventories five through twenty-five: Intelligence Capabilities; Intelligence Skills; Intelligence Powers; Human Powers; Ontologies; Encyclopedias; Security and Cybersecurity; Platform / Construction Infrastructure; Websites; Full-Spectrum Development; Divergence; Insurgence; Allegiance; Convergence; Ascendence; Prevention; Simulation; the Eight-Stratum Capability Ladder; Agent, OS and AI Unification; and Disorder and Chaos Prevention.
 
 ## 2. Intelligence Capabilities — open candidates
 
