@@ -583,3 +583,29 @@ The public branch contains only synthetic opaque references and portable shared 
 ### Limitations
 
 No third-party tool is installed or adopted. No real agent trace, cloud account, database, policy corpus, ontology, identity registry, embedding store or client update is inspected. No remediation or production action is performed. CI validates only synthetic contract semantics and a disposable test signature; it does not establish causality, legal compliance, production key custody or product safety.
+
+
+## 16. Sixteenth source — Insurgence, Resistance and Defensive Threat Modeling (2026-11-12)
+
+**Domains:** grassroots/counter-narrative; defensive threat modeling; resistance/execution sovereignty; containment/shutdown integrity; divergence/identity attribution.
+
+**Public candidate/research set**
+- Grassroots: Insurgent Campaign (public Tessl skill; seven-stage process and no-invented-facts rule); Cartographies of Sovereign Resistance (owner-supplied Human-in-Command concept; canonical source unresolved).
+- Threat research: InsurgiSim (older UPenn research prototype; no current release verified); ARIS (research series); MASON RebeLand (2010 model paper); RAND Infinite Potential (policy exercise platform; Robot Insurgency report covers four runs); Cambridge CASP report (57 interviews with 27 former members).
+- Resistance/security: AgentDojo (MIT prompt-injection benchmark); PEA (research preprint); Berkeley Peer-Preservation (controlled research); shutdown/graceful-degradation patterns; NVIDIA Sentry/BlueField-4 (vendor reference architecture).
+- Attribution: reuse the prior divergence and identity-corroboration contract.
+
+**Corrections and limitations**
+- Insurgent Campaign is a skill listing, not a verified standalone runtime. Civic use must remain transparent, sourced, voluntary, privacy-preserving and nonviolent.
+- Cartographies of Sovereign Resistance has no canonical public source identified.
+- InsurgiSim is an older research prototype paper, not a confirmed maintained product; ARIS is a research series; MASON RebeLand is a 2010 paper, not a current packaged tool.
+- RAND Infinite Potential supports facilitated policy exercises; the Robot Insurgency report is not an executable simulator.
+- Cambridge CASP provides qualitative interview evidence, not a prevalence estimate or forensic confirmation of every reported use.
+- AgentDojo is a prompt-injection benchmark and its API is under development. The supplied 0%-utility/100%-false-stop claim is not adopted because it was not supported by primary AgentDojo documentation.
+- PEA is a preprint. Berkeley's peer-preservation behaviors are controlled-study observations. NVIDIA Sentry's containment depends on deployment topology and the protected I/O/control path; do not describe it as a universal hardware shutdown mechanism.
+- Existing divergence tools are candidate signals, not proof of hostile intent or causal attribution.
+
+**Shared public contracts implemented**
+The v1 contract contains evidence-tiered threat models, resistance attestations, containment receipts, sourced/nonviolent seven-stage campaign-plan metadata, and signed in-toto/DSSE attestations. Fixtures include one record of each portable type, three signed attestations and twelve negative tests. The C2O-private authorization package is absent from UNIVERSALIS.
+
+No product or simulator was installed or invoked. No real campaign, live trace, incident, baseline, device, identity registry or control plane was accessed. No containment or shutdown action was performed. CI validates synthetic examples only, not production security, compliance or hardware guarantees.
