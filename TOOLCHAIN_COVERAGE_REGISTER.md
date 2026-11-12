@@ -477,10 +477,10 @@ The shared schema, six synthetic records, semantic validator, eleven negative ca
 
 ### Thirteenth-source CI evidence (2026-11-12)
 
-- UNIVERSALIS website contracts: [passed — run 43275844367](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275844367).
-- UNIVERSALIS ecosystem repository quality: [passed — run 43275844143](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275844143).
-- UNIVERSALIS ecosystem repository verification: [passed — run 43275844133](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275844133).
-- UNIVERSALIS research register quality: [passed — run 43275813693](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/actions/runs/43275813693).
-- UNIVERSALIS research register verification: [passed — run 43275813731](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/actions/runs/43275813731).
+- UNIVERSALIS website contracts: [passed — run 43275984926](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275984926).
+- UNIVERSALIS ecosystem repository quality: [passed — run 43275984975](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275984975).
+- UNIVERSALIS ecosystem repository verification: [passed — run 43275984927](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43275984927).
+- UNIVERSALIS research register quality: [passed — run 43276012556](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/actions/runs/43276012556).
+- UNIVERSALIS research register verification: [passed — run 43276012551](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/actions/runs/43276012551).
 
 These CI runs validate contracts, synthetic fixtures and repository artifacts only. They do not establish a live website scan, CMS integration, production publication or deployment.
