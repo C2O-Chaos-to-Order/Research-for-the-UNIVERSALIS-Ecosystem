@@ -68,3 +68,57 @@ All feature and performance claims remain source-supplied research claims pendin
 
 
 **CI evidence qualification:** The recorded Intelligence Capabilities CI runs passed the initial eight-case validator revision. The current branch contains ten negative checks, including the C2O-specific Plan DAG tool-scope and human-held permit gates; a new Actions run for that exact strengthened revision has not yet been surfaced. The current source files are present in both implementation branches, but do not attribute the earlier pass to the newer ten-case source revision.
+
+
+## 6. Sixth source — Intelligence Skills toolchain (public UNIVERSALIS scope)
+
+The sixth source separates the Intelligence Skills concept taxonomy from the artifact and execution supply chain. The canonical taxonomy remains `Intelligence_Skills.md` (I-S-01 through I-S-20); this section covers the tools and portable contracts used to package, discover, sandbox, evaluate, attest, and execute skill artifacts.
+
+### Open UNIVERSALIS candidate inventory
+
+- **Manifest / packaging:** Agent Skills Specification; Agent Plugins 1.0.0.
+- **Discovery / release / quality:** MCP Skill Registry; SkillDock.io; OpenSpace.
+- **Sandbox / execution:** SkillSandbox; Skillbox; SkillSeal.
+- **Safety scanning:** Cisco Skill Scanner; Zenity Labs AI Total; Tencent skill-scan; hybrid static-dynamic-agentic analysis framework.
+- **Attestation / competence provenance:** NVIDIA signed skills; formal verification of agent skills; Cupel.
+
+These remain candidates and research patterns, not installed integrations. The source-supplied benchmark figures, tool counts, and feature claims require canonical-source, license, maintenance, security, compatibility, and independent reproduction checks.
+
+### Portable shared contract set
+
+The open implementation defines registry-neutral schemas and synthetic fixtures for:
+1. Agent Skills normalized frontmatter profile.
+2. Agent Plugins 1.0.0 `plugin.json` and `mcp.json`.
+3. Versioned requested-capability declaration and optional `caps` profile extension.
+4. Default-deny sandbox policy and execution trace.
+5. Static/dynamic/hybrid scanner verdict.
+6. Functional-evidence report bound to skill/test digests.
+7. Skill Bundle Attestation (SBA).
+8. Skill release and dependency descriptor.
+9. Optional MCP-tool / REST registry-discovery descriptor.
+10. Boundary-evidence record covering data, memory, tools, model routing, egress, consent, and actions.
+
+No central registry is required or imposed. Operators keep their registries, storage, acceptance policies, and runtime decisions independently controlled. A manifest or capability declaration describes a package/request; it does not grant authority. A signature binds a signer to a statement and digests; it does not prove safety or grant execution access.
+
+The base Agent Skills standard does not define `caps`; it is a versioned C2O/UNIVERSALIS extension. `allowed-tools` is experimental and is not a sandbox or authorization mechanism. Agent Plugins package-path containment does not sandbox a running subprocess.
+
+### Owner implementation
+
+- [UNIVERSALIS open Intelligence Skills architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Skills/blob/implementation/repository-foundation-2026-11-12/INTELLIGENCE_SKILLS_TOOLCHAIN_ARCHITECTURE.md).
+- [Portable schemas](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Skills/tree/implementation/repository-foundation-2026-11-12/schemas/intelligence-skills).
+- [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Skills/blob/implementation/repository-foundation-2026-11-12/INTELLIGENCE_SKILLS_VALIDATION.md).
+
+This public implementation contains no C2O-private registry, identity, policy, authority token, permit, signing key, or private execution record.
+
+### Implementation status and outstanding work
+
+The shared JSON Schema contracts, synthetic fixtures, sample Agent Plugin package, and semantic contract test script are present on the implementation branch. The exact Intelligence Skills CI workflow has not yet been confirmed as passing for the current commit. No production registry, MCP/REST execution host, sandbox service, scanner integration, signature verifier, proof replay service, skill quality hub, or competence credential issuer is deployed. Full filesystem-resolved path and symlink containment, actual sandbox tests, evidence replay, and cryptographic trust validation remain future integration work.
+
+Cross-domain reuse to reconcile rather than duplicate: SkillSeal and Cupel were also named in Human Capabilities; NVIDIA OpenShell appeared in Intelligence Capabilities. MOSAIC appears in multiple supplied capability contexts and requires identity/version disambiguation before deduplication.
+
+### Current status vocabulary
+
+- **Documented:** candidate and function recorded.
+- **Basic contract implemented:** schema, fixture, and semantic code authored on this implementation branch.
+- **CI passed:** exact workflow revision and run confirmed; not yet established for this sixth source.
+- **Integrated:** a real adapter/service is connected and exercised; no external candidate is currently marked integrated.
