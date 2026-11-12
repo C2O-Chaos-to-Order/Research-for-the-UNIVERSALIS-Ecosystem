@@ -104,3 +104,8 @@ Public repositories contain only portable contracts and synthetic examples: no C
 ## Agent, OS and AI unification — 24th owner-supplied source
 
 The public candidate/source qualifications and generic authority-neutral contracts are recorded in TOOLCHAIN_COVERAGE_REGISTER.md under the 24th inventory. This public record does not contain C2O-private authorization schemas, policies, keys, identities, permits or deployment evidence.
+
+ 
+## Disorder and chaos prevention — 25th owner-supplied source
+
+The public candidate qualifications, theory boundaries, safe-experiment lifecycle and generic portable evidence contracts are recorded in TOOLCHAIN_COVERAGE_REGISTER.md. The public record contains no C2O-private authorization files, policies, keys, identities, permits or operational data.
