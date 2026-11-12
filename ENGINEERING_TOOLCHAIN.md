@@ -109,3 +109,8 @@ The public candidate/source qualifications and generic authority-neutral contrac
 ## Disorder and chaos prevention — 25th owner-supplied source
 
 The public candidate qualifications, theory boundaries, safe-experiment lifecycle and generic portable evidence contracts are recorded in TOOLCHAIN_COVERAGE_REGISTER.md. The public record contains no C2O-private authorization files, policies, keys, identities, permits or operational data.
+
+ 
+## Love, care, reciprocity and empathy — 26th owner-supplied source
+
+The public research register records source-qualified candidates, care/reciprocity distinctions, Synthesis limitations and portable evidence contracts. See TOOLCHAIN_COVERAGE_REGISTER.md. No private C2O authorization, policy, identity, permit, trust root or relationship data is exposed.
