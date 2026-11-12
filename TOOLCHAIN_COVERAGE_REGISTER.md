@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of twelve owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, and Platform / Construction Infrastructure (seven subdomains).
+**Scope:** Public UNIVERSALIS coverage of thirteen owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure (seven domains), and Websites.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through twelfth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, and Platform / Construction Infrastructure.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through thirteenth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, Security and Cybersecurity, Platform / Construction Infrastructure, and Websites.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -408,3 +408,68 @@ OCI describes container artifacts, not bootable OS interoperability. MCP tool in
 ### Implementation status and limits
 
 The public architecture, shared schema, synthetic fixture, semantic validator, validation record and CI workflow are present on this owner implementation branch. No OS/kernel was built or booted, no SDK/runtime/workflow/gateway/CI service was installed, no storage backend was provisioned, and no external evaluation benchmark was run. The schema and ten negative tests validate the proposed interchange representation only; they do not establish production compatibility, performance, safety, compliance or deployment.
+
+
+## 13. Thirteenth source — Websites, Site Construction and Agent-Ready Publishing (public UNIVERSALIS scope)
+
+This owner-supplied inventory adds structured website construction, agent-facing interfaces, CMS/content workflows, static generation, web frameworks, website auditing/accessibility and interoperable publishing evidence. The public register contains only public candidate identities and sanitized contracts; C2O-private systems and site operations remain outside this repository.
+
+### Open / public candidate inventory
+
+**Agentic site builders and visual editors**
+- **EmDash / EmDash Build** — Cloudflare's EmDash 1.0 is an Astro-based open-source CMS; EmDash Build is a separate open-source alpha AI site builder using EmDash MCP, per-project Cloudflare Sandbox and Workers for Platforms publishing. It is not automatically vendor-independent. Sources: [Cloudflare EmDash article](https://blog.cloudflare.com/emdash-cms-plugin-registry), [Cloudflare Workers docs](https://developers.cloudflare.com/workers/framework-guides/web-apps/emdash/).
+- **Weave** — owner-supplied human-agent collaborative editor concept with structured project state, revision-pinned ChangeSets, stale-revision refusal and a human publishing gate; exact upstream and release unresolved.
+- **OpenPage** — [buildingopen/openpage](https://github.com/buildingopen/openpage), MIT-licensed JSON-first visual/AI site builder with typed SiteConfig blocks/theme and standalone HTML export. Its schema is a reference model, not a universal interchange standard.
+- **OSW Studio** — [o-stahl/osw-studio](https://github.com/o-stahl/osw-studio), BYOK browser agent builder with IndexedDB-backed virtual filesystem. Browser persistence is not equivalent to an OS-level sandbox.
+- **SeldonFrame** — [seldonframe/seldonframe](https://github.com/seldonframe/seldonframe), open-source/self-hostable agent-native front-office workspace spanning websites, booking, intake, CRM and agents.
+
+**Headless CMS and content**
+- **Strapi MCP** — built-in MCP server introduced in v5.47.0 and GA in v5.49.0. Admin-token permissions gate content operations including publish. Source: [Strapi MCP GA announcement](https://strapi.io/blog/the-strapi-mcp-server-is-now-ga).
+- **agent-cms** — [jokull/agent-cms](https://github.com/jokull/agent-cms), Cloudflare Workers/D1/R2 CMS with GraphQL, FTS5/Vectorize and admin/editor MCP surfaces. Critical README default: writes are open when `CMS_WRITE_KEY` is unset; require a write secret or independently verified auth gateway before exposing write/publish routes.
+- **AgentCMS** — separate owner-supplied Astro/Cloudflare agent-authored CMS candidate; exact upstream unresolved. Do not conflate with agent-cms.
+- **Webiny** — open-source/self-hostable serverless CMS candidate; exact MCP integration and release require verification.
+- **Sveltia CMS** — [sveltia/sveltia-cms](https://github.com/sveltia/sveltia-cms), MIT Git-backed CMS with GitHub, GitLab and Gitea/Forgejo backends and documented AI/Agent Skill support.
+
+**Static site generators and publishing**
+- **seite** — Rust single-binary SSG; docs describe HTML, Markdown, `llms.txt` / `llms-full.txt` and agent-oriented audit CLI. [Documentation](https://seite.sh/docs/getting-started).
+- **vagejs** — JSON-command SSG with read-only MCP tools for site information, checks, pages and links; publication remains owner-operated. [FAQ](https://vagejs.com/faq/).
+- **staticforge** — owner-supplied CLI/MCP/JSON-schema SSG candidate; source/license unresolved.
+- **ShipStatic** — [shipstatic/mcp](https://github.com/shipstatic/mcp), MIT hosted/local MCP publishing tool. Hosted unauthenticated deployments are temporary unless claimed (current documentation says three days). Use for public prototypes, not private production sites.
+
+**Agent-aware web frameworks**
+- **Mastra** — open TypeScript framework with MCP client/server, workflow and human-in-the-loop pre-execution approval. Sources: [MCP documentation](https://mastra.ai/docs/connections/mcp), [HITL documentation](https://mastra.ai/docs/agents/human-in-the-loop).
+- **Cortex** — supplied AI-first Next.js framework identity is ambiguous; located Cortex project is a documentation/SDK/MCP generator, not proof of the described framework.
+- **Bao** and **AgenticAPI** — owner-supplied agent-native framework candidates; exact upstream, license, runtime and safety model unresolved.
+
+**Website audit, security and accessibility**
+- **squirrelscan** — [squirrelscan/squirrelscan](https://github.com/squirrelscan/squirrelscan), MIT local CLI/audit engine/rules, described as 300+ rules with CLI/MCP/agent/CI workflows. Hosted API/dashboard/cloud worker/hosted MCP and some cloud features are separate private services. Telemetry is enabled by default but can be disabled; offline mode exists. [FAQ](https://docs.squirrelscan.com/faq).
+- **AcuityScan** — website scanner with REST and native MCP interfaces; public materials advertise 350+ checks, with hosted-service dependency to be considered. [About](https://www.acuityscan.com/about).
+- **SyteCheck** — ten-category web audit service; public materials describe axe-core and WCAG 2.2 AA checks. Independently reproduce coverage. [Features](https://sytecheck.app/features).
+- **SiteProof** — owner-supplied agent-readiness/security/AEO scanner; canonical provider/source/license remain unresolved.
+- **Burp Suite DAST MCP** — PortSwigger DAST MCP interface for authorized scan/issue operations. Current documentation says it runs inside the DAST web server and is unavailable on self-hosted CI-only deployments without the dashboard. It is a licensed service integration, not a generic self-hosted scanner. [Official docs](https://portswigger.net/burp/documentation/dast/user-guide/using-ai/mcp-server).
+
+### Shared website interoperability contract implemented
+
+The public shared v1 schema defines six sanitized record types:
+1. Site definition (site/revision/digests, routes, block references, theme, render targets and discovery signals).
+2. Agent capability manifest (MCP/WebMCP/API/Agent Skills surfaces, declared operations/scopes, authentication and approval requirements).
+3. Revision-pinned site ChangeSet (base/current digests, typed changes, stale state and approval).
+4. Scoped site permission profile (principal/role, opaque token reference, allowed/denied operations, path scope and expiry).
+5. Website audit receipt (scanner/ruleset/scope, revision and content digests, findings, severity totals, score/time/evidence and optional signature metadata).
+6. Site publish receipt (preview/publish/deploy/DNS/unpublish/rollback event, target/artifact digest, operator/approval/result/time/audit references and optional signature metadata).
+
+Fixtures use synthetic reserved references only. The contract excludes private credentials, CMS token values, deployment secrets, policy bodies, private site content, authority tokens and raw operational audit data.
+
+### WebMCP and discovery cautions
+
+The Web Machine Learning Community Group's 2026-11-11 WebMCP document is a Draft Community Group Report, not a W3C Standard or a W3C-track standard; Chrome documentation describes early preview. The portable ChangeSet semantics therefore record maturity and require structured state, revision pinning, stale-proposal rejection and human publish gates explicitly. These are UNIVERSALIS contract requirements, not claims that the draft API provides them. Sources: [WebMCP draft report](https://webmachinelearning.github.io/webmcp/), [Chrome WebMCP docs](https://developer.chrome.com/docs/ai/webmcp).
+
+`robots.txt`, `llms.txt`, `llms-full.txt`, `ai.txt`, `AGENTS.md`, Markdown alternates and JSON-LD are discovery/description signals, not access control, consent, licensing or execution authority. MCP and Agent Skills likewise do not grant site permissions. A CMS scoped token is a technical credential, not a human/owner permit.
+
+### C2O boundary
+
+The C2O sovereign website architecture, private site inventory, authority/publishing policy, deployment secrets, private content, signing keys and site audit reports remain in the private owner environment. This public register carries only public candidate references and shared sanitized contract formats; it does not link to C2O-private website implementation artifacts.
+
+### Implementation status and limits
+
+The shared schema, six synthetic records, semantic validator, eleven negative cases and public CI workflow are present on the UNIVERSALIS owner implementation branch. No live site was crawled/published, no CMS/builder/auditor installed, no WebMCP browser integration enabled and no production signing service used. No accessibility/security certification is asserted. Exact sources for Weave, AgentCMS, Webiny MCP specifics, staticforge, supplied Cortex, Bao, AgenticAPI and SiteProof remain unresolved. All numerical security/audit claims remain vendor/source claims pending independent reproduction.
