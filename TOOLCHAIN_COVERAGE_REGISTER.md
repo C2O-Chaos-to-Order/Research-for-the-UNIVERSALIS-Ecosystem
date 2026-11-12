@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS toolchain coverage for six owner-supplied inventories: the original four, Intelligence Capabilities, and Intelligence Skills.  
+**Scope:** Public UNIVERSALIS coverage of eight owner-supplied toolchain inventories: original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, and Human Powers.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This document consolidates the fifth Intelligence Capabilities and sixth Intelligence Skills toolchains after the original four source inventories.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through eighth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, and Human Powers.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -137,3 +137,53 @@ The contract-bearing commits tested were recorded in the owner validation files.
 This public source package records reported scanner/verification metrics as bounded study results, not safety guarantees. In the cited 140-skill study (80 malicious, 60 benign), the default Cisco Skill Scanner configuration reported 0.91 recall with 33 false positives; the optional Qwen3:8B LLM configuration reported 0.85 recall with 40 false positives. The hybrid study reports content-only F1 0.70, dynamic-evidence F1 0.85, and combined static+dynamic F1 0.89; the full pipeline reports 68/80 malicious detections, 0.88 accuracy, 0.93 precision, 0.85 recall, and five false positives among 60 benign samples. These results are specific to the authors' dataset and evaluation protocol and are not a general safety guarantee or an independent UNIVERSALIS reproduction. Source: https://arxiv.org/abs/2611.10830.
 
 The formal-verification source's 53-test count remains an owner-supplied harness claim pending retrieval, version pinning, and local reproduction. SkillDock's TON payment flow is optional registry commerce, not a required UNIVERSALIS protocol.
+
+
+## 7. Intelligence Powers governance toolchain — public scope
+
+### Open UNIVERSALIS candidate inventory
+- **Runtime governance:** OpenShell; ActShield; Sponsio; AgentSentrix; agentpolicy; Aethelgard.
+- **Audit / trust / reputation:** AgentOps Replay; auditant; omega-audit; halo-record; IETF Agent Audit Trail draft; SwarmScore; ClankerScore.
+- **Sandbox isolation:** Google Agent Substrate / Agent Sandbox; Akamai Agent Sandbox; Edera; gVisor.
+- **Governance measurement / authorization interoperability:** AGB proposal; OpenID AuthZEN Authorization API 1.0.
+- **Policy languages:** Cedar and OPA/Rego peer backends.
+
+All candidates except specifications/current project statuses independently confirmed in the linked source checks remain proposed pending canonical-source, license, security, version, compatibility and behavior review. SwarmScore is an individual IETF Internet-Draft, not an IETF-approved standard. Reputation is a signal, never authority.
+
+### Portable contracts and owner implementation
+The eight public contract record families cover policy bundle metadata; AuthZEN request/response; enforcement receipt; hash-chain audit record; sandbox attestation; six-dimension governance benchmark; reputation evidence; and attenuable grant. They are operator-neutral and do not impose a central enforcement authority.
+
+[UNIVERSALIS Intelligence Powers architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/blob/implementation/repository-foundation-2026-11-12/INTELLIGENCE_POWERS_GOVERNANCE_ARCHITECTURE.md).
+
+- Contract workflow: [passed — 43253904706](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43253904706).
+- Repository quality baseline: [passed — 43253904757](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43253904757).
+
+The public workflow validates only public portable schemas and synthetic fixtures. It contains no C2O-private schema, credentials, authority token, policy data or execution records.
+
+### Current limits
+No production PDP/PEP, policy broker, sandbox runtime, live audit anchor, reputation network or independent AGB assessor is deployed. The CI record verifies the contract fixtures and tests, not runtime enforcement or vendor performance.
+
+## 8. Human Powers consent, oversight and augmentation — public scope
+
+### Open UNIVERSALIS candidate inventory
+- **Human-in-the-loop:** Magentic-UI; hitl-mcp-server; clarify-mcp; mcp-feedback-enhanced; human-in-the-loop-mcp; gotoHuman; ReadyAgents Core; SemaClaw; AG2; Open Computer Agent v2.0.
+- **Consent / sovereignty:** agentgov; consent-mcp; consentgraph; levain; @at1c/sdk; @weave_protocol/domere; SovereignOS; CapAuth; Anuma; doxx.net; RAI Manifesto / Digital DNA.
+- **Accessibility:** a11y-toolkit; mcp-axe; @webability/mcp; playwright-accessibility-mcp-server; axe-scanner-mcp; Morae.
+- **Augmentation:** OpenExo; CEINMS-RT; Human Operator; body-powered supernumerary robotic finger.
+
+### Portable contracts and owner implementation
+The public Human Powers schemas cover consent graph/grants; restriction join; provenance; action-specific human approval; WCAG 2.2 accessibility evidence; sovereignty profile; augmentation device/action evidence; and consent revocation/correction. Human identifiers are represented by opaque references; there is no central public consent store.
+
+[UNIVERSALIS Human Powers architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/blob/implementation/repository-foundation-2026-11-12/HUMAN_POWERS_CONSENT_AND_AUGMENTATION_ARCHITECTURE.md).
+
+- Contract workflow: [passed — 43253936863](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43253936863).
+- Repository quality baseline: [passed — 43253936774](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43253936774).
+
+### Conflicts and limits
+The earlier Human Capabilities source states 32 a11y-toolkit MCP tools; this Human Powers source states 31. Neither count is accepted until pinned to a precise release and verified. Automated scans are not conformance proof. Consent receipts do not prove informed, voluntary consent. Augmentation schemas require device-specific safety cases, calibration, interlocks, emergency-stop tests and human oversight; they do not validate or control a live device.
+
+No production consent store, identity wallet, cryptographic verifier, accessibility service, DSAR engine, revocation propagation service or physical-device adapter is deployed.
+
+### Public source verification
+- AT1C current public repository describes ML-DSA-65 and retirement of Ed25519 in that implementation: https://github.com/at1c-protocol/at1c-protocol-official
+- WCAG 2.2: https://www.w3.org/TR/WCAG22/
