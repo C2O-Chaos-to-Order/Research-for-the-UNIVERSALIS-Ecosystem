@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of ten owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies and Encyclopedias.
+**Scope:** Public UNIVERSALIS coverage of eleven owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, and Security and Cybersecurity.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through tenth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies and Encyclopedias.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through eleventh inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, Ontologies, Encyclopedias, and Security and Cybersecurity.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -281,3 +281,60 @@ CI checks JSON Schema records, semantic invariants and the synthetic RFC 9162 pr
 ### Portable signature-envelope extension
 
 The shared schema has optional signature-envelope metadata for ingestion manifests, citation-proof receipts, OKF/JSON-LD export manifests, evidence bundles, correction events and answer receipts. Fields include algorithm, key fingerprint, optional public-key reference, signed-payload digest, signature bytes, signing timestamp and verifier status. No private key material crosses the seam. This is a metadata contract only; CI does not generate or verify signatures, resolve key trust, or check revocation.
+
+
+## 11. Security and Cybersecurity — public UNIVERSALIS coverage
+
+### Open candidate inventory
+
+**Runtime security / agent firewalls:** AgentWall ([agent-wall/agent-wall](https://github.com/agent-wall/agent-wall)); HOL Guard ([hashgraph-online/hol-guard](https://github.com/hashgraph-online/hol-guard)); AgentSentrix; ShieldPilot; AgentShield (identity ambiguous; the located [affaan-m/agentshield](https://github.com/affaan-m/agentshield) is a configuration/MCP scanner, not the described runtime interceptor).
+
+**Zero-trust / kernel boundary:** ZTAgent ([ztagent-ai/ztagent](https://github.com/ztagent-ai/ztagent)); OS-Cicada / Sentry_Gateway; Kest Core; NVIDIA OpenShell ([NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell)); MCPGuard-Dynamic ([meta/mcpguard-dynamic](https://github.com/meta/mcpguard-dynamic)); k8e.
+
+**Prompt injection / behavior:** SNAFT; APEX; Phalanx AI; AgentSecCore; Axora AgentGuard ([product documentation](https://axorasecurity.com/docs/products/axora-agentguard)).
+
+**Authorized defensive assessment:** modelWrecker; ARTEX (independent forks only; see [CERT-EU warning, 2026-11-05](https://cert.europa.eu/blog/from-penetration-testing-to-cyber-threat-beware-of-artex)); PentAGI ([vxcontrol/pentagi](https://github.com/vxcontrol/pentagi)); CyberAI; CyberStrike. These are controlled assessment candidates, not unattended tools or authorized targets.
+
+**Supply chain / endpoint:** agentic-security ([Clear-Capabilities/agentic-security](https://github.com/Clear-Capabilities/agentic-security)); Hawkeye Agent; Chainloop ([chainloop-dev/chainloop](https://github.com/chainloop-dev/chainloop)); Vectra Guard.
+
+All remain candidates/reference patterns until canonical source, license, exact release, platform requirements, data flows, security posture and behavior are reviewed.
+
+### Shared portable contracts
+
+The shared contract family provides:
+1. Versioned OWASP/MITRE taxonomy and control-framework mapping.
+2. Enforcement decision receipts with policy digest and action outcome.
+3. Containment attestations distinguishing application, gateway, endpoint, kernel and hardware enforcement.
+4. Scope-bound assessment metadata and sanitized finding records.
+5. SBOM and vulnerability/license review attestations.
+6. Build provenance metadata for in-toto/SLSA/Chainloop.
+7. Sandbox/kernel/eBPF policy-digest evidence.
+8. SHA-256 tamper-evident audit-chain records.
+9. Technical-control evidence maps that explicitly are not certifications.
+10. Optional detached signature envelope metadata (public key reference/fingerprint, signed digest, signature bytes and verifier status; no private key).
+
+### Owner implementation and final CI
+
+- [UNIVERSALIS security architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/SECURITY_CYBERSECURITY_ARCHITECTURE.md).
+- [Portable security contracts](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/schemas/security/security-evidence-contracts.v1.schema.json).
+- [Synthetic public fixtures](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/examples/security/security-evidence-fixtures.v1.json).
+- [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/SECURITY_CYBERSECURITY_VALIDATION.md).
+- Security contracts: [passed — 43266877113](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43266877113); repository quality: [passed — 43266877098](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43266877098); Engineering Doctor: [passed — 43266877063](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43266877063); repository verification: [passed — 43266876988](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43266876988).
+
+The public schema, synthetic fixture and validator blobs are byte-identical to the shared C2O counterparts. No C2O-only private authorization schema, private policy, credential, incident, asset inventory or target list is present in this repository.
+
+### Source and taxonomy cautions
+
+- OWASP LLM Top 10 2025 and OWASP Agentic Top 10 2026 are separate versioned taxonomies. The [OWASP MCP Top 10 roadmap](https://owasp.github.io/www-project-mcp-top-10/) still reports beta/pilot status at this review date.
+- [MITRE ATLAS](https://atlas.mitre.org/) is a living AI threat knowledge base. Mapping relationships require rationale and exact framework edition/version.
+- [NIST AI 600-1](https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence) is a Generative AI risk-management profile, not a threat taxonomy or certification.
+- ZTAgent's README says development defaults disable authentication and allow an OPA bypass; its production configuration check rejects those defaults.
+- HOL Guard says coverage depends on host-exposed events and per-integration support; do not infer full kernel-level protection from a hook.
+- Chainloop documents signed in-toto attestations and self-hosted evidence storage, but real key custody and storage configuration must be independently reviewed.
+- agentic-security explicitly says its framework does not certify compliance and that it does not publish SARD benchmark scores.
+- ARTEX: CERT-EU reported threat-actor misuse, lack of hard scope enforcement in the described upstream and removal of the original repository in October 2026. Independent forks are not trusted upstream releases.
+- The supplied performance and marketing claims for AgentWall, AgentSentrix, ShieldPilot, AgentShield, OS-Cicada, SNAFT, APEX, Phalanx AI, AgentSecCore, Hawkeye Agent and Vectra Guard remain unverified until canonical source/release and reproducible tests are pinned.
+
+### Implementation limits
+
+CI validates JSON schemas, semantic invariants and a synthetic RFC 9162 proof plus a SHA-256 audit-chain record. Ten negative tests check tampered proof, deny/execute contradictions, containment independence, scope gates, false certification, chain integrity, unsafe reproduction, invented scan results and sandbox pass without testing. No scanner, gateway, BPF program, sandbox, DPU, SBOM generator, red-team tool or signature service is installed or invoked. Public fixtures contain synthetic references only; they contain no C2O-private data.
