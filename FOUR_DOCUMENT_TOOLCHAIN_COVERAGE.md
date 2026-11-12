@@ -315,3 +315,8 @@ Additional ecosystem checks:
 - UNIVERSALIS Repository Verification: [43238991044](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991044).
 
 These runs establish that the authored semantic checks and repository baseline passed for the synthetic fixtures. They do **not** establish that the external products have been installed, that the full JSON Schema 2020-12 keyword set is validated, that Ed25519 signatures are verified, or that live data has been measured.
+
+
+## Scope note — additional Intelligence Capabilities source
+
+This file preserves the original four source documents. The subsequently supplied Intelligence Capabilities document is inventoried separately in [TOOLCHAIN_COVERAGE_REGISTER.md](TOOLCHAIN_COVERAGE_REGISTER.md), which is now the current master register covering all five sources.
