@@ -151,12 +151,12 @@ The formal-verification source's 53-test count remains an owner-supplied harness
 All candidates except specifications/current project statuses independently confirmed in the linked source checks remain proposed pending canonical-source, license, security, version, compatibility and behavior review. SwarmScore is an individual IETF Internet-Draft, not an IETF-approved standard. Reputation is a signal, never authority.
 
 ### Portable contracts and owner implementation
-The eight public contract record families cover policy bundle metadata; AuthZEN request/response; enforcement receipt; hash-chain audit record; sandbox attestation; six-dimension governance benchmark; reputation evidence; and attenuable grant. They are operator-neutral and do not impose a central enforcement authority.
+The eight public contract record families cover policy bundle metadata; AuthZEN request/response; enforcement receipts with monitor/HITL/quarantine/block/revoke/rate-limit/redact/ask/warn/escalate/redirect outcomes; hash-chain audit record with context-taint evidence; sandbox attestation; six-dimension governance benchmark; reputation evidence; and attenuable grants with parent-scope containment checks. They are operator-neutral and do not impose a central enforcement authority.
 
 [UNIVERSALIS Intelligence Powers architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/blob/implementation/repository-foundation-2026-11-12/INTELLIGENCE_POWERS_GOVERNANCE_ARCHITECTURE.md).
 
-- Contract workflow: [passed — 43253904706](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43253904706).
-- Repository quality baseline: [passed — 43253904757](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43253904757).
+- Contract workflow: [passed — 43254783849](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43254783849).
+- Repository quality baseline: [passed — 43254784031](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43254784031).
 
 The public workflow validates only public portable schemas and synthetic fixtures. It contains no C2O-private schema, credentials, authority token, policy data or execution records.
 
@@ -172,12 +172,12 @@ No production PDP/PEP, policy broker, sandbox runtime, live audit anchor, reputa
 - **Augmentation:** OpenExo; CEINMS-RT; Human Operator; body-powered supernumerary robotic finger.
 
 ### Portable contracts and owner implementation
-The public Human Powers schemas cover consent graph/grants; restriction join; provenance; action-specific human approval; WCAG 2.2 accessibility evidence; sovereignty profile; augmentation device/action evidence; and consent revocation/correction. Human identifiers are represented by opaque references; there is no central public consent store.
+The public Human Powers schemas cover consent graph/grants; restriction join; provenance; action-specific human approval; WCAG 2.2 accessibility evidence with optional VPAT/compliance-matrix references; sovereignty profile; data-subject-rights requests; augmentation device/action evidence; and consent revocation/correction. Human identifiers are represented by opaque references; there is no central public consent store.
 
 [UNIVERSALIS Human Powers architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/blob/implementation/repository-foundation-2026-11-12/HUMAN_POWERS_CONSENT_AND_AUGMENTATION_ARCHITECTURE.md).
 
-- Contract workflow: [passed — 43253936863](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43253936863).
-- Repository quality baseline: [passed — 43253936774](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43253936774).
+- Contract workflow: [passed — 43254912619](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43254912619).
+- Repository quality baseline: [passed — 43254913053](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Powers/actions/runs/43254913053).
 
 ### Conflicts and limits
 The earlier Human Capabilities source states 32 a11y-toolkit MCP tools; this Human Powers source states 31. Neither count is accepted until pinned to a precise release and verified. Automated scans are not conformance proof. Consent receipts do not prove informed, voluntary consent. Augmentation schemas require device-specific safety cases, calibration, interlocks, emergency-stop tests and human oversight; they do not validate or control a live device.
@@ -187,3 +187,8 @@ No production consent store, identity wallet, cryptographic verifier, accessibil
 ### Public source verification
 - AT1C current public repository describes ML-DSA-65 and retirement of Ed25519 in that implementation: https://github.com/at1c-protocol/at1c-protocol-official
 - WCAG 2.2: https://www.w3.org/TR/WCAG22/
+
+
+### Expanded eighth-source evidence contracts
+
+The Human Powers v1 model includes a portable data-subject-rights request record for access, rectification, erasure, restriction, portability, objection, and consent withdrawal. This is a request/evidence contract only, not a legal compliance service. The Intelligence Powers contract also tests parent-to-child capability containment and additional review/escalation outcomes. The latest public contract and quality workflows for both domains passed all steps.
