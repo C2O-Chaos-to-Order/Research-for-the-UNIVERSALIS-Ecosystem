@@ -297,3 +297,21 @@ The following details are transcribed as requirements or product descriptions fr
 - **gitagent / omni-agents-cli:** portable versioned agent definitions and centralized distribution of agents/skills/rules.
 - **ai-ecosystem-map / VisualAgents / Agent Fabric / Agent Visualizer / Reco Graph / AgentFolio:** discovery and inventory of agents/skills/MCP/rules; workflow/event visualization and replay; external agent scanning; identity/permission/connection/action graph; curated discovery directory. Any visualizer that exposes model-internal reasoning requires a privacy/safety review; prefer observable action and event traces rather than disclosure of private reasoning.
 - **MokuGraph / Draw.io / shared formats:** MokuGraph JSON rendering schema; Draw.io XML and supplied MCP 3.0 Task Protocol pattern; WorkBraid proposal format; Agentopology .at; Paperclip template; dependency graph interchange. These are separate contracts/adapters still to be implemented, not all covered by the generic architecture graph v1.
+
+## 11. Executed CI receipts for the four basic foundations
+
+These run links show the dedicated contract workflows and repository-quality baselines passed. Mapping owners also retain their additional repository validation workflows.
+
+| Domain | C2O contract / graph | C2O quality | UNIVERSALIS contract / graph | UNIVERSALIS quality |
+|---|---|---|---|---|
+| Human Knowledge | [43233037409](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Knowledge/actions/runs/43233037409) | [43233037332](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Knowledge/actions/runs/43233037332) | [43233072778](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072778) | [43233072777](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072777) |
+| Powers / Energy | [43237146027](https://github.com/C2O-Chaos-to-Order/The-C2O-Powers/actions/runs/43237146027) | [43237145898](https://github.com/C2O-Chaos-to-Order/The-C2O-Powers/actions/runs/43237145898) | [43237154087](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154087) | [43237154046](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154046) |
+| Human Capabilities | [43238884857](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Capabilities/actions/runs/43238884857) | [43238884861](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Capabilities/actions/runs/43238884861) | [43238904991](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904991) | [43238904935](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904935) |
+| Mapping / Matrix | [43238968417](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238968417) | [43238968426](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238968426) | [43238990961](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238990961) | [43238991355](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991355) |
+
+Additional ecosystem checks:
+- C2O Repository Verification: [43238969066](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238969066).
+- UNIVERSALIS Engineering Doctor: [43238991130](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991130).
+- UNIVERSALIS Repository Verification: [43238991044](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991044).
+
+These runs establish that the authored semantic checks and repository baseline passed for the synthetic fixtures. They do **not** establish that the external products have been installed, that the full JSON Schema 2020-12 keyword set is validated, that Ed25519 signatures are verified, or that live data has been measured.
