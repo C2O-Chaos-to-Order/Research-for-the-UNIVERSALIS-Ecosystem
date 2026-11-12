@@ -276,3 +276,8 @@ The public shared schema, fixture and validator blobs are byte-identical to the 
 
 ### Implementation limits
 CI checks JSON Schema records, semantic invariants and the synthetic RFC 9162 proof only. It does not deploy a wiki compiler, live ingest engine, source-rights system, OCR pipeline, graph store, citation database connector, signature/key service or correction propagation. Merkle inclusion is not claim truth, source authenticity or corpus completeness. No third-party candidate is claimed integrated; public examples contain synthetic data only.
+
+
+### Portable signature-envelope extension
+
+The shared schema has optional signature-envelope metadata for ingestion manifests, citation-proof receipts, OKF/JSON-LD export manifests, evidence bundles, correction events and answer receipts. Fields include algorithm, key fingerprint, optional public-key reference, signed-payload digest, signature bytes, signing timestamp and verifier status. No private key material crosses the seam. This is a metadata contract only; CI does not generate or verify signatures, resolve key trust, or check revocation.
