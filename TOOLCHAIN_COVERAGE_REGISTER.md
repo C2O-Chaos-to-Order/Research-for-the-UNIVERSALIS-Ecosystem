@@ -918,3 +918,69 @@ Fourteen record families cover canonical strata, component/license/maturity meta
 - Isaac Lab-Arena: https://github.com/isaac-sim/IsaacLab-Arena.
 - DORA: https://github.com/insilicomedicine/DORA.
 - Vendor announcements/research papers remain qualified as such; Thales HexaForce, Alexandria and Magetools require unique source/release pinning.
+
+
+## 24. Twenty-fourth source — Agent, Operating-System and AI Unification (public UNIVERSALIS scope; 2026-11-12)
+
+### Public candidate inventory
+
+- **Runtime/substrate:** Qualixar OS; khy-os (source-available, non-commercial restrictions); Formicx (MIT Alpha 0.1.0); SleekAI Cortex (release/license and production scope require pinning).
+- **Orchestration/composition:** Omnigent (independent Apache-2.0 project); Agno AgentOS (framework runtime/adapters); LAR-OS gateway artifact. AgentOS/nexus-agentos remains unresolved pending canonical source, owner, release and license.
+- **Model routing/gateway:** OmniRoute (MIT); Glob.AI OS (commercial Globant offering, not open-source); g8e (project-specific gateway/envelope reference).
+- **Local execution/computer use:** aevra (license/release pinning required); OmniPilot (MIT); Shinken (local/reference implementation with production hardening and broader cross-OS fleet scope still requiring proof).
+- **Public protocol/format references:** OCI image/runtime; MCP; A2A; ACP; Agent Protocol REST; Agno AgentProtocol adapter; OpenAI-compatible inference API profile; product-specific Qualixar command surface, g8e GovernanceEnvelope and Shinken ACI.
+- **Proposed UNIVERSALIS profile:** generic component/capability assimilation record for independent review; not an external standard or automatic mesh admission.
+
+### Public/private separation
+
+This public register contains public sources, generic architecture and authority-neutral contracts only. It does not name or expose owner-specific private sovereign platforms, private deployment architecture, C2O authorization files, identities, policies, keys, credentials, permits, budgets, endpoint inventories, hardware identifiers or operational evidence.
+
+### Portable shared implementation
+
+The UNIVERSALIS Ecosystem branch contains:
+- `UNIFICATION_ARCHITECTURE.md` and `UNIFICATION_VALIDATION.md`.
+- Shared schema: `schemas/unification/unification-contracts.v1.schema.json`.
+- Synthetic public fixture: `examples/unification/unification-fixtures.v1.json`.
+- Standard-library semantic validator: `.github/scripts/unification_contract.py`.
+
+The fixture has 25 synthetic records. Every record has `authority_effect: none` and `boundary: portable_public_record`. The shared validator defines 12 negative semantic cases. These scripts were not executed during this repository integration; no test pass is claimed.
+
+### Protocol semantics and source corrections
+
+- OCI image/runtime compatibility is not universal kernel, OS, driver or accelerator equivalence.
+- MCP is client-to-server tool/resource/prompt interaction; A2A is agent-to-agent collaboration; ACP is agent-to-client.
+- Agent Protocol REST is a separate client-to-agent API; Agno AgentProtocol is an Agno-specific Python adapter.
+- OpenAI-compatible inference APIs do not imply model/feature parity, privacy, residency or sovereignty.
+- Qualixar Universal Command Protocol, g8e GovernanceEnvelope and Shinken ACI are product-specific interfaces, not external universal standards.
+- Qualixar's current upstream describes 15 providers, 13 topologies and 25 commands; changelog records FSL-1.1-ALv2 source-available terms with competing-use restrictions.
+- khy-os is source-available/non-commercial absent written permission, not unrestricted OSI-open source.
+- Formicx is MIT Alpha 0.1.0 and Linux-oriented.
+- Omnigent is an independent Apache-2.0 repository, distinct from a Databricks managed offering.
+- OmniRoute is MIT and currently advertises 375 providers/1,400+ models; counts change and are not standards.
+- Glob.AI OS is a commercial Globant offering announced 2026-10-27.
+- Shinken's current design separates local/reference implementation from later production hardening and broader cross-OS fleet coverage.
+
+### Primary references
+
+- Qualixar: https://github.com/qualixar/qualixar-os
+- khy-os: https://pypi.org/project/khy-os/
+- Formicx: https://pypi.org/project/formicx/
+- Cortex: https://www.npmjs.com/package/@sleekai/cortex
+- Omnigent: https://github.com/omnigent-ai/omnigent
+- Agno: https://docs.agno.com/agent-os/introduction
+- LAR-OS: https://huggingface.co/Jun33550336/lar-os-antigravity-gateway
+- OmniRoute: https://github.com/cheaper-inference/OmniRoute
+- Glob.AI OS: https://www.globant.com/news/globai-os-enterprise-ai-operating-system
+- g8e: https://github.com/g8e-ai/g8e
+- aevra: https://github.com/the-long-ride/aevra
+- OmniPilot: https://github.com/xrchris7/OmniPilot
+- Shinken: https://github.com/Meirtz/Shinken
+- OCI: https://specs.opencontainers.org/runtime-spec/
+- MCP: https://github.com/modelcontextprotocol/modelcontextprotocol/tree/main/docs/specification
+- A2A: https://a2a-protocol.org/v1.0.0/specification/
+- ACP: https://agentclientprotocol.com/
+- Agent Protocol REST: https://github.com/agi-inc/agent-protocol
+
+### Verification state and non-claims
+
+No workflow was added or dispatched. No third-party product was installed or integrated. The schema/fixture/validator are a basic public contract prototype only. The validator defines 12 negative semantic cases but was not executed during this integration; no pass is claimed. No C2O-only authorization file or private operational information is present in the public implementation.
