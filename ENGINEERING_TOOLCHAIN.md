@@ -84,3 +84,7 @@ The full source-to-repository inventory for Human Knowledge, Powers, Human Capab
 The complete owner-supplied tool inventory and status matrix for Human Knowledge, Powers, Human Capabilities, and Mapping/Matrix/Organization/Ecosystem Mapping is maintained in the UNIVERSALIS research register: https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/FOUR_DOCUMENT_TOOLCHAIN_COVERAGE.md.
 
 Treat every third-party name in that register as a proposed candidate/reference pattern until canonical source, license, maintenance, security, compatibility, and behavior are reviewed. The register distinguishes documented tools, basic contracts, passing CI, and actual integrations. This repository owns only the parts assigned to its domain. No C2O-private repository links or policy values are part of this public register.
+
+## Master toolchain coverage register
+
+The consolidated register covering the original four toolchain documents plus the Intelligence Capabilities source is in TOOLCHAIN_COVERAGE_REGISTER.md. It distinguishes documented candidates, basic contracts, passing CI, and actual integrations.
