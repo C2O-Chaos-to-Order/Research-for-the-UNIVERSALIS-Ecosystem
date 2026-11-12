@@ -78,3 +78,9 @@ The open implementation is local-first and independently operable. Measurement, 
 ## Four-document toolchain coverage register
 
 The full source-to-repository inventory for Human Knowledge, Powers, Human Capabilities, and Mapping/Matrix/Organization/Ecosystem Mapping is in FOUR_DOCUMENT_TOOLCHAIN_COVERAGE.md. It distinguishes documentation, basic contracts, CI evidence, and actual third-party integrations.
+
+## Four-document source coverage — 2026-11-12
+
+The complete owner-supplied tool inventory and status matrix for Human Knowledge, Powers, Human Capabilities, and Mapping/Matrix/Organization/Ecosystem Mapping is maintained in the UNIVERSALIS research register: https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/FOUR_DOCUMENT_TOOLCHAIN_COVERAGE.md.
+
+Treat every third-party name in that register as a proposed candidate/reference pattern until canonical source, license, maintenance, security, compatibility, and behavior are reviewed. The register distinguishes documented tools, basic contracts, passing CI, and actual integrations. This repository owns only the parts assigned to its domain. No C2O-private repository links or policy values are part of this public register.
