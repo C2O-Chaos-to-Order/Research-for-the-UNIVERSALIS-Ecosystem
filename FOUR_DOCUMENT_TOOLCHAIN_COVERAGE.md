@@ -1,3 +1,5 @@
+> **Register status — 2026-11-12:** This file remains the historical inventory of the first four supplied toolchain documents. The current consolidated register covers all six source inventories, including Intelligence Capabilities and Intelligence Skills: [public UNIVERSALIS master toolchain coverage register](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/TOOLCHAIN_COVERAGE_REGISTER.md). Use the master register for current coverage, implementation status, and CI evidence.
+
 # Four-Document Toolchain Coverage Register
 
 **Date:** 2026-11-12  
