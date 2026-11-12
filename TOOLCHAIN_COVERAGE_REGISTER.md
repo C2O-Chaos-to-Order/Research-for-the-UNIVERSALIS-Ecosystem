@@ -689,3 +689,45 @@ Seven record types cover shared intent, participant satisfaction, negotiation, g
 
 ### Boundary and non-claims
 The public register contains public candidate references, portable schemas and synthetic opaque evidence only. It contains no private resolution policy, principal, negotiation preferences, BATNA, signing key, permit, or operational data. No third-party tool was installed or adopted; no live consensus, graph mutation, ontology migration, settlement or arbitration was executed. Passing CI establishes fixture/schema behavior only, not truth, fairness, legal enforceability, Pareto optimality or production interoperability.
+
+
+## 19. Nineteenth source — Ascendence, Recursive Self-Improvement and Capability Evolution (public UNIVERSALIS scope; 2026-11-12)
+
+**Domains:** experience-driven asset evolution; harness recursion; genome/mutation search; independent evaluation; frozen promotion gates; admission cards; witness approvals; cryptographic lineage; autonomy ceilings; persistent memory/persona manifests; rollback and recall.
+
+### Open candidate inventory
+- **Experience-driven / harness evolution:** DarwinAgent (experimental 0.2.0; task assets, not model weights); Harness² (Google Research, Apache-2.0, fixed model weights); The Trinity (code release not verified).
+- **Promotion / evidence gates:** @metaharness/flywheel; VERDICT (exact upstream not pinned); AWS sample-sentinel-harness (Bedrock AgentCore Harness-specific); Aura RSI Validation (exact upstream not pinned).
+- **Bounded RSI / organizations:** vsf-rsi (current README lists L1-L3 autonomous, L4 human-approved); ASAN (conceptual architecture); FIRM Protocol (project/package claims); Ormica 0.10.0; Ouroboros (self-modifying adversarial-research candidate).
+- **Genome / mutation:** agent-taxonomy (classification package plus GENOME.md conventions); Aragora Genesis; EvoMap Evolver/GEP; Living Agent/GODEGEN and Agent DNA (exact upstream/release not pinned).
+- **Persistence / memory:** Tur (Merkle-backed persona/memory; cross-model identity invariance remains a research question).
+- **Other candidates requiring exact source/release pinning:** opencode-autoresearch; evolving-agent-harnesses; auto-harness; HyperAgents; ace-skill; PDR.
+
+### Source verification corrections and qualifications
+- DarwinAgent 0.2.0 is experimental; its own synthetic offline replay does not establish model learning or benchmark gains. It changes task assets rather than weights: https://github.com/gogoingai/DarwinAgent.
+- Harness² fixes model weights and evolves harness components. Its README warns that executor web access is unrestricted and Codex sandboxing is disabled; benchmark isolation is necessary: https://github.com/google-research/harness2 and https://arxiv.org/abs/2610.14224.
+- AWS sample-sentinel-harness is specific to Amazon Bedrock AgentCore Harness. Its driver documents external witness-gated evaluation and subject-bound HITL approval, but some README/module status statements differ; verify exact release/evidence: https://github.com/aws-samples/sample-sentinel-harness.
+- @metaharness/flywheel documents a frozen conjunctive gate, anchor/holdout, signed receipts and replay; production mode needs independent evidence, pinned signer/gate and hard budgets. Earlier replay-anchor issue history warrants exact-release review: https://www.npmjs.com/package/@metaharness/flywheel and https://github.com/ruvnet/metaharness/issues/230.
+- vsf-rsi currently documents L1-L3 autonomous and L4 human-approved, not the supplied L3-human-gated classification. This is one project's default, not a universal standard: https://github.com/rm-w3kufe/vsf-rsi.
+- agent-taxonomy's genome format and Lamarckian mutation workflow are conventions; its npm package implements classification and validation, not a standardized agent genome or complete evolution runtime: https://github.com/suryast/agent-taxonomy.
+- Aragora Genesis documents AgentGenome, PopulationManager, GenomeBreeder and GenesisLedger; exact version and trust properties need pinned testing: https://github.com/synaptent/aragora/blob/main/docs/workflow/GENESIS.md.
+- EvoMap Evolver's standalone mode emits prompts/assets for a host runtime. Validation commands can execute allowlisted node/npm/npx commands; external assets are staged before explicit promotion: https://github.com/EvoMap/evolver.
+- The Trinity code is still listed as coming soon. Treat its reported results as paper claims until code is tagged and reproducible: https://github.com/InfRec-Cardinal/The-Trinity.
+- ASAN is conceptual research. FIRM's 12-layer status is a project claim. Ormica's permission-chain/auto-pruning features are documented package behavior requiring inspection: https://github.com/Variable-Fox/ASAN-Architecture; https://pypi.org/project/firm-protocol/; https://pypi.org/project/ormica/0.10.0/.
+- Tur's own essay says cross-model identity invariance and true epigenetic adaptation remain open hypotheses: https://erivlis.github.io/tur/essays/the-calibration-of-expectation/.
+- Ouroboros modifies its own code/architecture/prompts/tools/dependencies; it is treated as an adversarial candidate, not a default safe engine: https://github.com/razzant/ouroboros.
+- VERDICT, Aura RSI Validation, Living Agent/GODEGEN, PDR, Agent DNA and several other named projects were not pinned to a uniquely identifiable maintained upstream/release; they remain unresolved research candidates.
+
+### Shared Ascendence contracts implemented
+Files:
+- ASCENDENCE_ARCHITECTURE.md
+- ASCENDENCE_VALIDATION.md
+- schemas/ascendence/ascendence-contracts.v1.schema.json
+- examples/ascendence/ascendence-fixtures.v1.json
+- .github/scripts/ascendence_contract.py
+- .github/workflows/ascendence-contract.yml
+
+Eight record families define frozen gates, autonomy ceilings, genome mutations, paired evaluation evidence, subject-bound human witness approvals, admission cards, lineage events and Merkle memory manifests. The synthetic fixture includes an in-toto/DSSE bundle signing the admission card and lineage event. Eighteen negative tests include self-certification, gate tampering, protected-component mutation, evaluator conflicts, failed anchors/safety vetoes, subject-mismatched approval and lineage/signature tampering.
+
+### Boundary and non-claims
+The public branch includes only public candidate references, synthetic digests, portable contracts and a disposable test verification key. It contains no C2O-private ascent policy, model/genome, baseline, evaluator corpus, human permit, principal, signing key, memory contents or authority token. No tool/package was installed or invoked, no model was trained or changed, and no candidate was promoted. CI proves contract and fixture behavior only—not actual improvement, generalization, evaluator independence, production safety or cryptographic trust-root validity.
