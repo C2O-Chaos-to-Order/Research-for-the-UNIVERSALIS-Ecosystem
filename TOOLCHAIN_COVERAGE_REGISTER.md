@@ -303,15 +303,16 @@ All remain candidates/reference patterns until canonical source, license, exact 
 
 The shared contract family provides:
 1. Versioned OWASP/MITRE taxonomy and control-framework mapping.
-2. Enforcement decision receipts with policy digest and action outcome.
-3. Containment attestations distinguishing application, gateway, endpoint, kernel and hardware enforcement.
-4. Scope-bound assessment metadata and sanitized finding records.
-5. SBOM and vulnerability/license review attestations.
-6. Build provenance metadata for in-toto/SLSA/Chainloop.
-7. Sandbox/kernel/eBPF policy-digest evidence.
-8. SHA-256 tamper-evident audit-chain records.
-9. Technical-control evidence maps that explicitly are not certifications.
-10. Optional detached signature envelope metadata (public key reference/fingerprint, signed digest, signature bytes and verifier status; no private key).
+2. RFC 9162 SHA-256 Merkle proof of a sanitized security-evidence payload.
+3. Enforcement decision receipts with policy digest and action outcome.
+4. Containment attestations distinguishing application, gateway, endpoint, kernel and hardware enforcement.
+5. Scope-bound assessment metadata and sanitized finding records.
+6. SBOM and vulnerability/license review attestations.
+7. Build provenance metadata for in-toto/SLSA/Chainloop.
+8. Sandbox/kernel/eBPF policy-digest evidence.
+9. SHA-256 tamper-evident audit-chain records.
+10. Technical-control evidence maps that explicitly are not certifications.
+11. Optional detached signature envelope metadata (public key reference/fingerprint, signed digest, signature bytes and verifier status; no private key).
 
 ### Owner implementation and final CI
 
@@ -319,7 +320,7 @@ The shared contract family provides:
 - [Portable security contracts](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/schemas/security/security-evidence-contracts.v1.schema.json).
 - [Synthetic public fixtures](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/examples/security/security-evidence-fixtures.v1.json).
 - [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/blob/implementation/repository-foundation-2026-11-12/SECURITY_CYBERSECURITY_VALIDATION.md).
-- Security contracts: [passed — 43267172715](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43267172715); repository quality: [passed — 43267172143](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43267172143); Engineering Doctor: [passed — 43267171861](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43267171861); repository verification: [passed — 43267171678](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43267171678).
+- Security contracts: [passed — 43268851042](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43268851042); repository quality: [passed — 43268850866](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43268850866); Engineering Doctor: [passed — 43268850907](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43268850907); repository verification: [passed — 43268850893](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43268850893).
 
 The public schema, synthetic fixture and validator blobs are byte-identical to the shared C2O counterparts. No C2O-only private authorization schema, private policy, credential, incident, asset inventory or target list is present in this repository.
 
