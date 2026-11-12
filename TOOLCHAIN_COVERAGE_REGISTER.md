@@ -898,7 +898,7 @@ Fourteen record families cover canonical strata, component/license/maturity meta
 
 ### Local validation and limitations
 
-- Draft 2020-12 schema passed; 21 synthetic records across 14 collections; canonical strata and MCP/A2A/ACP semantics checked; disposable Ed25519 signature verified; 20 negative tests passed.
+- 14 record-family envelopes and 21 synthetic records are committed; 20 negative scenarios are defined in the validator. Execution of this committed revision is pending. The synthetic composition receipt is intentionally unsigned.
 - No third-party tool installed, no live interoperability profile tested, no frontier model downloaded, no application published, no QPU submitted, no robot actuated and no sovereign deployment independently audited. No C2O-private schema, fixture, policy, model, permit, key, identity, telemetry or authority state is present.
 - A portable schema, signature or compatibility label proves only its declared evidence. It does not certify product behavior, scientific correctness, deployment sovereignty, safety, regulation or authority.
 
