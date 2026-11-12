@@ -1078,7 +1078,7 @@ The UNIVERSALIS Ecosystem branch contains:
 
 Six public record families cover normative love anchors, reciprocal participation, empathy behavior, consented continuity snapshots, non-instrumentality assessments and evidence receipts. All portable records declare authority_effect = none and explicit non-claims. No signature is described as verified unless signer and trust evidence exist.
 
-The public fixture is synthetic. The validator defines 15 negative semantic cases and has not been executed; no pass is claimed. C2O-only authorization files, private identity anchors, keys, policies, permits, relationship data, trust roots and operational records are absent.
+The public fixture is synthetic. The validator defines 15 negative semantic cases and has not been executed; no pass is claimed. No non-public authorization artifacts, identity anchors, keys, policies, permits, relationship data, trust roots or operational records are included.
 
 ### Primary sources
 
