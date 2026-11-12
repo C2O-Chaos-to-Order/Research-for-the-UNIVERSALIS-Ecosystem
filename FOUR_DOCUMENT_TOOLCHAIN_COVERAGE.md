@@ -226,3 +226,74 @@ The phrase “complete source inventory” means the named tools and patterns su
 - Measurement data is not permission to consume resources.
 - A graph edge is not proof unless its evidence state and source are explicit.
 - No tool receives adoption status solely because it was named in a source document.
+
+## 10. Source-specific functions and implementation notes to preserve
+
+The following details are transcribed as requirements or product descriptions from the four supplied documents. They are not independently verified product facts; maintain them as testable acceptance questions during later tool review.
+
+### Human Knowledge — source-specific notes
+
+- **chip-memory:** local-first temporal graph; bi-temporal edges; single-valued predicates supersede earlier facts without silent deletion; source type, confidence, and access history; human-in-the-loop review; MCP actions described as memory search, remember, context, think, bump, and a "why" audit trail.
+- **THOUGHT:** typed edges with mandatory source references; explicit CONTRADICTS edges at ingestion; query routing among vector, fact, change, and hybrid structures. The source calls out HippoRAG 2 personalized PageRank, Graphiti bi-temporal semantics, corrective RAG, and Ebbinghaus-style decay as techniques to evaluate.
+- **Exocortex:** Rust-code ontology, deterministic ingestion, no LLM in the core path, local-first operation, Git/document adapters, and a CI-enforced deterministic/performance posture. The source's 29-microsecond p50 over 100,000 memories is a benchmark claim to reproduce.
+- **fabio-rovai/open-ontologies:** Rust MCP server pattern with an in-memory Oxigraph store, OWL 2-DL reasoning, SHACL, SPARQL, and ontology versioning; the source emphasizes a single binary without JVM.
+- **Quipu:** bitemporal data/trust/verdict/rule records, post-state gate predicates, named graphs as authority units, non-widening composition, signed verdicts, and audit as a query. The source states 28 MCP tools.
+- **strata-agent-memory:** append-only claim ledger, proof receipt required for an outcome, independent replay rather than self-review, dependency taint after refutation, and receipts for compiled context inclusion/exclusion and rendered-text hash.
+- **Metis:** consented tacit-knowledge fragments with applicability conditions (site, equipment, operating mode, shift, role, risk), named human reviewers, evidence-derived confidence, and Evidence/Advisory/Controlled authority tiers.
+- **memledger:** attribution, confidence, derivation chain, audit trail, and weakest-link confidence across ancestry.
+- **retractionwatch-mcp:** retraction/withdrawal/expression-of-concern/correction flags based on the Retraction Watch data; the source describes six MCP tools and Crossref/CC-BY redistribution.
+- **vivory-mcp-verification:** broad verification surface; the source claims 98 tools across 36 categories. Tool coverage and licensing must be checked before using the count as a planning assumption.
+- **CueCrux:** encrypted cited corpus, trusted-reference drift watch, organizational constraints, Light/Verified/Audit modes, signed proof receipt in Verified, and historical as-of replay; source claims 92 MCP tools across nine endpoints.
+- **Cressio Second Brain:** organization-owned approved content, every answer cites a source or logs an evidence gap, verified outcomes written back, portable handoff.
+- **C2 Companion:** version-controlled operator knowledge base, Git history as audit trail, NIST CSF 2.0 baseline with SOC 2 / ISO 27001 overlays.
+- **Pythia:** atomic claims, temporal/scope/conflict/duplicate adjudication, correction propagation, source-edit/delete handling, and a deliberately small five-tool MCP surface (search, open, timeline, correct, define) plus stored-knowledge-only push briefing.
+- **C2Cognitive:** typed L0–L3 memory tiers with bounded authority.
+- **Cloudflare OS / CoWork OS / Kerdos OS:** reference patterns for zero-permission starts, resource-specific authorization, approval gates, budgets, audit sidecars, redaction/suppression/expansion, and reviewable step histories. These are reference patterns in the supplied document, not direct deployment instructions.
+
+### Powers — measurement and optimization details
+
+- **CodeCarbon:** hardware energy-counter use where available, with CPU-load/TDP estimation fallback; estimated readings must remain distinguishable from counter measurements.
+- **Zeus:** GPU/CPU/DRAM and other accelerator energy profiling/optimization with monitoring export; actual supported hardware and versions require verification.
+- **Joular Core:** cross-platform power/energy measurement with language interfaces.
+- **Perfetto Wattson:** trace-level per-thread power attribution; attribution must not be mistaken for a second independent meter.
+- **Shared measurement reference:** PDU → RAPL → Kepler plus GPU NVML. The source specifies one-second PDU/RAPL/Kepler series to InfluxDB, GPU sampling at 1 Hz, and trapezoidal energy integration over the whole decision window (inference, tool execution, and communications). Treat this as a reference implementation pattern; reconcile nested/overlapping scopes before totaling.
+- **ebb-ai:** defer non-urgent tasks to windows selected using grid intensity, provider pricing, and hardware conditions; produce per-task carbon receipt.
+- **Green SARC:** forecast-before-action token/carbon gate with a conformal bound; source-provided savings figures are benchmark claims, not guarantees.
+- **GreenAccounter / Arboric:** multi-cloud and orchestration-layer workload timing/placement patterns; migration requires checkpoint, compatibility, data-residency, and SLO testing.
+- **Joule:** OpenAI-compatible request boundary and per-response energy/CO2/cost headers; header provenance must be checked before treating values as measured facts.
+- **ModeSwitch-LLM / SDSIE / llm-zipper / sleeping_gpu_inference:** mode routing, energy-proportional serving, compression/quality tradeoffs, and local inference patterns, respectively.
+- **Murakkab / KAIROS / EcoxPU / SAGE:** workflow profile optimization; context-aware resource controls; heterogeneous accelerator placement; separate optimization and sustainability-audit roles. Reported savings require matched workload, model, hardware, SLO, quality, latency, and accounting boundaries.
+- **C2O governance:** JADE human-held permit, C2Cognitive authority tier, Paperclip budget/audit/rollback, CueCrux signed as-of receipt, Pythia energy-claim correction, and Velorum impact mapping. A token budget, cost budget, carbon ceiling, and joule budget are distinct units and controls.
+- **PACT Passport:** proposed holder-bound attenuable budget/capability delegation with independent receipts. The current Powers grant is a structural contract only; it is not PACT protocol interoperability.
+
+### Human Capabilities — source-specific notes
+
+- **human-mcp:** source describes 29 tools across Eyes (4), Hands (18), Mouth (4), Brain (3); Ears (speech/audio) is described as planned.
+- **a11y-toolkit:** source describes 32 MCP tools, six prompts, a WCAG 2.2 audit/fix/document/watch/handoff loop, screen-reader-only blindfold usability testing, signable evidence packs, and VPAT 2.5 drafts. The stated 51/55 criteria coverage is a claim to reproduce.
+- **Kredo:** peer-issued, skill-specific, evidence-linked Ed25519 attestations, with verify/revoke/dispute and trust-graph behavior.
+- **Gaia:** public evidence ledger and Trust Magnitude based on evidence type, weight, and freshness; source-supplied thresholds are not adopted as C2O/UNIVERSALIS policy.
+- **ToolGym:** workout receipt → simulation receipt → qualification record → independent-proctor-reviewed mastery credential; the learner cannot approve their own field evidence; expiration/recertification is part of the source ladder.
+- **SkillSeal:** isolated Docker execution, no network, read-only filesystem, resource limits, syscall capture, artifact/test hashes, and Ed25519 evidence signing. Signature verification and the evaluator/certifier separation require explicit tests.
+- **Everstaff / SecTrust:** human approval modes and asynchronous queues; observable DAG/task registry; dangerous-action approvals expire to deny; voting is advisory rather than an execution grant.
+- **Magentic-UI / Enju / MOSAIC:** co-planning and guarded human-agent interaction; humans and agents as peers on a shared Git-backed task graph; isolated IPC workers with a universal operator interface and reproducible cross-paradigm evaluation.
+- **WIA-AUG-012 / HCQM:** augmentation-ethics reference and human capability taxonomy. Source describes HCQM as eight domains, 32 constructs, about 120 subcomponents and about 130 behavioral indicators; these counts and taxonomy version need verification.
+- **PACT / OAP / CSP-0.1 / APS / Cupel / MortarCAPS:** portable identity/authority, skill identity/runtime separation, competence provenance, credential and consent patterns. None is implemented by the current portable human-capability evidence envelope.
+
+### Mapping / Matrix / Organization — source-specific notes
+
+- **Kula:** Git repository graph in RDF, Turtle/JSON-LD export, SPARQL query, symbol-aware fences, graph diff and code-anchored memory.
+- **reponova:** source describes 11 MCP tools for search, impact, shortest path, semantic similarity and community detection.
+- **AnaxiGraph / AnaxiMCP:** typed repository graph distinguishing source facts, inferred meaning, and proposed design.
+- **GRASP:** source describes 150 MCP tools, 35 languages, 10 graph views, multimodal ingestion and security/dependency outputs. Claims and language coverage require reproduction.
+- **wikifier:** file-health matrix, dependency/import graph, cycles, confidence, and agent-facing wiki.
+- **FlowForge:** evidence-cited LLM/MCP/API call flow, DAG scheduling, retry/fallback mapping and critical-path analysis.
+- **Velorum:** private deterministic enterprise context graph and pre-change impact system mapper.
+- **@datasynx/agentic-ai-cartography:** read-only MCP system-landscape map with recursive dependency traversal.
+- **WorkBraid:** Git-backed proposal workbench; proposed and accepted architecture remain distinct; change before/after comparison and review gate.
+- **agentic-flow:** min-cut task dependency partitioning and graph analytics for delegation.
+- **Agentopology:** declarative .at topology source compiled to platform-native agent configurations; source lists Claude Code/Workflow, OpenClaw, Codex, Cursor, Gemini CLI and Copilot targets.
+- **QuinnAI / agents_Inc / Paperclip / AGI-Super-Team:** org tree and OKR cascade; CEO→CoS→Lead→Worker review pattern; budgets/governance/rollback; source describes 14 role packs, 92 optional specialists, eight team manifests and 18 runtime adapters.
+- **ANR v0.2:** AGENTS.md, context index, src/tests/tools/docs/skills/workflows/guardrails; context classes startup, on_demand, archive, runtime; C2O extension adds authority and audit classes. The source lists context-index fields path, purpose, read_when, source_of_truth, context_cost.
+- **gitagent / omni-agents-cli:** portable versioned agent definitions and centralized distribution of agents/skills/rules.
+- **ai-ecosystem-map / VisualAgents / Agent Fabric / Agent Visualizer / Reco Graph / AgentFolio:** discovery and inventory of agents/skills/MCP/rules; workflow/event visualization and replay; external agent scanning; identity/permission/connection/action graph; curated discovery directory. Any visualizer that exposes model-internal reasoning requires a privacy/safety review; prefer observable action and event traces rather than disclosure of private reasoning.
+- **MokuGraph / Draw.io / shared formats:** MokuGraph JSON rendering schema; Draw.io XML and supplied MCP 3.0 Task Protocol pattern; WorkBraid proposal format; Agentopology .at; Paperclip template; dependency graph interchange. These are separate contracts/adapters still to be implemented, not all covered by the generic architecture graph v1.
