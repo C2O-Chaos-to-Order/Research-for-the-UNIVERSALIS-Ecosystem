@@ -1,7 +1,7 @@
 # Toolchain Coverage Register — UNIVERSALIS
 
 **Date:** 2026-11-12  
-**Scope:** Public UNIVERSALIS coverage of eight owner-supplied toolchain inventories: original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, and Human Powers.
+**Scope:** Public UNIVERSALIS coverage of nine owner-supplied inventories: the original four, Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers and Ontologies.
 **Boundary:** This public register does not link to C2O-private owner repositories or disclose private policies, model weights, benchmark datasets, credentials, or authority tokens.
 
 ## 1. Original four source documents
@@ -12,7 +12,7 @@ The original four public/open source areas remain inventoried in FOUR_DOCUMENT_T
 3. Human Capabilities.
 4. Mapping / Matrix / Organization / Ecosystem Mapping.
 
-That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through eighth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, and Human Powers.
+That register contains the full UNIVERSALIS candidate lists, functional notes, implementation status, and CI receipts. This register consolidates the fifth through ninth inventories: Intelligence Capabilities, Intelligence Skills, Intelligence Powers, Human Powers, and Ontologies.
 
 ## 2. Intelligence Capabilities — open candidates
 
@@ -192,3 +192,43 @@ No production consent store, identity wallet, cryptographic verifier, accessibil
 ### Expanded eighth-source evidence contracts
 
 The Human Powers v1 model includes a portable data-subject-rights request record for access, rectification, erasure, restriction, portability, objection, and consent withdrawal. This is a request/evidence contract only, not a legal compliance service. The Intelligence Powers contract also tests parent-to-child capability containment and additional review/escalation outcomes. The latest public contract and quality workflows for both domains passed all steps.
+
+
+## 9. Ontology toolchain and schema governance — public UNIVERSALIS scope
+
+### Open candidate inventory
+- **Engine / reasoning:** open-ontologies (fabio-rovai); Ontosphere; graph-mcp-driver.
+- **Agent-writable ontology:** MNEME / FlowX.AI Ontology Layer.
+- **Ontology-to-tools compilation:** Ontology-to-Tools Compilation / The World Avatar.
+- **Schema governance / knowledge graph:** Entigram; OpenBKN.
+- **Deterministic validation / reasoning:** Semantica; ontobricks; cassis-cli.
+- **Bitemporal store:** Quipu.
+- **Standards:** RDF 1.1; OWL 2 Direct Semantics; SHACL; PROV-O; SKOS.
+
+These remain open candidates and standards/reference patterns, not adopted integrations. The source review queue and version-specific caveats are recorded in the owner architecture.
+
+### Portable shared contract foundation
+Fourteen portable JSON Schema record families cover ontology artifact metadata; SKOS alignment mapping; PROV-O event; SHACL validation report; reasoning certificate and trusted-computing-base metadata; bitemporal fact; valid-time/transaction-time as-of query; crosswalk-resolution receipt; agent-write provenance/confidence; non-widening named-graph authority; conflict record; versioned schema-evolution proposal; ontology-to-tool compilation; and closed-world action-admission receipt.
+
+Two RDF/Turtle examples are parsed by CI: SKOS mapping with PROV-O provenance, and a SHACL validation report. No central ontology registry is required or introduced.
+
+### Owner implementation and CI
+- [UNIVERSALIS open ontology toolchain architecture](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/blob/implementation/repository-foundation-2026-11-12/ONTOLOGY_TOOLCHAIN_ARCHITECTURE.md).
+- [Portable ontology schemas](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/tree/implementation/repository-foundation-2026-11-12/schemas/ontology).
+- [RDF examples](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/tree/implementation/repository-foundation-2026-11-12/examples/ontology).
+- [Validation record](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/blob/implementation/repository-foundation-2026-11-12/ONTOLOGY_TOOLCHAIN_VALIDATION.md).
+- Contract workflow: [passed — 43258538853](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/actions/runs/43258538853).
+- Repository quality baseline: [passed — 43258538884](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ontology/actions/runs/43258538884).
+
+The public implementation includes only portable schemas, synthetic fixtures, RDF examples and open architecture documentation. It contains no C2O-private admission schema, ontology, named-graph grant, policy, identity mapping, signing key or operational trace.
+
+### Source verification and discrepancies
+- OWL 2 Direct Semantics, PROV-O and SKOS are W3C Recommendations. SHACL 1.0 is the stable target; SHACL 1.2 Core is a Working Draft as of October 2026.
+- Only `skos:exactMatch` is transitive among SKOS mapping properties.
+- open-ontologies' current README describes optional feature-gated tools, with eight omitted from the default published binary; exact tool inventory depends on the selected build.
+- Lean certificates check a derivation conditional on the asserted graph and supplied steps. The Rust engine's production of those graph/step artifacts remains part of the trusted computing base.
+- Quipu's docs.rs page describes an immutable bitemporal EAVT fact log backed by SQLite; the supplied 28-tool MCP count remains unverified.
+- MNEME's current FlowX.AI page says nine nodes, while the supplied proposal says twelve. Ontosphere's 43-tool count and the feature claims for graph-mcp-driver, Entigram, OpenBKN, Semantica, ontobricks and cassis-cli remain unverified.
+
+### Implementation limits
+CI checks JSON contracts, semantic invariants and Turtle syntax only. It does not execute OWL reasoning, SHACL validation over ontology data, Lean proof checking, graph-store operations, bitemporal queries, cryptographic verification, or schema deployment. No external product is marked integrated. The canonical UNIVERSALIS master ontology text remains unchanged.
