@@ -112,7 +112,7 @@ This public implementation contains no C2O-private registry, identity, policy, a
 
 ### Implementation status and outstanding work
 
-The shared JSON Schema contracts, synthetic fixtures, sample Agent Plugin package, and semantic contract test script are present on the implementation branch. The exact Intelligence Skills CI workflow has not yet been confirmed as passing for the current commit. No production registry, MCP/REST execution host, sandbox service, scanner integration, signature verifier, proof replay service, skill quality hub, or competence credential issuer is deployed. Full filesystem-resolved path and symlink containment, actual sandbox tests, evidence replay, and cryptographic trust validation remain future integration work.
+Eighteen shared JSON Schema contract records, synthetic fixtures, a sample Agent Plugin package, and semantic tests are implemented in the public owner branch. Lexical package path rejection and resolved-symlink escape checks pass in temporary test packages. The exact tested contract commit has a passing contract workflow and repository quality baseline. No production registry, MCP/REST execution host, runtime sandbox service, live scanner integration, cryptographic SBA verifier, proof replay service, skill quality hub, competence credential issuer, or correction propagation service is deployed.
 
 Cross-domain reuse to reconcile rather than duplicate: SkillSeal and Cupel were also named in Human Capabilities; NVIDIA OpenShell appeared in Intelligence Capabilities. MOSAIC appears in multiple supplied capability contexts and requires identity/version disambiguation before deduplication.
 
@@ -122,3 +122,11 @@ Cross-domain reuse to reconcile rather than duplicate: SkillSeal and Cupel were 
 - **Basic contract implemented:** schema, fixture, and semantic code authored on this implementation branch.
 - **CI passed:** exact workflow revision and run confirmed; not yet established for this sixth source.
 - **Integrated:** a real adapter/service is connected and exercised; no external candidate is currently marked integrated.
+
+
+### Exact sixth-source CI receipts
+
+- Intelligence Skills contract workflow: [passed — run 43250292584](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Skills/actions/runs/43250292584)
+- Repository quality baseline: [passed — run 43250292526](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Skills/actions/runs/43250292526)
+
+The contract-bearing commits tested were recorded in the owner validation files. Later commits to architecture and status documentation did not alter the schema/fixture/validator/workflow contents.
