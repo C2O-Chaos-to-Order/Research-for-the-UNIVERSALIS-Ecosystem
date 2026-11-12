@@ -65,3 +65,6 @@ All feature and performance claims remain source-supplied research claims pendin
 ## Intelligence Capabilities validation record
 
 - UNIVERSALIS execution evidence: [INTELLIGENCE_CAPABILITIES_VALIDATION.md](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Capabilities/blob/implementation/repository-foundation-2026-11-12/INTELLIGENCE_CAPABILITIES_VALIDATION.md).
+
+
+**CI evidence qualification:** The recorded Intelligence Capabilities CI runs passed the initial eight-case validator revision. The current branch contains ten negative checks, including the C2O-specific Plan DAG tool-scope and human-held permit gates; a new Actions run for that exact strengthened revision has not yet been surfaced. The current source files are present in both implementation branches, but do not attribute the earlier pass to the newer ten-case source revision.
