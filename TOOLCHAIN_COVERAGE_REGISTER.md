@@ -984,3 +984,61 @@ The fixture has 25 synthetic records. Every record has `authority_effect: none` 
 ### Verification state and non-claims
 
 No workflow was added or dispatched. No third-party product was installed or integrated. The schema/fixture/validator are a basic public contract prototype only. The validator defines 12 negative semantic cases but was not executed during this integration; no pass is claimed. No C2O-only authorization file or private operational information is present in the public implementation.
+
+
+## 25. Twenty-fifth source — Disorder and Chaos Prevention (public UNIVERSALIS scope; 2026-11-12)
+
+### Research relationship
+
+This inventory expands the existing prevention work with five-layer disorder classification, bounded agentic fault injection, stability gauges, resilience evaluation and containment evidence. It does not assert that disorder is a physical law or that entropy must increase monotonically in every AI system.
+
+The Intelligence Entropy / ADE research proposes S(t)=S0 exp(alpha t) and a later capability-adjusted S(t,Cm)=S0 exp(alpha t/Cm). These are distinct research model versions. The operational entropy construct requires explicit metric definition, units, sampling and validation; author-reported experiments and monitoring are not independent certification. Silent failure means no surfaced trigger/error signal, not no internal cause.
+
+The public CAAI proof pack describes itself as proof-of-origin and a Phase-1.5 validation stage. Controlled/Hedge/Chaos is recorded as an owner-proposed regime vocabulary. Re_EOS/ECR and the Covenant Protocol remain unresolved proposals pending canonical equations and reproducible evidence. The Second Law of Intelligence is a separate paper-specific ethical-entropy proposal, not a thermodynamic law.
+
+### Public/open candidates
+
+- agentic-chaos-security (Apache-2.0, v1, agentic-chaos/v1 experiment format and MCP proxy).
+- pytest-agent-chaos (MIT 0.2.0, pre-1.0, transport coverage and structural recovery limitations).
+- chaos-bringer (PyPI candidate; pin release/source/license).
+- Flakestorm (Apache-2.0 public GitHub repository; OECD listing unverified).
+- Chaos Monkey Agent (public LangGraph/Toxiproxy prototype; production suitability unverified).
+- ChaosEater (canonical maintained source/reproducibility unresolved).
+- MCP-Injector (arXiv 2610.32555; 1,350-cell experiment; reported 60% degradation under a particular permanent-heavy fault model, not universal threshold).
+- Swarmbreaker (PyPI 0.1.0; load/chaos analysis with confidence-labelled knee points, not model-quality testing).
+- ChaosBull (MIT MCP/Playwright browser/network fault tool).
+- Resilience Lab (exact source/release unresolved).
+- llmosafe (MIT Rust runtime guardrails; project-specific classifier/OOV gauges on 0–65,535 scale).
+- ENTRO-DASA (Zenodo 2026 research framework).
+- Agent SRE Governance (draft specification, not industry standard).
+- RAFAEL (canonical source and reproducible implementation unresolved).
+- SCPN Phase Orchestrator (AGPL-3.0-or-later, 36 domain packs; review-only proposals distinguishable from actuation).
+
+### Portable public implementation
+
+The UNIVERSALIS Ecosystem branch contains:
+- DISORDER_PREVENTION_ARCHITECTURE.md and DISORDER_PREVENTION_VALIDATION.md.
+- schemas/disorder-prevention/disorder-prevention-contracts.v1.schema.json.
+- examples/disorder-prevention/disorder-prevention-fixtures.v1.json.
+- .github/scripts/disorder_prevention_contract.py.
+
+Six public record families cover taxonomy profile, disorder event, bounded experiment, stability receipt, containment attestation and resilience index. Each public record sets `authority_effect: none`; the synthetic containment fixture has no verified signature. The schema allows only synthetic, isolated-test and staging experiment contexts.
+
+The validator defines 15 negative semantic scenarios. It was not executed during repository integration; no test pass is claimed. No C2O-only authorization file, private sovereign platform, policy, key, identity, permit, baseline or operational trace is present in the public implementation.
+
+### Primary source qualifications
+
+- agentic-chaos-security v1: https://github.com/RicoKomenda/agentic-chaos
+- pytest-agent-chaos: https://pypi.org/project/pytest-agent-chaos/
+- chaos-bringer: https://pypi.org/project/chaos-bringer/
+- Flakestorm: https://github.com/flakestorm/flakestorm
+- Chaos Monkey Agent: https://github.com/arec1b0/the_chaos_monkey_agent
+- MCP-Injector: https://arxiv.org/abs/2610.32555
+- Swarmbreaker: https://pypi.org/project/swarmbreaker/
+- ChaosBull: https://github.com/Omkar2240/chaosbull-mcp
+- llmosafe: https://github.com/moeshawky/llmosafe
+- ENTRO-DASA: https://zenodo.org/records/20353988
+- Agent SRE draft: https://github.com/microsoft/agent-governance-toolkit
+- SCPN Phase Orchestrator: https://github.com/anulum/scpn-phase-orchestrator
+- NVIDIA OpenShell security practices: https://github.com/NVIDIA/OpenShell/blob/main/docs/security/best-practices.mdx
+- NVIDIA Sentry: https://www.nvidia.com/en-us/networking/products/software/sentry/
