@@ -862,3 +862,7 @@ Eight record families define simulation identity/model/environment/solver/geomet
 - No candidate package was installed, no MCP server connected, no physics/FEM solver run, no empirical reference dataset used and no world-model external validation completed. Local results prove contract and fixture semantics only—not simulator accuracy, scientific validity, production replay or interoperability.
 - Governing distinction: an executable or replayable model can still be wrong about the external world. External-world validity requires independent observed/measured reference data, holdout separation, uncertainty and a bounded domain. MCP, hashes, signatures and replay are not substitutes for that validation.
 - No Actions workflow was added or dispatched for this inventory.
+
+
+### Source-identity and compatibility caveat
+The owner-supplied CAEL `SimulationContract.ts` / `CAELTrace.ts` geometry-hash and replay primitives were not pinned to an authoritative canonical upstream repository and release in this review. The implemented v1 JSON Schema is therefore a newly authored, language-neutral portable contract with analogous digest/provenance/replay semantics; it is not asserted to be wire-compatible with CAEL or to contain CAEL code. Likewise, the portable `agent_decision` record is a proposed generic interchange record, not a verified drop-in AgoraSim decision-object schema. Exact AgoraSim source/API compatibility remains unverified.
