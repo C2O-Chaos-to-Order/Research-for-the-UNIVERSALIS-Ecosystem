@@ -532,3 +532,54 @@ The public register contains only public candidate identities, synthetic fixture
 ### Limitations
 
 No third-party candidate is installed or adopted by inclusion in this inventory. No real project or artifact was built, signed, published or deployed. The CI suite validates synthetic contracts and a disposable test signature only; it does not establish product safety, local-only behavior, license compatibility, real-world interoperability, reproducible builds or XR/device conformance. Exact upstream, release, licensing, network-ejection and dependency review remains required before adoption.
+
+
+## 15. Fifteenth source — Divergence Detection, Attribution and Reconciliation (public UNIVERSALIS scope)
+
+**Date:** 2026-11-12  
+**Domains:** behavioral/trajectory; configuration/infrastructure; schema/data; policy; semantic/ontological; identity/federation; embedding/RAG; resolution/reconciliation.
+
+### Open / public candidate inventory
+
+- **Behavioral/trajectory:** TraceFork; Praxen; AlignmentCheck (LlamaFirewall); driftbase; SEISMOGRAPH; agentdrift; Shadow; Hodoscope; Arbiter; Agent Behavioral Contracts (ABC); AEBA.
+- **Configuration/infrastructure:** terraship; DriftSentry; tfdrift; cloudrift; stackdrift; driftmgr.
+- **Schema/data:** Flyway Community Drift Check; sqldrift; saropa_drift_advisor; gcfm.
+- **Policy:** Risk Cognizance; PolicyIQ; Semantic Consensus Framework (SCF).
+- **Semantic/ontological:** OntoLDiff; owlcompare; open-ontologies alignment; Ontology Development Tracker (OnDeT).
+- **Identity/federation:** sm-divergence; federated-learning disagreement resolution.
+- **Embedding/RAG:** ragdrift; embspec; embspec-mcp.
+- **Resolution/reconciliation:** Graph Merge; ConcordAI; Automated Codebase Reconciliation.
+
+### Source verification corrections and unresolved claims
+
+- TraceFork's 45.5 ms median and 0.910 F1 are paper results on a specific EMNLP 2026 evaluation set, not general performance guarantees.
+- Praxen is read-only Worker Remit verification, not a full runtime enforcement plane.
+- AlignmentCheck is a probabilistic few-shot/semantic LlamaFirewall guardrail, not deterministic proof.
+- driftbase currently advertises EU AI Act Articles 9 and 12, not Article 72. Its own score reference says the 0–1 score measures behavioral difference, not quality. Confirm egress by selected deployment mode.
+- SEISMOGRAPH's 38-day lead is a seeded synthetic backtest. Its current public network has one observer and requires quorum three.
+- AEBA and the sm-divergence-related registry corroboration document are individual Internet-Drafts, not adopted RFCs. AEBA weights are implementation-defined.
+- The exact upstream/version/license/deployment remains unresolved for DriftSentry, Shadow, agentdrift, sqldrift, gcfm, SCF, OntoLDiff, OnDeT, federated-learning disagreement resolution, ConcordAI and Automated Codebase Reconciliation.
+- tfdrift has similarly named projects. cloudrift is AWS-focused in its current README; stackdrift is CloudFormation-specific; verify driftmgr provider support in an isolated account.
+- Flyway distinguishes migration-history validation and live schema drift. saropa_drift_advisor is a debug-focused Dart/Flutter SQLite/Drift inspector, not a general data-drift service.
+- PolicyIQ's 91.6% precision is a target reported on a controlled synthetic corpus, not independently validated production accuracy. Risk Cognizance product support claims are not certification.
+- owlcompare v0.1.0 currently supports syntactic/structural diff; inferential/impact layers are planned. open-ontologies is MIT Rust/Oxigraph/SQLite/Lean tooling. Exact OntoLDiff/OnDeT logic and proof profiles need pinning.
+- sm-divergence draft-02 maps to versions 0.12.0 and 0.7.0 for sm-divergence/sm-resolver respectively. A single valid claim or an error is not corroborated agreement.
+- ragdrift is a Rust/Python crate; embspec's retrieval-recovery number is a source-attributed result, not a general guarantee.
+- Graph Merge documentation describes a planned merge set and surfaced conflicts; reviewed application is distinct from plan generation.
+
+### Shared public contract files implemented
+
+- DIVERGENCE_ARCHITECTURE.md
+- DIVERGENCE_VALIDATION.md
+- schemas/divergence/divergence-contracts.v1.schema.json
+- examples/divergence/divergence-fixtures.v1.json
+- .github/scripts/divergence_contract.py
+- .github/workflows/divergence-contract.yml
+
+Three record types: behavioral-axis contract; domain-specific divergence report; signed in-toto/DSSE attribution receipt. Nine proposed behavioral axes, eight domain reports, one Ed25519-signed synthetic receipt and twelve negative tests are included. Identity agreement requires at least two usable present/absent observations from distinct sources and at least one comparable shared field; error observations and differing digests cannot be treated as agreement.
+
+The public branch contains only synthetic opaque references and portable shared contracts. It contains no C2O private baselines, traces, incidents, production keys, permits, credentials, authority tokens, private policy clauses or operational data.
+
+### Limitations
+
+No third-party tool is installed or adopted. No real agent trace, cloud account, database, policy corpus, ontology, identity registry, embedding store or client update is inspected. No remediation or production action is performed. CI validates only synthetic contract semantics and a disposable test signature; it does not establish causality, legal compliance, production key custody or product safety.
