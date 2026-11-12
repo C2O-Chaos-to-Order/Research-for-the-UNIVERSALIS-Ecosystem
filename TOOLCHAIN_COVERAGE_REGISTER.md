@@ -484,3 +484,51 @@ The shared schema, six synthetic records, semantic validator, eleven negative ca
 - UNIVERSALIS research register verification: [passed — run 43276123720](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/actions/runs/43276123720).
 
 These CI runs validate contracts, synthetic fixtures and repository artifacts only. They do not establish a live website scan, CMS integration, production publication or deployment.
+
+
+## 14. Fourteenth source — Full-Spectrum Development Suite (public UNIVERSALIS scope)
+
+**Date:** 2026-11-12  
+**Domains:** game development; music/audio; 3D graphics/modeling/CAD; video; VR/AR; IDE/version control; build/CI/CD; project management; documentation.
+
+### Open / public candidate inventory
+
+- **Game development:** NodeTool; Summer Engine; Blazium Engine; o3de-mcp; GladeKit MCP; Limina; Omniweft; OpenEngine; MORX GMS2 MCP; unikit-ai; GameForge MCP.
+- **Music/audio:** ReaperMCP; FL Studio MCP Server; ATRI_AGENT; Audio Plugin Coder; ConjureDSP; SongForge-MCP; songgeneration-mcp; Soundbox; ai-music-mcp; yovoice.
+- **3D/CAD:** Blender MCP Bridge; VibeInc AI Art Team; Vibe CAD; ai-cad; cadx; Presidium Shape Studio; 3D Gen Studio.
+- **Video:** Kinocut; Framewright; OpenEdit.
+- **VR/AR:** Immersive Web SDK (IWSDK); XR Blocks; Three-Live; HERA; scenekit-xr.
+- **IDE/VCS/core engineering:** Eclipse Theia; Qt Creator 20; ThinkRail; Cline; joLink Runtime; Libra; AVCS; GitAgent; LogNexus MCP; TeamAI; RepoKeeper.
+- **Build/CI/CD:** eforge; RepoLaunch; Genesis; agent-project-builder; Eclipse Atesor; shipmill; Hive; CiLydian; CIDRA; KiCI.
+- **Project management/documentation:** Agentic Project Management (APM); open-workmcp; Paca; OpenMac; CodiLay; Fidus; CodeWiki 2.0; OpenWiki; docsector-reader; devdocs-forge-agent.
+
+### Source verification corrections and unresolved claims
+
+- o3de-mcp's current README describes 96 tools/seven categories, not 67/five; GladeKit's current README describes Unity 275 and Godot 115, not 235/53.
+- FL Studio MCP's current README describes 164 tools, not 29.
+- Blender MCP Bridge counts are internally inconsistent (93/98/106); Soundbox's README conflicts between 21 and 24 tool counts.
+- Summer Engine separates local engine operation from hosted cloud MCP services; only the former is a local runtime surface.
+- Limina describes permissioned skills and a hash-chained JSONL world log; replay compatibility needs independent testing.
+- Audio Plugin Coder's JUCE 9 workflow does not make every plugin format universally enabled; model/asset rights remain separate.
+- OpenEdit's VEED renderer is a separate closed-source component and optional transcription can involve upload. Kinocut Video Receipts do not alone establish cryptographic signatures or publication approval.
+- XR Blocks and Three-Live are explicitly not presented as officially supported Google products; Gemini integration can involve provider-side data flow.
+- RepoLaunch's 78% number is a paper-specific benchmark. Eclipse Atesor is in incubation and current RISC-V build documentation uses QEMU/binfmt emulation; native hardware is future/in progress.
+- KiCI documents an operator-controlled runner/orchestrator while retaining a hosted relay/dashboard, so it is hybrid rather than air-gapped.
+- Exact source, license, current release or capability verification is unresolved for several owner-supplied names, including Omniweft, OpenEngine, MORX GMS2 MCP, unikit-ai, GameForge MCP, ReaperMCP, ATRI_AGENT, ConjureDSP, songgeneration-mcp, ai-music-mcp, CAD/3D candidates, Framewright, HERA, scenekit-xr, Libra, AVCS, GitAgent, LogNexus MCP, Genesis, agent-project-builder, shipmill, Hive, CiLydian, CIDRA, open-workmcp, Paca, OpenMac, CodeWiki 2.0, OpenWiki, docsector-reader, and devdocs-forge-agent. These remain proposed candidates.
+
+### Shared public contract files implemented
+
+- DEVELOPMENT_SUITE_ARCHITECTURE.md
+- DEVELOPMENT_SUITE_VALIDATION.md
+- schemas/development-suite/development-suite-contracts.v1.schema.json
+- examples/development-suite/development-suite-fixtures.v1.json
+- .github/scripts/development_suite_contract.py
+- .github/workflows/development-suite-contract.yml
+
+The schema defines project-format contracts, agent-capability manifests, and signed in-toto/SLSA provenance receipts. Fixtures include nine domain examples, three capability manifests (local and hybrid cases), and one DSSE/Ed25519 signed receipt. Ten negative tests cover schema and semantic failure cases, including capability approval and provenance-signature tampering. The public fixture key is disposable and is not a production trust root.
+
+The public register contains only public candidate identities, synthetic fixture records and public format/specification references. It contains no C2O-only authorization schemas, permits, credentials, keys, policy rules, operational data or private repository references.
+
+### Limitations
+
+No third-party candidate is installed or adopted by inclusion in this inventory. No real project or artifact was built, signed, published or deployed. The CI suite validates synthetic contracts and a disposable test signature only; it does not establish product safety, local-only behavior, license compatibility, real-world interoperability, reproducible builds or XR/device conformance. Exact upstream, release, licensing, network-ejection and dependency review remains required before adoption.
