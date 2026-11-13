@@ -96,3 +96,41 @@ jobs:
         env:
           UNIVERSALIS_TOOLS: ${{ github.workspace }}/The-UNIVERSALIS-Ecosystem/scaffold/tools
         run: python research-packages/UNI-RP-001/assurance/e2e_walkthrough.py
+
+  uni-rp-001-s:
+    name: UNI-RP-001-S corrected envelope, tests, and reproducibility
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.11"
+
+      - name: Verify package SHA-256 manifest
+        run: |
+          python - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          package = Path('research-packages/UNI-RP-001-S')
+          manifest = json.loads((package / 'metadata/sha256_manifest.json').read_text(encoding='utf-8'))
+          failures = []
+          for relative, expected in manifest.items():
+              path = package / relative
+              actual = hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+              if actual != expected:
+                  failures.append(f'{relative}: expected {expected}, got {actual}')
+          if failures:
+              raise SystemExit('SHA-256 manifest verification failed:\n' + '\n'.join(failures))
+          print(f'PASS: {len(manifest)} package files match the SHA-256 manifest')
+          PY
+
+      - name: Run UNI-RP-001-S assurance tests
+        run: python -m unittest discover -s research-packages/UNI-RP-001-S/assurance -p 'test_*.py' -v
+
+      - name: Re-execute all UNI-RP-001-S cases against committed records
+        run: python research-packages/UNI-RP-001-S/assurance/reexecute_all.py --json

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "SIM-001",
+    "command": [
+      "/usr/bin/python3",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/simulations/run_one.py",
+      "--case",
+      "SIM-001",
+      "--output",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/results/SIM-001.json",
+      "--replace-existing"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"id\": \"SIM-001\", \"outcome\": \"PASS\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "SIM-002",
+    "command": [
+      "/usr/bin/python3",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/simulations/run_one.py",
+      "--case",
+      "SIM-002",
+      "--output",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/results/SIM-002.json",
+      "--replace-existing"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"id\": \"SIM-002\", \"outcome\": \"PASS\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "SIM-003",
+    "command": [
+      "/usr/bin/python3",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/simulations/run_one.py",
+      "--case",
+      "SIM-003",
+      "--output",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/results/SIM-003.json",
+      "--replace-existing"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"id\": \"SIM-003\", \"outcome\": \"PASS\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "SIM-004",
+    "command": [
+      "/usr/bin/python3",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/simulations/run_one.py",
+      "--case",
+      "SIM-004",
+      "--output",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/results/SIM-004.json",
+      "--replace-existing"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"id\": \"SIM-004\", \"outcome\": \"PASS\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  },
+  {
+    "id": "SIM-005",
+    "command": [
+      "/usr/bin/python3",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/simulations/run_one.py",
+      "--case",
+      "SIM-005",
+      "--output",
+      "/workspace/work/w1/Research-UNI-s/research-packages/UNI-RP-001-S/results/SIM-005.json",
+      "--replace-existing"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"id\": \"SIM-005\", \"outcome\": \"PASS\", \"execution_status\": \"COMPLETED\"}\n",
+    "stderr": ""
+  }
+]
