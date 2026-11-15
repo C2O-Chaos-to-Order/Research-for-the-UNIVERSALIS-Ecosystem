@@ -110,3 +110,13 @@ Added UNI-DP-09 — Good / Greater Good Duality: Open Governance Patterns and Ev
 The proposed governance contract distinguishes non-waivable floors from bounded consequence evaluation. Human adjudication selects among compliant actions, requests evidence, holds, refuses, contains or escalates; it cannot waive a floor explicitly designated non-waivable. If no compliant option exists, no agent or ad hoc permit invents an exception. The Kantian “not merely as a means” formulation is carefully distinguished from a blanket prohibition on cooperation. MORU and the Greatest Good Benchmark are treated as model-evaluation instruments, not proof of moral truth or universal consensus. ARTICLE 11 AI Constitution, magi-core, DilemmaEngine and Ethics Review Agent remain unverified because exact canonical sources/versions were not pinned.
 
 No benchmark execution, tool test, implementation, legal review, ethical certification, owner acceptance or release was performed. Public materials contain only public research, candidate tools and portable non-sensitive contracts; no private C2O operational detail is included.
+
+## Meta-Research architecture layer — UNI-DP-10 — 2026-11-15
+
+Added UNI-DP-10 — Meta-Research Architecture: Evidence Graphs, Claim Verification and Reproducible Synthesis v0.1.0 and SOURCE_QUALIFICATION_ADDENDUM_META_RESEARCH_v0.1.0.
+
+The public architecture defines Discover, Assemble, Verify, Synthesize and Audit, with Persist as a cross-cutting substrate. It records source capture, evidence graphs, research ledgers, source-aware claim verification, systematic-review and meta-analysis controls, and offline Research Artifact Bundle verification. It distinguishes factual claim support from source attribution, PRISMA reporting from review conduct quality, and cryptographic integrity from scientific truth.
+
+Public source qualification pins Argus, Lyra, DuMate-DeepResearch, DAGent, Xcientist, XScientist, ProvenanceGuard, Janus, PARIS, AgentSLR, MedSR-Copilot, PRISMA 2020, wiki-vault, ZotSeek and the SPOTTER-AI project page, with stated limitations. Dossier, agent-evidence-verify, vivory, meta-pipe, LUMEN, nexus-scholar, Scholar Agent, AAR, YAML metaprompt orchestration and MACP remain unverified until exact canonical sources and versions are pinned.
+
+No tool was installed or executed; no benchmark, systematic review, meta-analysis, offline audit, implementation, security test, legal review, or independent certification was performed. Public files contain only public research candidates and portable contracts; no private C2O control configuration, credentials, keys or operational data is included.
