@@ -24,3 +24,7 @@ Added [UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates](DOMAIN_PACKS/
 ## Good / Greater Good Duality — 2026-11-15
 
 Added [UNI-DP-09 — Good / Greater Good Duality](DOMAIN_PACKS/UNI-DP-09_Good_Greater_Good_Duality_Open_Governance_Patterns_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_GOOD_GREATER_GOOD_v0.1.0.md). The public model separates normative floors, consequence analysis and human adjudication; it does not claim universal moral consensus or authorize policy overrides.
+
+## Meta-Research Architecture — 2026-11-15
+
+Added [UNI-DP-10 — Meta-Research Architecture](DOMAIN_PACKS/UNI-DP-10_Meta_Research_Architecture_Evidence_Graphs_Verification_and_Synthesis_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_META_RESEARCH_v0.1.0.md). The public package defines source-to-claim provenance, evidence graphs, research ledgers, systematic synthesis and offline audit without private C2O dependencies.
