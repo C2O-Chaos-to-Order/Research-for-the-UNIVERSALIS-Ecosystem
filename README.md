@@ -86,3 +86,10 @@ The charter, Reports 13–15, requirements register, and reciprocal stewardship 
 Draft research packages for Elemental Alchemy, Quantum Order/Quantum Chaos, Agent Essence/Quintessence, and authorized Dark Alchemy have been opened for review in [PR #13](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/pull/13).
 
 The packages are in `RESEARCH/DOMAIN_PACKS/` and include a source qualification register and continuity record. They remain research proposals, not adopted product architecture or implementation commitments. Public source boundary rules remain in force; no private C2O operational source, credentials, target scopes, or authority services are included.
+
+
+### Periodic Table and Materials Property Layer
+
+The public research package now includes [UNI-DP-07 — Periodic Table and Materials Property Layer](RESEARCH/DOMAIN_PACKS/UNI-DP-07_Periodic_Table_and_Materials_Property_Layer_v0.1.0.md) and its [source qualification addendum](RESEARCH/DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_PERIODIC_MATERIALS_v0.1.0.md), as part of draft [PR #13](https://github.com/C2O-Chaos-to-Order/Research-for-the-UNIVERSALIS-Ecosystem/pull/13).
+
+This is an empirical material-property layer beneath the functional Elemental Alchemy hierarchy. Chemical classifications and property data are distinguished from proposed symbolic affinities; candidate tool claims remain subject to source/version and independent review.
