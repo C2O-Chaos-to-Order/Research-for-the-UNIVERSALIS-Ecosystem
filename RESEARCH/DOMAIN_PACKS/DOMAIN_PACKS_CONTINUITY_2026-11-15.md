@@ -95,3 +95,10 @@ Re-fetched UNI-DP-07, the periodic-material source qualification addendum, packa
 A scan of every file in the public PR #13 changed-file list found zero occurrences of the private C2O control identifiers checked in the review. The public continuity record contains only a general boundary statement and does not enumerate private identifiers. The material layer includes public chemistry references, publicly documented tools and portable data/evidence contracts only.
 
 PR #13 remains open, draft, unmerged and mergeable. The branch has no divergence from main. No chemistry experiment, materials synthesis, DFT computation, phase diagram, property measurement, tool test, legal review or independent security audit was performed.
+## Epistemic coordinate layer — UNI-DP-08 — 2026-11-15
+
+Added UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates v0.1.0 and SOURCE_QUALIFICATION_ADDENDUM_EPISTEMIC_COORDINATES_v0.1.0.
+
+The coordinate K = <D,E,S> separates domain profile, epistemic warrant/assessment and elemental affinity. Biglan is recorded as a contextual disciplinary framework with revisable profiles; the 2026 re-evaluation cautions against rigid binary classifications. Eigenius's declared/observed/derived/verified pattern is treated as an implementation precedent, with formal verification limited to proof under explicit assumptions. Library of Congress authority metadata is not treated as validation of claim truth. AFFIRMATIVE > 0.8 is not adopted as a universal threshold. Exact sources for the described Knowledge Graph MCP, NOUZ, LC Vocabularies MCP adapter and arifOS ZEN coordinate remain unpinned and are labelled unverified.
+
+No knowledge graph deployment, source-code audit, formal proof, tool test, owner acceptance, legal review or implementation was performed.
