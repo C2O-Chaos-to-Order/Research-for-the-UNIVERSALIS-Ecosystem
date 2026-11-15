@@ -17,3 +17,6 @@ These are public research proposals and candidate inventories, not adopted produ
 The [Complete Elemental Matrix and Four-Operation Order Architecture](DOMAIN_PACKS/UNI-DP-05_Complete_Elemental_Matrix_and_Four_Operation_Order_Architecture_v0.1.0.md) and [Four-Operation Source Qualification Addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_FOUR_ORDER_OPERATIONS_v0.1.0.md) are also included in the open research package.
 
 Added the [Periodic Table and Materials Property Layer](DOMAIN_PACKS/UNI-DP-07_Periodic_Table_and_Materials_Property_Layer_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_PERIODIC_MATERIALS_v0.1.0.md) to the public domain research package.
+## Knowledge-Subject Epistemic Coordinates — 2026-11-15
+
+Added [UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates](DOMAIN_PACKS/UNI-DP-08_Knowledge_Subject_Epistemic_Coordinate_Architecture_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_EPISTEMIC_COORDINATES_v0.1.0.md). The material separates domain taxonomy, epistemic warrant/disposition and elemental affinity; it does not treat Biglan labels, confidence scores, subject authority or elemental balance as interchangeable.
