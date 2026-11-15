@@ -56,3 +56,9 @@ The proposed K = <D,E,S> coordinate separates domain classification, epistemic w
 Added [UNI-DP-09 — Good / Greater Good Duality: Open Governance Patterns and Evidence Contracts](UNI-DP-09_Good_Greater_Good_Duality_Open_Governance_Patterns_v0.1.0.md) and its [source qualification addendum](SOURCE_QUALIFICATION_ADDENDUM_GOOD_GREATER_GOOD_v0.1.0.md).
 
 The proposed model separates a non-waivable Good Floor, bounded consequence comparison among compliant options, and human adjudication. Human review cannot waive a floor declared non-waivable. MORU and the Greatest Good Benchmark are evaluation tools, not normative authorities or proof of universal moral consensus. Unpinned ARTICLE 11 AI Constitution, magi-core, DilemmaEngine and Ethics Review Agent candidates remain unverified.
+
+## Meta-Research Architecture — 2026-11-15
+
+Added [UNI-DP-10 — Meta-Research Architecture: Evidence Graphs, Claim Verification and Reproducible Synthesis](UNI-DP-10_Meta_Research_Architecture_Evidence_Graphs_Verification_and_Synthesis_v0.1.0.md) and its [source qualification addendum](SOURCE_QUALIFICATION_ADDENDUM_META_RESEARCH_v0.1.0.md).
+
+The pack defines Discover, Assemble, Verify, Synthesize and Audit, with Persist as a cross-cutting substrate. It provides public evidence-graph, Research Ledger, claim-verification, systematic-review, Research Artifact Bundle and offline-audit contracts. Tool metrics are scope-specific and source-reported; unpinned candidates remain unverified. PRISMA is treated as a reporting guideline, not a substitute for review-conduct or risk-of-bias methods.
