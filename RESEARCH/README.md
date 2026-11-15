@@ -15,3 +15,5 @@ The following draft packages organize research inputs for the UNIVERSALIS open e
 These are public research proposals and candidate inventories, not adopted product architecture or implementation commitments. Private C2O material is excluded. Tool descriptions, performance claims, licenses, and security properties require source pinning and independent validation.
 
 The [Complete Elemental Matrix and Four-Operation Order Architecture](DOMAIN_PACKS/UNI-DP-05_Complete_Elemental_Matrix_and_Four_Operation_Order_Architecture_v0.1.0.md) and [Four-Operation Source Qualification Addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_FOUR_ORDER_OPERATIONS_v0.1.0.md) are also included in the open research package.
+
+Added the [Periodic Table and Materials Property Layer](DOMAIN_PACKS/UNI-DP-07_Periodic_Table_and_Materials_Property_Layer_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_PERIODIC_MATERIALS_v0.1.0.md) to the public domain research package.
