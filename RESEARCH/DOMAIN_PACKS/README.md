@@ -29,3 +29,12 @@ These domain packs are research inputs. Promotion to canonical ontology content 
 See [SOURCE_QUALIFICATION_REGISTER_v0.1.0.md](SOURCE_QUALIFICATION_REGISTER_v0.1.0.md) for public source locators, standards publication status, candidates awaiting exact version pins, and claims requiring independent reproduction.
 
 [Continuity record](DOMAIN_PACKS_CONTINUITY_2026-11-15.md) — documentary intake, source boundaries, verification, and remaining review.
+
+
+## Owner-supplied revision — 2026-11-15
+
+Added [UNI-DP-05 — Complete Elemental Matrix and Four-Operation Order Architecture](UNI-DP-05_Complete_Elemental_Matrix_and_Four_Operation_Order_Architecture_v0.1.0.md), recording the revised Aether / Chaos / Void / Logos / Eros quaternary names, Unity as the Quintessence element name, Essence as an entity-level concept, and the four operations Prevent Chaos / Find Order / Presume Order / Resume Order.
+
+Added [SOURCE_QUALIFICATION_ADDENDUM_FOUR_ORDER_OPERATIONS](SOURCE_QUALIFICATION_ADDENDUM_FOUR_ORDER_OPERATIONS_v0.1.0.md) with current public source locators and claim limitations.
+
+The revised proposal preserves unresolved Nature, Light, Air + Water, and quaternary name-to-composition assignments for owner disposition.
