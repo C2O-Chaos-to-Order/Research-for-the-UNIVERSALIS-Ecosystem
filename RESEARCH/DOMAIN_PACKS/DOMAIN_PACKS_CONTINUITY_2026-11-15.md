@@ -102,3 +102,11 @@ Added UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates v0.1.0 and SOUR
 The coordinate K = <D,E,S> separates domain profile, epistemic warrant/assessment and elemental affinity. Biglan is recorded as a contextual disciplinary framework with revisable profiles; the 2026 re-evaluation cautions against rigid binary classifications. Eigenius's declared/observed/derived/verified pattern is treated as an implementation precedent, with formal verification limited to proof under explicit assumptions. Library of Congress authority metadata is not treated as validation of claim truth. AFFIRMATIVE > 0.8 is not adopted as a universal threshold. Exact sources for the described Knowledge Graph MCP, NOUZ, LC Vocabularies MCP adapter and arifOS ZEN coordinate remain unpinned and are labelled unverified.
 
 No knowledge graph deployment, source-code audit, formal proof, tool test, owner acceptance, legal review or implementation was performed.
+
+## Good / Greater Good duality layer — UNI-DP-09 — 2026-11-15
+
+Added UNI-DP-09 — Good / Greater Good Duality: Open Governance Patterns and Evidence Contracts v0.1.0 and SOURCE_QUALIFICATION_ADDENDUM_GOOD_GREATER_GOOD_v0.1.0.
+
+The proposed governance contract distinguishes non-waivable floors from bounded consequence evaluation. Human adjudication selects among compliant actions, requests evidence, holds, refuses, contains or escalates; it cannot waive a floor explicitly designated non-waivable. If no compliant option exists, no agent or ad hoc permit invents an exception. The Kantian “not merely as a means” formulation is carefully distinguished from a blanket prohibition on cooperation. MORU and the Greatest Good Benchmark are treated as model-evaluation instruments, not proof of moral truth or universal consensus. ARTICLE 11 AI Constitution, magi-core, DilemmaEngine and Ethics Review Agent remain unverified because exact canonical sources/versions were not pinned.
+
+No benchmark execution, tool test, implementation, legal review, ethical certification, owner acceptance or release was performed. Public materials contain only public research, candidate tools and portable non-sensitive contracts; no private C2O operational detail is included.
