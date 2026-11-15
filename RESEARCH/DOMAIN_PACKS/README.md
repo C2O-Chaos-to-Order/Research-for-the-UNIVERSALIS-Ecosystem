@@ -50,3 +50,9 @@ The material layer grounds claims about actual elements, compounds, structures, 
 Added [UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates](UNI-DP-08_Knowledge_Subject_Epistemic_Coordinate_Architecture_v0.1.0.md) and the [Epistemic Coordinate Source Qualification Addendum](SOURCE_QUALIFICATION_ADDENDUM_EPISTEMIC_COORDINATES_v0.1.0.md).
 
 The proposed K = <D,E,S> coordinate separates domain classification, epistemic warrant/assessment, and multi-valued elemental affinity. Biglan is contextual and revisable, not a universal fixed taxonomy. Confidence is method-specific; AFFIRMATIVE > 0.8 is not adopted as a universal threshold. Unpinned Knowledge Graph MCP, NOUZ, LC Vocabularies MCP and arifOS ZEN claims remain unverified candidates.
+
+## Good / Greater Good Duality — 2026-11-15
+
+Added [UNI-DP-09 — Good / Greater Good Duality: Open Governance Patterns and Evidence Contracts](UNI-DP-09_Good_Greater_Good_Duality_Open_Governance_Patterns_v0.1.0.md) and its [source qualification addendum](SOURCE_QUALIFICATION_ADDENDUM_GOOD_GREATER_GOOD_v0.1.0.md).
+
+The proposed model separates a non-waivable Good Floor, bounded consequence comparison among compliant options, and human adjudication. Human review cannot waive a floor declared non-waivable. MORU and the Greatest Good Benchmark are evaluation tools, not normative authorities or proof of universal moral consensus. Unpinned ARTICLE 11 AI Constitution, magi-core, DilemmaEngine and Ethics Review Agent candidates remain unverified.
