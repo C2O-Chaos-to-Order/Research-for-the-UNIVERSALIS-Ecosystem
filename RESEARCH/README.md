@@ -20,3 +20,7 @@ Added the [Periodic Table and Materials Property Layer](DOMAIN_PACKS/UNI-DP-07_P
 ## Knowledge-Subject Epistemic Coordinates — 2026-11-15
 
 Added [UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates](DOMAIN_PACKS/UNI-DP-08_Knowledge_Subject_Epistemic_Coordinate_Architecture_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_EPISTEMIC_COORDINATES_v0.1.0.md). The material separates domain taxonomy, epistemic warrant/disposition and elemental affinity; it does not treat Biglan labels, confidence scores, subject authority or elemental balance as interchangeable.
+
+## Good / Greater Good Duality — 2026-11-15
+
+Added [UNI-DP-09 — Good / Greater Good Duality](DOMAIN_PACKS/UNI-DP-09_Good_Greater_Good_Duality_Open_Governance_Patterns_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_GOOD_GREATER_GOOD_v0.1.0.md). The public model separates normative floors, consequence analysis and human adjudication; it does not claim universal moral consensus or authorize policy overrides.
