@@ -27,3 +27,5 @@ These domain packs are research inputs. Promotion to canonical ontology content 
 ## Source qualification
 
 See [SOURCE_QUALIFICATION_REGISTER_v0.1.0.md](SOURCE_QUALIFICATION_REGISTER_v0.1.0.md) for public source locators, standards publication status, candidates awaiting exact version pins, and claims requiring independent reproduction.
+
+[Continuity record](DOMAIN_PACKS_CONTINUITY_2026-11-15.md) — documentary intake, source boundaries, verification, and remaining review.
