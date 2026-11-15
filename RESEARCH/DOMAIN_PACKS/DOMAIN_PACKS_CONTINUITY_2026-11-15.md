@@ -66,3 +66,12 @@ The revision records the latest owner-supplied hierarchy (including Unity and en
 Source qualification records the alpha status of Ballast and Sponsio, OpenShell deployment-dependent controls, CP-WBFT paper-specific results, Quipu preprint status, and the Internet-Draft status of Progressive Trust, ATTP and NBTP. Several recovery and diagnostic candidates remain unpinned.
 
 No implementation, product adoption, tool test, fault injection, quantum experiment, penetration test, legal review, owner acceptance or release was performed.
+
+
+## Verification addendum — EA-02 / UNI-DP-05 — 2026-11-15
+
+Re-fetched the public UNI-DP-05 and Four-Operation Source Qualification Addendum from the exact UNIVERSALIS working branch. Both expected end markers were present. The domain-pack README and RESEARCH index link UNI-DP-05 and the source addendum. A bounded scan of the public package found none of the named private C2O controls/services (CueCrux, C2Cognitive, JADE Decision Governance, Sovereign Agent Fleet, NEXUS A2A, Pythia, Paperclip, cMCP).
+
+The paired private C2O branch includes EA-02 and SR-02; no private C2O source, credential, target scope or authority configuration is included in this public package. PR #13 remains a separate open draft review and is not merged. No product implementation, tool execution, fault injection, chaos experiment, recovery exercise, quantum experiment, QPU job, penetration test, legal review or independent security audit was performed.
+
+Open assignments and source/claim qualifications remain as described in UNI-DP-05. Presume Order is a bounded trust/confidence state, not an authorization source.
