@@ -75,3 +75,14 @@ Re-fetched the public UNI-DP-05 and Four-Operation Source Qualification Addendum
 The paired private C2O branch includes EA-02 and SR-02; no private C2O source, credential, target scope or authority configuration is included in this public package. PR #13 remains a separate open draft review and is not merged. No product implementation, tool execution, fault injection, chaos experiment, recovery exercise, quantum experiment, QPU job, penetration test, legal review or independent security audit was performed.
 
 Open assignments and source/claim qualifications remain as described in UNI-DP-05. Presume Order is a bounded trust/confidence state, not an authorization source.
+
+
+## Material-property layer — UNI-DP-07 — 2026-11-15
+
+Added UNI-DP-07 — Periodic Table and Materials Property Layer v0.1.0 and SOURCE_QUALIFICATION_ADDENDUM_PERIODIC_MATERIALS_v0.1.0.
+
+This layer defines open periodic/material property research under the functional Elemental Alchemy hierarchy. It records chemistry fundamentals, proposed family affinities as an interpretive overlay, material/property evidence contracts, open tool candidates, and source/version qualification.
+
+Scientific corrections and boundaries are preserved: p-block includes metals and metalloids as well as nonmetals; halogens/noble gases are families within p-block; noble gases are generally low-reactivity rather than absolutely inert; transition-element classification is more specific than simply “all d-block”; the lanthanide contraction is not a quaternary alchemical combination; chemical stoichiometry does not automatically imply alchemical coupling; and Z identifies an element but does not determine isotopic mass or all material properties.
+
+No chemistry experiment, materials synthesis, DFT calculation, phase diagram, property measurement, tool test, security audit, legal review, owner acceptance or release was performed.
