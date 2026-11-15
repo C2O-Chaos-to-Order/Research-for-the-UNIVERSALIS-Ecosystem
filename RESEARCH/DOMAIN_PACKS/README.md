@@ -23,3 +23,7 @@ This directory contains public-side, independently operable research proposals. 
 - No package implies product implementation, acceptance, certification, or release authorization.
 
 These domain packs are research inputs. Promotion to canonical ontology content or product implementation requires independent review, source/version/license qualification, traceability, and explicit approval.
+
+## Source qualification
+
+See [SOURCE_QUALIFICATION_REGISTER_v0.1.0.md](SOURCE_QUALIFICATION_REGISTER_v0.1.0.md) for public source locators, standards publication status, candidates awaiting exact version pins, and claims requiring independent reproduction.
