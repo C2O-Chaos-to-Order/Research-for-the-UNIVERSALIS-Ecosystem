@@ -45,3 +45,8 @@ The revised proposal preserves unresolved Nature, Light, Air + Water, and quater
 Added [UNI-DP-07 — Periodic Table and Materials Property Layer](UNI-DP-07_Periodic_Table_and_Materials_Property_Layer_v0.1.0.md) and [Periodic Materials Source Qualification Addendum](SOURCE_QUALIFICATION_ADDENDUM_PERIODIC_MATERIALS_v0.1.0.md).
 
 The material layer grounds claims about actual elements, compounds, structures, phases and properties. The mapping from chemical families to alchemical primaries remains an owner-proposed interpretive overlay, not standard chemistry or empirical validation of the symbolic hierarchy.
+## Knowledge-Subject Epistemic Coordinate layer — 2026-11-15
+
+Added [UNI-DP-08 — Knowledge Subjects and Epistemic Coordinates](UNI-DP-08_Knowledge_Subject_Epistemic_Coordinate_Architecture_v0.1.0.md) and the [Epistemic Coordinate Source Qualification Addendum](SOURCE_QUALIFICATION_ADDENDUM_EPISTEMIC_COORDINATES_v0.1.0.md).
+
+The proposed K = <D,E,S> coordinate separates domain classification, epistemic warrant/assessment, and multi-valued elemental affinity. Biglan is contextual and revisable, not a universal fixed taxonomy. Confidence is method-specific; AFFIRMATIVE > 0.8 is not adopted as a universal threshold. Unpinned Knowledge Graph MCP, NOUZ, LC Vocabularies MCP and arifOS ZEN claims remain unverified candidates.
