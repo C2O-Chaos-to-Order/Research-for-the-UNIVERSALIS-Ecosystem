@@ -86,3 +86,12 @@ This layer defines open periodic/material property research under the functional
 Scientific corrections and boundaries are preserved: p-block includes metals and metalloids as well as nonmetals; halogens/noble gases are families within p-block; noble gases are generally low-reactivity rather than absolutely inert; transition-element classification is more specific than simply “all d-block”; the lanthanide contraction is not a quaternary alchemical combination; chemical stoichiometry does not automatically imply alchemical coupling; and Z identifies an element but does not determine isotopic mass or all material properties.
 
 No chemistry experiment, materials synthesis, DFT calculation, phase diagram, property measurement, tool test, security audit, legal review, owner acceptance or release was performed.
+
+
+## Final periodic-material verification — 2026-11-15
+
+Re-fetched UNI-DP-07, the periodic-material source qualification addendum, package README, RESEARCH index, repository README and continuity record from the exact public branch. Both new documents had their expected end markers and the indexes linked them.
+
+A scan of every file in the public PR #13 changed-file list found zero occurrences of the private C2O control identifiers checked in the review. The public continuity record contains only a general boundary statement and does not enumerate private identifiers. The material layer includes public chemistry references, publicly documented tools and portable data/evidence contracts only.
+
+PR #13 remains open, draft, unmerged and mergeable. The branch has no divergence from main. No chemistry experiment, materials synthesis, DFT computation, phase diagram, property measurement, tool test, legal review or independent security audit was performed.
