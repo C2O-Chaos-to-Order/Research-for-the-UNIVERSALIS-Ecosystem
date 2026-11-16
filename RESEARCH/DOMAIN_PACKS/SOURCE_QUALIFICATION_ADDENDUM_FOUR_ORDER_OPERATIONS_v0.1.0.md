@@ -1,7 +1,7 @@
 # Public Source Qualification Addendum — Four-Operation Order Tools
 ## v0.1.0 — 2026-11-15
 
-**Status:** Bounded public source intake; review and independent reproduction pending  
+**Status:** Bounded public source intake; review and independent reproduction pending
 **Purpose:** Qualify the public tool candidates in UNI-DP-05. Project/vendor claims are not treated as independent assurance.
 
 ## 1. Prevent Chaos

@@ -1,8 +1,8 @@
 # UNI-DP-04 — Authorized Dark Alchemy: Open Security Assessment and Safe Emulation Research
 ## Public research proposal v0.1.0
 
-**Status:** Proposed public research package; safety/legal/technical review pending  
-**Scope:** Authorized security assessment, adversary emulation, MCP/agent security, safe emulation, and evidence-driven remediation  
+**Status:** Proposed public research package; safety/legal/technical review pending
+**Scope:** Authorized security assessment, adversary emulation, MCP/agent security, safe emulation, and evidence-driven remediation
 **Execution status:** No scanning, exploitation, emulation, or testing executed by this document
 
 ---

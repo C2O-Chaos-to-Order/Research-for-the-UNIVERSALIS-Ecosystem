@@ -1,8 +1,8 @@
 # Source Qualification Addendum — Epistemic Coordinates
 ## v0.1.0 — UNIVERSALIS public source register
 
-**Status:** Bounded desk review — pending review  
-**Date:** 2026-11-15  
+**Status:** Bounded desk review — pending review
+**Date:** 2026-11-15
 **Execution:** No tools installed, invoked, benchmarked or security-tested.
 
 ## 1. Biglan dimensions

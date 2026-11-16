@@ -1,9 +1,9 @@
 # UNI-DP-10 — Meta-Research Architecture: Evidence Graphs, Claim Verification and Reproducible Synthesis
 ## v0.1.0 — UNIVERSALIS public research specification
 
-**Status:** Proposed public domain pack — pending review  
-**Date:** 2026-11-15  
-**Boundary:** Public tools, public research and portable non-sensitive schemas only  
+**Status:** Proposed public domain pack — pending review
+**Date:** 2026-11-15
+**Boundary:** Public tools, public research and portable non-sensitive schemas only
 **Implementation:** Not performed
 
 ## 1. Purpose

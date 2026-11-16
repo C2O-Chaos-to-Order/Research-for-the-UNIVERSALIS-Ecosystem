@@ -1,10 +1,10 @@
 # UNI-DP-07 — Periodic Table and Materials Property Layer
 ## Public research proposal v0.1.0
 
-**Status:** Owner-supplied material-layer model recorded; scientific/tool review pending  
-**Scope:** Open element-property data, materials structures, computational workflows, knowledge graphs, and portable evidence contracts  
-**Implementation status:** Not started  
-**Experiment / simulation status:** Not executed  
+**Status:** Owner-supplied material-layer model recorded; scientific/tool review pending
+**Scope:** Open element-property data, materials structures, computational workflows, knowledge graphs, and portable evidence contracts
+**Implementation status:** Not started
+**Experiment / simulation status:** Not executed
 **Release status:** Draft research branch only; no merge or product adoption implied
 
 ---

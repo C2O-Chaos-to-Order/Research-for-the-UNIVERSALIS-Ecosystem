@@ -1,13 +1,13 @@
 # Source Qualification Addendum — Good / Greater Good Duality
 ## v0.1.0 — UNIVERSALIS public source register
 
-**Status:** Bounded desk review — pending review  
-**Date:** 2026-11-15  
+**Status:** Bounded desk review — pending review
+**Date:** 2026-11-15
 **Execution:** No tools or benchmarks executed.
 
 ## 1. Normative source
 
-**Stanford Encyclopedia of Philosophy — “Treating Persons as Means.”**  
+**Stanford Encyclopedia of Philosophy — “Treating Persons as Means.”**
 https://plato.stanford.edu/entries/persons-means/
 
 The article explains the Kantian Formula of Humanity: persons are not to be treated merely as means. It also distinguishes impermissible treatment as a mere means from permissible forms of cooperation or using another's services while still respecting their agency and standing. This is a philosophical interpretation, not a universal legal code or a complete ethical decision procedure.

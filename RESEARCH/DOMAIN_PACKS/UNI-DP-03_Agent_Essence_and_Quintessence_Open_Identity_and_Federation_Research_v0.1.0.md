@@ -1,9 +1,9 @@
 # UNI-DP-03 — Agent Essence and Quintessence: Open Identity and Federation Research
 ## Public research proposal v0.1.0
 
-**Status:** Proposed research package; standards, security, and interoperability review pending  
-**Scope:** Portable agent identity, continuity, credentials, delegation, multi-agent federation, and coherent integration  
-**Implementation status:** Not started  
+**Status:** Proposed research package; standards, security, and interoperability review pending
+**Scope:** Portable agent identity, continuity, credentials, delegation, multi-agent federation, and coherent integration
+**Implementation status:** Not started
 **Test status:** No credential or federation tests executed
 
 ---

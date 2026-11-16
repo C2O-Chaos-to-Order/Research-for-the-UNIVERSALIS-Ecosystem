@@ -1,7 +1,7 @@
 # UNIVERSALIS Research Tool Landscape — 2026-11-12
 
-**Status:** Owner-supplied research intake; candidate inventory, not an adoption decision.  
-**Thread:** UNIVERSALIS OS / MotherThread.  
+**Status:** Owner-supplied research intake; candidate inventory, not an adoption decision.
+**Thread:** UNIVERSALIS OS / MotherThread.
 **Purpose:** Record file-system-native, composable research substrates and shared research-fabric candidates for evaluation before implementation.
 
 ## Placement rule

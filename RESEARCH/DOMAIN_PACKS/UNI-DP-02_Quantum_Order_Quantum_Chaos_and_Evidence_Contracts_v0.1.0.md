@@ -1,8 +1,8 @@
 # UNI-DP-02 — Quantum Order and Quantum Chaos: Open Research Tools and Evidence Contracts
 ## Public research proposal v0.1.0
 
-**Status:** Proposed public research package; independent technical review pending  
-**Scope:** Quantum Order, Quantum Chaos, controlled chaos engineering, and quantum chaos alchemy  
+**Status:** Proposed public research package; independent technical review pending
+**Scope:** Quantum Order, Quantum Chaos, controlled chaos engineering, and quantum chaos alchemy
 **Implementation/experiment status:** No code, simulator or QPU execution performed by this document
 
 ---

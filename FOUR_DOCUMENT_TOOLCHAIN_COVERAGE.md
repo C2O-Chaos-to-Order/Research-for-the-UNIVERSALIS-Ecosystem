@@ -2,8 +2,8 @@
 
 # Four-Document Toolchain Coverage Register
 
-**Date:** 2026-11-12  
-**Scope:** Four owner-supplied toolchain documents: Human Knowledge; Powers / Energy Efficiency / Synergy; Human Capabilities; Mapping / Matrix / Organization / Ecosystem Mapping.  
+**Date:** 2026-11-12
+**Scope:** Four owner-supplied toolchain documents: Human Knowledge; Powers / Energy Efficiency / Synergy; Human Capabilities; Mapping / Matrix / Organization / Ecosystem Mapping.
 **Purpose:** Preserve every named tool and architectural pattern, identify its owning repository, and distinguish a documented candidate from an implemented contract or an integrated product.
 
 ## 1. Reading the status labels

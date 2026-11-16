@@ -1,10 +1,10 @@
 # UNI-DP-05 — Complete Elemental Matrix and Four-Operation Order Architecture
 ## Public research proposal v0.1.0
 
-**Status:** Owner-supplied model recorded as a public research proposal; owner/reviewer disposition pending  
-**Scope:** Elemental matrix, Essence/Quintessence distinction, open order-operation tools and portable contracts  
-**Implementation status:** Not started  
-**Test / simulation status:** Not executed  
+**Status:** Owner-supplied model recorded as a public research proposal; owner/reviewer disposition pending
+**Scope:** Elemental matrix, Essence/Quintessence distinction, open order-operation tools and portable contracts
+**Implementation status:** Not started
+**Test / simulation status:** Not executed
 **Release status:** Draft PR only; no merge or product adoption implied
 
 ---

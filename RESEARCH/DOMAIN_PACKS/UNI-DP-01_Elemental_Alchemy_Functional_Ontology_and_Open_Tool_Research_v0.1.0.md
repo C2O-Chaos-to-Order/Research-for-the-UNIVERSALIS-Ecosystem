@@ -1,11 +1,11 @@
 # UNI-DP-01 — Elemental Alchemy: Functional Ontology, Combinatorial Derivation, and Open Tool Research
 ## Public research proposal v0.1.0
 
-**Status:** Proposed public research package; independent review and source qualification pending  
-**Scope:** UNIVERSALIS-compatible ontology concepts, open/public tool research, and portable non-sensitive contracts  
-**Source basis:** Owner-supplied research notes; AI-assisted organization and bounded public-source qualification  
-**Implementation status:** Not started  
-**Research/simulation status:** No implementation or experiment executed by this document  
+**Status:** Proposed public research package; independent review and source qualification pending
+**Scope:** UNIVERSALIS-compatible ontology concepts, open/public tool research, and portable non-sensitive contracts
+**Source basis:** Owner-supplied research notes; AI-assisted organization and bounded public-source qualification
+**Implementation status:** Not started
+**Research/simulation status:** No implementation or experiment executed by this document
 **Release status:** Draft branch only; no merge or product adoption implied
 
 ---

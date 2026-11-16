@@ -1,7 +1,7 @@
 # UNIVERSALIS Engineering, Verification, Research, and Immersive Toolchain Proposal
 
-**Date recorded:** 2026-11-12  
-**Status:** Owner-supplied proposal; candidates are proposed and unverified, not approved deployments.  
+**Date recorded:** 2026-11-12
+**Status:** Owner-supplied proposal; candidates are proposed and unverified, not approved deployments.
 **Scope:** Open UNIVERSALIS / MotherThread repository responsibilities, shared engineering controls, immersive WebXR, and the controlled integration boundary with C2O.
 
 ## 1. Architectural placement and boundary

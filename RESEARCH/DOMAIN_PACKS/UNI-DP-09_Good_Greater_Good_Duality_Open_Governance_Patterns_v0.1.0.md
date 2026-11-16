@@ -1,9 +1,9 @@
 # UNI-DP-09 — Good / Greater Good Duality: Open Governance Patterns and Evidence Contracts
 ## v0.1.0 — UNIVERSALIS public research specification
 
-**Status:** Proposed public domain pack — pending review  
-**Date:** 2026-11-15  
-**Boundary:** Public tools, public research and portable non-sensitive contracts only  
+**Status:** Proposed public domain pack — pending review
+**Date:** 2026-11-15
+**Boundary:** Public tools, public research and portable non-sensitive contracts only
 **Implementation:** Not performed
 
 ## 1. Purpose

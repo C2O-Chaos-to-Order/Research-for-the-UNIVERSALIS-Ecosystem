@@ -1,8 +1,8 @@
 # Public Domain Pack Source Qualification Register
 ## Elemental, Quantum, Identity, and Authorized Security Research v0.1.0
 
-**Status:** Initial bounded source register; review and release disposition pending  
-**Date:** 2026-11-15  
+**Status:** Initial bounded source register; review and release disposition pending
+**Date:** 2026-11-15
 **Purpose:** Preserve exact public source locators and distinguish project existence from validation of project claims.
 
 ## 1. Status vocabulary
