@@ -172,4 +172,4 @@ Each bridge candidate requires independent source, license, security, protocol, 
 ## 9. Relationship to companion record
 
 The C2O counterpart records private FatherThread assurance and governance responsibilities. Its private details are not reproduced here:
-[Research for the C2O Ecosystem](https://github.com/C2O-Chaos-to-Order/Research-for-the-C2O-Ecosystem).
+a private counterpart (not public).

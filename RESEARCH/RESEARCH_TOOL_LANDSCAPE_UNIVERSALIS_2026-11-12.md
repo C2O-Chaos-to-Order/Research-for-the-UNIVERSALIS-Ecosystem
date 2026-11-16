@@ -6,7 +6,9 @@
 
 ## Placement rule
 
-Research records, comparative analysis, rubrics, evidence, and adoption decisions belong in this research repository. Actual public UNIVERSALIS tools and reusable implementations must be built in `C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem`. Private C2O governance and authority tools belong in `C2O-Chaos-to-Order/The-C2O-Ecosystem`. Shared capabilities must be exposed through explicit, versioned, portable interfaces; public UNIVERSALIS components must not contain C2O private credentials, private policy, or authority state.
+> Rule No. 1 — "Do No Harm. Do No Destruction." Canonical: `foundation/RULE_1.md` in The-UNIVERSALIS-Ecosystem, canonical-text sha256 `b029644d741d99dab4bfcdd0d28f25a03dad67dff0a8032f2b999109f7d31317`.
+
+Research records, comparative analysis, rubrics, evidence, and adoption decisions belong in this research repository. Actual public UNIVERSALIS tools and reusable implementations must be built in `C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem`. Private C2O governance and authority tools belong in a private counterpart (not public). Shared capabilities must be exposed through explicit, versioned, portable interfaces; public UNIVERSALIS components must not contain C2O private credentials, private policy, or authority state.
 
 ## MotherThread research-substrate candidates
 
@@ -75,8 +77,8 @@ No weighted score or pass threshold is assigned in this intake. Define and appro
 ## Cross-repository coordination
 
 - UNIVERSALIS implementation destination: [The UNIVERSALIS Ecosystem](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem)
-- C2O research counterpart: [Research for the C2O Ecosystem](https://github.com/C2O-Chaos-to-Order/Research-for-the-C2O-Ecosystem)
-- C2O implementation destination: [The C2O Ecosystem](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem)
+- C2O research counterpart: a private counterpart (not public)
+- C2O implementation destination: a private counterpart (not public)
 
 
 ## Follow-up primary-source discovery — 2026-11-12
