@@ -7,7 +7,7 @@
 
 ## 1. Governing implementation rule
 
-The governing C2O Research Plan and Do No Harm rule apply. Build only against accepted requirements, in the public UNIVERSALIS product repository, using public-approved source material. Do not expose or import private C2O source, credentials, data, infrastructure, or authority.
+The governing private research methodology and the Do No Harm rule apply. Build only against accepted requirements, in the public UNIVERSALIS product repository, using public-approved source material. Do not expose or import private C2O source, credentials, data, infrastructure, or authority.
 
 Report 13's open research gaps govern what must be learned. Report 14's build/no-build scope governs what may be designed. This roadmap is not permission to implement, deploy, or publish.
 

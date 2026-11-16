@@ -25,7 +25,7 @@ The research does not assume that any capability is already implemented, indepen
 
 > Rule No. 1 — "Do No Harm. Do No Destruction." Canonical: `foundation/RULE_1.md` in The-UNIVERSALIS-Ecosystem, canonical-text sha256 `b029644d741d99dab4bfcdd0d28f25a03dad67dff0a8032f2b999109f7d31317`.
 
-The Unified C2O Research Plan is the governing methodology. This charter is a subject-specific application of that Plan.
+A private governing research methodology applies. This charter is a subject-specific application of that methodology.
 
 Applicable foundational obligations include:
 - Rule 1 — Do No Harm.

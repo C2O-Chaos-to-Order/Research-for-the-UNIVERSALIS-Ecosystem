@@ -45,7 +45,7 @@ On 2026-11-15, all four domain documents, the source register, package README, a
 - Independent review of ontology assignments, source mapping, tool licenses, security, and scientific claims remains open.
 - Exact repository/release/version pins remain incomplete for many candidates.
 - No source code implementation, benchmark, tool test, quantum experiment, penetration test, legal review, or security audit was performed.
-- The packages do not amend the governing C2O Research Plan, confer pass credit, or authorize implementation.
+- The packages do not amend the governing private research methodology, confer pass credit, or authorize implementation.
 - Next: owner/reviewer disposition through a draft pull request; product work requires separate requirements, architecture, and release gates.
 
 
