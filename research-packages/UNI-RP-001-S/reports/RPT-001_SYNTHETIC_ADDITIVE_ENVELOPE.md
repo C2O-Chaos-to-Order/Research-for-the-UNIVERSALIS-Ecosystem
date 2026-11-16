@@ -23,4 +23,4 @@ new negative-control test covers nonzero initial error.
 5. SIM-005. All 50 generated rows were reproduced with zero mismatches.
 
 No owner credit is awarded. No independent review was performed. The package
-is INTERNAL_CANDIDATE and is not release-authorized.
+is UNRELEASED_CANDIDATE and is not release-authorized.

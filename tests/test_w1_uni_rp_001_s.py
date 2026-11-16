@@ -19,11 +19,11 @@ class UniRp001STests(unittest.TestCase):
     def test_records_are_internal_candidate(self):
         sources = json.loads((PACKAGE / "sources" / "source_register.json").read_text())
         for source in sources:
-            self.assertEqual(source["release_classification"], "INTERNAL_CANDIDATE")
+            self.assertEqual(source["release_classification"], "UNRELEASED_CANDIDATE")
             self.assertEqual(source.get("repository"), "Research-for-the-UNIVERSALIS-Ecosystem")
             self.assertNotIn("C2O", source.get("repository", ""))
         status = json.loads((PACKAGE / "metadata" / "programme_status.json").read_text())
-        self.assertEqual(status["release_classification"], "INTERNAL_CANDIDATE")
+        self.assertEqual(status["release_classification"], "UNRELEASED_CANDIDATE")
         self.assertEqual(status["repository"], "Research-for-the-UNIVERSALIS-Ecosystem")
         self.assertFalse(status["release_authorized"])
 

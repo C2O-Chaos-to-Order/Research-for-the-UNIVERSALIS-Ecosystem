@@ -6,4 +6,4 @@ for this package. They do not cite, instantiate, or evaluate any C2O clause.
 
 A clean leak check against the private corpus is a character-run screen, not a
 claim that the package has been cleared for public release. The package remains
-INTERNAL_CANDIDATE until an owner release record says otherwise.
+UNRELEASED_CANDIDATE until an owner release record says otherwise.

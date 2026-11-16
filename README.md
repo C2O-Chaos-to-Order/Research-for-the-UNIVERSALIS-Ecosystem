@@ -51,7 +51,7 @@ Initialization, and the presence of Golden-Compass papers, do not mean the resea
 - PR #3 — Reciprocal Stewardship Charter. It remains a proposal and does not establish legal independence, accepted governing policy, or implementation authorization.
 - PR #4 — research-package, provenance, and reproduction CI checks.
 
-**Open:** PR #8 — UNI-RP-001-S. Its mathematical claim and implementation have been corrected to include the initial-error term; its dedicated tests, SHA-256 manifest check, and same-code re-execution passed on the PR branch. It remains `INTERNAL_CANDIDATE`, is not release-authorized, and has not been merged into this public repository's `main`.
+**Open:** PR #8 — UNI-RP-001-S. Its mathematical claim and implementation have been corrected to include the initial-error term; its dedicated tests, SHA-256 manifest check, and same-code re-execution passed on the PR branch. It remains `UNRELEASED_CANDIDATE`, is not release-authorized, and has not been merged into this public repository's `main`.
 
 **Closed without merge:** PRs #2, #5, #6, and #7. Their work is not counted as merged or accepted. The Emerald research package and the stacked output-isolation, re-execution, and source-locator changes require content-level reconciliation against current `main` and surviving branches before any replacement or pass credit is claimed.
 

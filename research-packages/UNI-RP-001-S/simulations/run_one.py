@@ -253,7 +253,7 @@ def main(argv: list[str] | None = None) -> int:
             "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
             "independent_review": "NOT_PERFORMED",
             "randomness": "none",
-            "release_classification": "INTERNAL_CANDIDATE",
+            "release_classification": "UNRELEASED_CANDIDATE",
         }
     )
     destination.parent.mkdir(parents=True, exist_ok=True)

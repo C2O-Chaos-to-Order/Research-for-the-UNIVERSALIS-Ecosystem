@@ -43,7 +43,7 @@
       "SYN-00-01"
     ],
     "limitations": "Zero drive cannot stress the envelope; the case is a harness check only.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   },
   {
     "id": "SIM-002",
@@ -89,7 +89,7 @@
       "SYN-00-01"
     ],
     "limitations": "Sharpness is shown for a constant drive only.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   },
   {
     "id": "SIM-003",
@@ -133,7 +133,7 @@
       "SYN-00-01"
     ],
     "limitations": "Only one expanding family is exercised.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   },
   {
     "id": "SIM-004",
@@ -179,7 +179,7 @@
       "SYN-00-01"
     ],
     "limitations": "The missing uniform cap is a property of this additive form only.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   },
   {
     "id": "SIM-005",
@@ -209,6 +209,6 @@
       "SYN-00-01"
     ],
     "limitations": "Reproduction shows internal consistency with the generation script, not external validity.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   }
 ]

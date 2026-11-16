@@ -80,9 +80,9 @@
   "exit_code": 0,
   "code_path": "simulations/model.py",
   "code_sha256": "70ec542478f611ac1c59a05adcc56dfb1f0ce68b5c1b0bc076fbc6962e104ba9",
-  "fixtures_sha256": "bd3a7153efc94a8486f1ceb0f0c14726edad580ff02347d87f104677130d44e1",
+  "fixtures_sha256": "d66ea67b1af79374d38e99766b68f4ab2b45e271d2e43a014ef82797cedb39ae",
   "programme_credit": "CANDIDATE_PENDING_OWNER_REVIEW",
   "independent_review": "NOT_PERFORMED",
   "randomness": "none",
-  "release_classification": "INTERNAL_CANDIDATE"
+  "release_classification": "UNRELEASED_CANDIDATE"
 }

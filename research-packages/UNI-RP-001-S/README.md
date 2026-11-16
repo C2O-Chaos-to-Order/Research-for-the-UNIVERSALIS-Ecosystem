@@ -8,7 +8,7 @@ bound, SYN-BND-001. The bound, the inputs, the generated table, and the
 generation script were written for this package. They are not drawn from a
 private corpus and they do not evaluate any C2O clause.
 
-Release classification: INTERNAL_CANDIDATE. No owner record authorizes public
+Release classification: UNRELEASED_CANDIDATE. No owner record authorizes public
 release. Labels alone do not authorize release.
 
 ## Bound in brief

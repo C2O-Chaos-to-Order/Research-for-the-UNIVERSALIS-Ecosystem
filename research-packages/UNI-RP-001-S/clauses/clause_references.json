@@ -6,6 +6,6 @@
     "side": "unspecified",
     "placeholder": false,
     "note": "Synthetic bound id only. Not a C2O clause.",
-    "release_classification": "INTERNAL_CANDIDATE"
+    "release_classification": "UNRELEASED_CANDIDATE"
   }
 ]
