@@ -306,13 +306,13 @@ These run links show the dedicated contract workflows and repository-quality bas
 
 | Domain | C2O contract / graph | C2O quality | UNIVERSALIS contract / graph | UNIVERSALIS quality |
 |---|---|---|---|---|
-| Human Knowledge | [43233037409](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Knowledge/actions/runs/43233037409) | [43233037332](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Knowledge/actions/runs/43233037332) | [43233072778](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072778) | [43233072777](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072777) |
-| Powers / Energy | [43237146027](https://github.com/C2O-Chaos-to-Order/The-C2O-Powers/actions/runs/43237146027) | [43237145898](https://github.com/C2O-Chaos-to-Order/The-C2O-Powers/actions/runs/43237145898) | [43237154087](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154087) | [43237154046](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154046) |
-| Human Capabilities | [43238884857](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Capabilities/actions/runs/43238884857) | [43238884861](https://github.com/C2O-Chaos-to-Order/The-C2O-Human-Capabilities/actions/runs/43238884861) | [43238904991](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904991) | [43238904935](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904935) |
-| Mapping / Matrix | [43238968417](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238968417) | [43238968426](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238968426) | [43238990961](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238990961) | [43238991355](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991355) |
+| Human Knowledge | private run (not public) | private run (not public) | [43233072778](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072778) | [43233072777](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Knowledge/actions/runs/43233072777) |
+| Powers / Energy | private run (not public) | private run (not public) | [43237154087](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154087) | [43237154046](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Intelligence-Powers/actions/runs/43237154046) |
+| Human Capabilities | private run (not public) | private run (not public) | [43238904991](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904991) | [43238904935](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Human-Capabilities/actions/runs/43238904935) |
+| Mapping / Matrix | private run (not public) | private run (not public) | [43238990961](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238990961) | [43238991355](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991355) |
 
 Additional ecosystem checks:
-- C2O Repository Verification: [43238969066](https://github.com/C2O-Chaos-to-Order/The-C2O-Ecosystem/actions/runs/43238969066).
+- C2O Repository Verification: private run (not public).
 - UNIVERSALIS Engineering Doctor: [43238991130](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991130).
 - UNIVERSALIS Repository Verification: [43238991044](https://github.com/C2O-Chaos-to-Order/The-UNIVERSALIS-Ecosystem/actions/runs/43238991044).
 
