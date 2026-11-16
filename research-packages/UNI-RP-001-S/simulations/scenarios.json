@@ -1,0 +1,214 @@
+[
+  {
+    "id": "SIM-001",
+    "research_record_id": "RES-001",
+    "checkpoint_id": "SYN-CP-01",
+    "family": "still",
+    "protocol_version": "1",
+    "configuration": "exact rational arithmetic; case kind envelope_on_working_box",
+    "input": {
+      "kind": "envelope_on_working_box",
+      "family": "still",
+      "start": [
+        "2",
+        "2"
+      ],
+      "z": "2",
+      "steps": 5,
+      "delta": "0",
+      "working_box": [
+        "-10",
+        "10"
+      ],
+      "ambient_box": [
+        "-10",
+        "10"
+      ]
+    },
+    "expected": {
+      "bound_satisfied_at_every_step": true,
+      "hypothesis_held_at_every_step": true,
+      "final_true_error": "0",
+      "max_true_error": "0",
+      "max_claimed_bound": "0",
+      "steps_within_working_box": 6,
+      "worst_error_minus_bound": "0"
+    },
+    "source_ids": [
+      "SRC-SYN-BOUND",
+      "SRC-SYN-TABLE",
+      "SRC-SYN-GENERATOR"
+    ],
+    "clause_ids": [
+      "SYN-00-01"
+    ],
+    "limitations": "Zero drive cannot stress the envelope; the case is a harness check only.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  },
+  {
+    "id": "SIM-002",
+    "research_record_id": "RES-002",
+    "checkpoint_id": "SYN-CP-01",
+    "family": "steady_drive",
+    "protocol_version": "1",
+    "configuration": "exact rational arithmetic; case kind envelope_on_working_box",
+    "input": {
+      "kind": "envelope_on_working_box",
+      "family": "steady_drive",
+      "start": [
+        "2",
+        "2"
+      ],
+      "z": "2",
+      "steps": 5,
+      "delta": "1/5",
+      "working_box": [
+        "-10",
+        "10"
+      ],
+      "ambient_box": [
+        "-10",
+        "10"
+      ]
+    },
+    "expected": {
+      "bound_satisfied_at_every_step": true,
+      "hypothesis_held_at_every_step": true,
+      "final_true_error": "1",
+      "max_true_error": "1",
+      "max_claimed_bound": "1",
+      "steps_within_working_box": 6,
+      "worst_error_minus_bound": "0"
+    },
+    "source_ids": [
+      "SRC-SYN-BOUND",
+      "SRC-SYN-TABLE",
+      "SRC-SYN-GENERATOR"
+    ],
+    "clause_ids": [
+      "SYN-00-01"
+    ],
+    "limitations": "Sharpness is shown for a constant drive only.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  },
+  {
+    "id": "SIM-003",
+    "research_record_id": "RES-003",
+    "checkpoint_id": "SYN-CP-01",
+    "family": "expanding",
+    "protocol_version": "1",
+    "configuration": "exact rational arithmetic; case kind working_box_escape",
+    "input": {
+      "kind": "working_box_escape",
+      "family": "expanding",
+      "start": [
+        "2",
+        "2"
+      ],
+      "z": "2",
+      "steps": 6,
+      "delta": "2",
+      "working_box": [
+        "-3",
+        "3"
+      ],
+      "ambient_box": [
+        "-6",
+        "6"
+      ]
+    },
+    "expected": {
+      "first_step_hypothesis_broken": 1,
+      "first_step_bound_violated": 2,
+      "first_step_outside_ambient": 2,
+      "hypothesis_broke_before_bound": true,
+      "max_true_error": "126"
+    },
+    "source_ids": [
+      "SRC-SYN-BOUND",
+      "SRC-SYN-TABLE",
+      "SRC-SYN-GENERATOR"
+    ],
+    "clause_ids": [
+      "SYN-00-01"
+    ],
+    "limitations": "Only one expanding family is exercised.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  },
+  {
+    "id": "SIM-004",
+    "research_record_id": "RES-004",
+    "checkpoint_id": "SYN-CP-01",
+    "family": "steady_drive",
+    "protocol_version": "1",
+    "configuration": "exact rational arithmetic; case kind duration_growth",
+    "input": {
+      "kind": "duration_growth",
+      "family": "steady_drive",
+      "start": [
+        "2",
+        "2"
+      ],
+      "z": "2",
+      "steps": 5,
+      "delta": "1/5",
+      "working_box": [
+        "-10",
+        "10"
+      ],
+      "ambient_box": [
+        "-10",
+        "10"
+      ],
+      "reference_budget": "1/2"
+    },
+    "expected": {
+      "bound_grows_with_duration": true,
+      "no_finite_uniform_cap": true,
+      "final_claimed_bound": "1",
+      "max_true_error": "1",
+      "reference_budget": "1/2",
+      "claimed_bound_exceeds_reference": true
+    },
+    "source_ids": [
+      "SRC-SYN-BOUND",
+      "SRC-SYN-TABLE",
+      "SRC-SYN-GENERATOR"
+    ],
+    "clause_ids": [
+      "SYN-00-01"
+    ],
+    "limitations": "The missing uniform cap is a property of this additive form only.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  },
+  {
+    "id": "SIM-005",
+    "research_record_id": "RES-005",
+    "checkpoint_id": "SYN-CP-01",
+    "family": "generated_table",
+    "protocol_version": "1",
+    "configuration": "exact rational arithmetic; case kind reproduce_generated_table",
+    "input": {
+      "kind": "reproduce_generated_table",
+      "table_csv": "sources/generated/synthetic_envelope_table.csv",
+      "expected_row_count": 50
+    },
+    "expected": {
+      "expected_row_count": 50,
+      "rows_checked": 50,
+      "rows_mismatched": 0,
+      "mismatches": [],
+      "row_count_matches_expectation": true
+    },
+    "source_ids": [
+      "SRC-SYN-BOUND",
+      "SRC-SYN-TABLE",
+      "SRC-SYN-GENERATOR"
+    ],
+    "clause_ids": [
+      "SYN-00-01"
+    ],
+    "limitations": "Reproduction shows internal consistency with the generation script, not external validity.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  }
+]

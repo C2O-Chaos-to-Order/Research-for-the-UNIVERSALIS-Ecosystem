@@ -1,0 +1,11 @@
+[
+  {
+    "clause_id": "SYN-00-01",
+    "tablet_number": 0,
+    "clause_number": 1,
+    "side": "unspecified",
+    "placeholder": false,
+    "note": "Synthetic bound id only. Not a C2O clause.",
+    "release_classification": "INTERNAL_CANDIDATE"
+  }
+]

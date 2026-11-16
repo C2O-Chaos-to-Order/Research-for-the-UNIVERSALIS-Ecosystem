@@ -1,0 +1,17 @@
+[
+  {
+    "requirement_id": "ULC-00-01",
+    "objective_question": "Does the additive envelope remain a guarantee after the state leaves the working box, and if not, what must be re-checked?",
+    "candidate_requirement": "An envelope of this form must name a working box that is closed under the intended iteration and must be re-checked at each step. A bound that holds only where its premise holds, and whose premise is not re-checked as the state evolves, is not a guarantee over later steps.",
+    "research_record_id": "RES-003",
+    "simulation_record_id": "SIM-003",
+    "clause_id": "SYN-00-01",
+    "classification": "candidate_safety_requirement (synthetic envelope)",
+    "implementation": "None. No UNIVERSALIS component implements this candidate.",
+    "production_validation": "NOT_PERFORMED",
+    "evidence_status": "documented",
+    "authorization_status": "NOT_AUTHORIZED",
+    "programme_credit": "NONE",
+    "release_classification": "INTERNAL_CANDIDATE"
+  }
+]
