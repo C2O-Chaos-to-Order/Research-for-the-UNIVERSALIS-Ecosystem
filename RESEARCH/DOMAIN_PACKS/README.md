@@ -2,6 +2,8 @@
 
 **Status:** Proposed public research packages; owner/reviewer disposition pending
 
+> **Disposition note (2026-11-16 master integration):** held under owner decision D-F (public scope). The element names, compositions and higher-order labels in UNI-DP-01 and UNI-DP-05 (including Wave, the Ice/Nature assignments, Aether/Chaos/Void/Logos/Eros and Unity) are historical candidates recorded by PR #13. They are **not adopted** and are not the owner's current model. Whether a public version of the model is published, or only the generic 2ⁿ−1 combination method, is pending D-F. Known open items carried from review: UNI-DP-06 is absent from this directory; three dead links remain to be checked.
+
 This directory contains public-side, independently operable research proposals. It does not contain private C2O implementation, credentials, operational data, internal policies, target scopes, or authority services.
 
 ## Packages
