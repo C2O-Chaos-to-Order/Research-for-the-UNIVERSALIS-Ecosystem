@@ -90,10 +90,10 @@ A component PASS is not a system PASS. A system PASS is not release authorizatio
 
 ## 7. Repository placement
 
-- Research methodology and source Tablet collections: `Research-for-the-C2O-Ecosystem`.
+- Research methodology and source Tablet collections: a private counterpart (not public).
 - UNIVERSALIS-specific research, reports, evidence, test protocols and traceability: `Research-for-the-UNIVERSALIS-Ecosystem`.
 - Public product architecture, code, tests, developer docs and releases: `The-UNIVERSALIS-Ecosystem`.
-- Private C2O governance, J.A.R.V.I.S., private infrastructure and coupling controls: `The-C2O-Ecosystem`.
+- Private C2O governance, J.A.R.V.I.S., private infrastructure and coupling controls: a private counterpart (not public).
 
 The public UNIVERSALIS product repository's current main branch contains its README, scaffold tooling, prototype code, and tests. Their presence does not establish that the proposed product capability is accepted, production-ready, or release-authorized. Further implementation and release scope must remain tied to accepted requirements and build-stage gates. Private C2O source is excluded from the public product and must not be transferred without separate source classification and explicit owner release approval.
 

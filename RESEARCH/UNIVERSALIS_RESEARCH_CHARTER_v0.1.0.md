@@ -23,6 +23,8 @@ The research does not assume that any capability is already implemented, indepen
 
 ## 2. Governing authority
 
+> Rule No. 1 — "Do No Harm. Do No Destruction." Canonical: `foundation/RULE_1.md` in The-UNIVERSALIS-Ecosystem, canonical-text sha256 `b029644d741d99dab4bfcdd0d28f25a03dad67dff0a8032f2b999109f7d31317`.
+
 The Unified C2O Research Plan is the governing methodology. This charter is a subject-specific application of that Plan.
 
 Applicable foundational obligations include:
@@ -63,10 +65,10 @@ A future proposal for an excluded capability requires a separate charter, risk a
 
 ## 5. Source and repository boundaries
 
-- Governing research method and tablet source collections remain in `Research-for-the-C2O-Ecosystem`.
+- Governing research method and tablet source collections remain in a private counterpart (not public).
 - UNIVERSALIS-specific research outputs and evidence belong in `Research-for-the-UNIVERSALIS-Ecosystem`.
 - Open-source UNIVERSALIS product architecture, source code, tests, developer documentation, and releases belong in `The-UNIVERSALIS-Ecosystem`.
-- C2O private governance, J.A.R.V.I.S. operations, internal infrastructure, credentials, private data, and coupling controls remain in `The-C2O-Ecosystem`.
+- C2O private governance, J.A.R.V.I.S. operations, internal infrastructure, credentials, private data, and coupling controls remain in a private counterpart (not public).
 
 Repository visibility is not permission to transfer material. Public research outputs must contain only information classified and approved for public release.
 

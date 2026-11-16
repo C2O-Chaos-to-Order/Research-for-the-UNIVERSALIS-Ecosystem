@@ -6,7 +6,9 @@
 
 ## Authority and relationship
 
-The [Unified C2O Research Plan](https://github.com/C2O-Chaos-to-Order/Research-for-the-C2O-Ecosystem/blob/main/The%20C2O%20Research%20Plan/README.md) is the governing research methodology. This repository applies that methodology to UNIVERSALIS; it does not replace or silently amend the governing Plan.
+> Rule No. 1 — "Do No Harm. Do No Destruction." Canonical: `foundation/RULE_1.md` in The-UNIVERSALIS-Ecosystem, canonical-text sha256 `b029644d741d99dab4bfcdd0d28f25a03dad67dff0a8032f2b999109f7d31317`.
+
+A private research Plan (a private counterpart, not public) governs methodology. The public methodology for this repository is stated here and in `RESEARCH/UNIVERSALIS_RESEARCH_CHARTER_v0.1.0.md`; this repository applies it to UNIVERSALIS and does not replace or silently amend the governing Plan. Public work must remain usable without access to any private repository.
 
 The paired technical and Human Tablet collections are maintained in the C2O research repository. They are proposed contemporary research artifacts and interpretive inputs, not independent scientific authority, implementation proof, or permission to act.
 
