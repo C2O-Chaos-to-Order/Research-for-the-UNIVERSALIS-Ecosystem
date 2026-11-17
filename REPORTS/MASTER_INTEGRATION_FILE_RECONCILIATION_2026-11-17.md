@@ -48,7 +48,7 @@ Source head: `879ea3c26944ebb1cf46427f62e18f17ddc16dfa`; changed paths: 6; sourc
 
 | #12 | `.github/scripts/repository_quality_baseline.py` | `7dfe6492f60a2f4f02846efadfab4d3d48ebb3da` | `—` | explicitly held outside active tree |
 | #12 | `.github/workflows/repository-quality.yml` | `4455975bd07a1b4ea53e31cde5b7014e0afb69d2` | `—` | explicitly held outside active tree |
-| #12 | `.github/workflows/repository-verification.yml` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | listed in held inventory but byte-identical in active tree |
+| #12 | `.github/workflows/repository-verification.yml` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | PR #12 version equals active main baseline; PR #8's later modified version of this path is held |
 | #12 | `ENGINEERING_TOOLCHAIN.md` | `3b752492d53f993d3d7578468d196544a29f6822` | `22b959685809e881add26bc8a2ab1ede908030f2` | present; blob differs; content review required |
 | #12 | `FOUR_DOCUMENT_TOOLCHAIN_COVERAGE.md` | `4560a8d9cad0a56b5f6e609ddcea359013d0e0fe` | `3cb740a5e510082e6924c947825a1098c1e6b038` | present; blob differs; content review required |
 | #12 | `TOOLCHAIN_COVERAGE_REGISTER.md` | `c52ce2c505088e5433d00e99e5f5e4ed7f5b5dd2` | `5d776fd41130ec53231387a3e50700d74c02dfcb` | present; blob differs; content review required |
@@ -64,7 +64,7 @@ Source head: `a4cf7203dbb3667234d8d37c59380013b0c1490a`; changed paths: 2; sourc
 
 Source head: `2bc52622a4257e65660cd44c50e796d42e25b50f`; changed paths: 61; source tree truncated: `false`.
 
-| #8 | `.github/workflows/repository-verification.yml` | `7dbcdfe04bbd5039eae0e7c046c4b51510ddf50d` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | present; blob differs; content review required |
+| #8 | `.github/workflows/repository-verification.yml` | `7dbcdfe04bbd5039eae0e7c046c4b51510ddf50d` | `28013840a3f084d81543aa7d3fb43a5ed9153b72` | PR #8 source modification is held; active main-baseline version remains in the master tree |
 | #8 | `research-packages/UNI-RP-001-S/README.md` | `1fbdaf015196f6d60c6ead11f8a2f16a1f176cf4` | `60e00369d574022c1ce173d39e860c87c7e0dd0a` | present; blob differs; content review required |
 | #8 | `research-packages/UNI-RP-001-S/assurance/DOES_NOT_TEST_C2O_CLAUSES.md` | `410a5a9f4526e825224cd4d9add41ff542d064fe` | `a0015c1a7e43e8661f4f6ca413a830d81919ecbf` | present; blob differs; content review required |
 | #8 | `research-packages/UNI-RP-001-S/assurance/reexecute_all.py` | `2477470d595a601fcca04af39ca7d51278443fce` | `2477470d595a601fcca04af39ca7d51278443fce` | byte-identical |
@@ -125,3 +125,14 @@ Source head: `2bc52622a4257e65660cd44c50e796d42e25b50f`; changed paths: 61; sour
 | #8 | `research-packages/UNI-RP-001-S/sources/generated/synthetic_envelope_table.csv` | `27f470c5ee51dfa192c705a0994f1faccc375929` | `27f470c5ee51dfa192c705a0994f1faccc375929` | byte-identical |
 | #8 | `research-packages/UNI-RP-001-S/sources/source_register.json` | `542f5109068bf4565df1dd44d1cdb7e9a0f86675` | `5d4b3effb0290cb1f4c9ebde4dc8474908e16295` | present; blob differs; content review required |
 | #8 | `tests/test_w1_uni_rp_001_s.py` | `40723b722e99656715cae3cc96ed65094e88af74` | `e3b0178d2bebd241f17d5a69ee77759a868c2747` | present; blob differs; content review required |
+## Final current-head reconciliation and hold correction — 2026-11-17
+
+**Final master head containing this audit:** 62369c9dd570a38585f7563527a685cd36ceca30. The four source PRs contain 88 changed-file/PR records across 87 distinct paths. All source and master recursive trees were complete (truncated=false). Every change is accounted for: 28 paths are byte-identical; 56 are present with different blobs, matching the earlier aggregate rework counts after reclassifying one held source version; two added files from PR #12 are absent and explicitly held; and the modified PR #8 version of .github/workflows/repository-verification.yml is held while the active master keeps the main-baseline version. There are no unaccounted missing paths.
+
+### Version-specific .github disposition
+
+- PR #12's .github/scripts/repository_quality_baseline.py and .github/workflows/repository-quality.yml are new source additions and remain absent/held.
+- PR #12's .github/workflows/repository-verification.yml blob is byte-identical to the active main baseline; it is not a unique PR #12 content transfer.
+- PR #8 modifies .github/workflows/repository-verification.yml to a different blob. That PR-specific version is not active; the baseline version remains active. The path remains in the hold inventory because this source-version distinction matters.
+
+The 56 present-but-different paths match the integration rework counts. Source PR heads remain preserved in master history. This audit does not activate the held workflow or claim a CI run.
