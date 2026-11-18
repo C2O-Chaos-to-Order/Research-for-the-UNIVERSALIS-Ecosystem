@@ -28,3 +28,8 @@ Added [UNI-DP-09 — Good / Greater Good Duality](DOMAIN_PACKS/UNI-DP-09_Good_Gr
 ## Meta-Research Architecture — 2026-11-15
 
 Added [UNI-DP-10 — Meta-Research Architecture](DOMAIN_PACKS/UNI-DP-10_Meta_Research_Architecture_Evidence_Graphs_Verification_and_Synthesis_v0.1.0.md) and its [source qualification addendum](DOMAIN_PACKS/SOURCE_QUALIFICATION_ADDENDUM_META_RESEARCH_v0.1.0.md). The public package defines source-to-claim provenance, evidence graphs, research ledgers, systematic synthesis and offline audit without private C2O dependencies.
+
+
+## Governed execution and thermodynamic accounting — 2026-11-18
+
+Added [UNI-DP-11 — Governed Execution, Worker Lifecycle and Thermodynamic Accounting](DOMAIN_PACKS/UNI-DP-11_Governed_Execution_Worker_Lifecycle_and_Thermodynamic_Accounting_v0.1.0.md). It specifies public, provider-neutral research requirements for independent activation gates, worker observation, lifecycle and cancellation, resource reservation, candidate/acceptance separation, classical thermodynamic boundaries, distributed execution risks, migration, accessibility and evidence status. It is a proposed research specification, not a deployed service or authorization to execute work.
