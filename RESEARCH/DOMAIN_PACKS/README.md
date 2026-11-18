@@ -64,3 +64,10 @@ The proposed model separates a non-waivable Good Floor, bounded consequence comp
 Added [UNI-DP-10 — Meta-Research Architecture: Evidence Graphs, Claim Verification and Reproducible Synthesis](UNI-DP-10_Meta_Research_Architecture_Evidence_Graphs_Verification_and_Synthesis_v0.1.0.md) and its [source qualification addendum](SOURCE_QUALIFICATION_ADDENDUM_META_RESEARCH_v0.1.0.md).
 
 The pack defines Discover, Assemble, Verify, Synthesize and Audit, with Persist as a cross-cutting substrate. It provides public evidence-graph, Research Ledger, claim-verification, systematic-review, Research Artifact Bundle and offline-audit contracts. Tool metrics are scope-specific and source-reported; unpinned candidates remain unverified. PRISMA is treated as a reporting guideline, not a substitute for review-conduct or risk-of-bias methods.
+
+
+## Governed Execution and Worker Lifecycle — 2026-11-18
+
+Added [UNI-DP-11 — Governed Execution, Worker Lifecycle and Thermodynamic Accounting](UNI-DP-11_Governed_Execution_Worker_Lifecycle_and_Thermodynamic_Accounting_v0.1.0.md).
+
+The public package defines bounded admission, independent readiness/authorization/budget gates, worker identity and fresh telemetry, cancellation/termination semantics, resource reservation, candidate/acceptance separation, classical thermodynamic accounting, distributed failure analysis, portability, quantum workload boundaries and accessible state presentation. The Elemental and Six-Alchemy content is explicitly framed as interpretive design lenses, not empirical physical properties. UNI-DP-11 is proposed research content; implementation, test execution, independent review, owner acceptance and release authorization remain separate.
