@@ -1,0 +1,5 @@
+family,configurations,completed,expectations_matched,scope
+still,1,1,1,Exact rational arithmetic inside the working box.
+steady_drive,2,2,2,Exact rational arithmetic inside the working box.
+expanding,1,1,1,Exact rational arithmetic; working box and ambient box are checked separately.
+generated_table,1,1,1,One-step reproduction of the generated table only.

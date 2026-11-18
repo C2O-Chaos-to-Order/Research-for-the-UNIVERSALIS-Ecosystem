@@ -17,7 +17,7 @@ The first build decision should remain a bounded, read-only, locally testable pr
 
 The current evidence base includes:
 - A proposed 28-pair technical/Human Tablet collection (IDs 00–27).
-- A governing C2O Research Plan with Do No Harm, risk elimination/reduction, universal subject research, verification, and source-boundary requirements.
+- A governing private research methodology with Do No Harm, risk elimination/reduction, universal subject research, verification, and source-boundary requirements.
 - A UNIVERSALIS continuity research package, historically labelled GIDEON in some earlier records, with 15 reports, 107 research records, 107 scenario configurations, and 107 execution-log records.
 - Finite synthetic models for retrieval, approvals, temporal history, forecasting, replay, state projection, and integration.
 - Private C2O prototype material is excluded from this public evidence base; no private code, branch details, credentials, configuration, or operational records are included or relied upon.

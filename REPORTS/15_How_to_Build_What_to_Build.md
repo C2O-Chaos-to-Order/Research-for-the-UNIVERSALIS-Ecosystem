@@ -7,7 +7,7 @@
 
 ## 1. Governing implementation rule
 
-The governing C2O Research Plan and Do No Harm rule apply. Build only against accepted requirements, in the public UNIVERSALIS product repository, using public-approved source material. Do not expose or import private C2O source, credentials, data, infrastructure, or authority.
+The governing private research methodology and the Do No Harm rule apply. Build only against accepted requirements, in the public UNIVERSALIS product repository, using public-approved source material. Do not expose or import private C2O source, credentials, data, infrastructure, or authority.
 
 Report 13's open research gaps govern what must be learned. Report 14's build/no-build scope governs what may be designed. This roadmap is not permission to implement, deploy, or publish.
 
@@ -15,10 +15,10 @@ Report 13's open research gaps govern what must be learned. Report 14's build/no
 
 | Repository | Visibility / current state | Responsibility |
 |---|---|---|
-| `Research-for-the-C2O-Ecosystem` | Private; populated | Governing research Plan and paired Tablet source collections. |
+| a private counterpart (not public) — research | Private | Governing research Plan and paired Tablet source collections. |
 | `Research-for-the-UNIVERSALIS-Ecosystem` | Public; initialized for research | UNIVERSALIS charter, research reports, requirements, source/evidence registers, test records, independent reviews and release evidence. |
 | `The-UNIVERSALIS-Ecosystem` | Public; README, scaffold tooling, prototype code and tests present; acceptance and production readiness not established | Open-source product architecture, source code, tests, developer documentation, build workflows, packages and releases. |
-| `The-C2O-Ecosystem` | Private; populated | C2O company/governance model, J.A.R.V.I.S. operational architecture, private infrastructure, internal systems, and controlled C2O–UNIVERSALIS coupling. |
+| a private counterpart (not public) — governance | Private | C2O company/governance model, J.A.R.V.I.S. operational architecture, private infrastructure, internal systems, and controlled C2O–UNIVERSALIS coupling. |
 
 Existing UNIVERSALIS domain repositories for ontology, human/intelligence powers, skills, capabilities and knowledge remain taxonomy/content repositories. They are not substitutes for the core product repository. Their current descriptions and metadata include legacy GAIA wording; perform a separate naming, ownership and scope audit before treating them as authoritative UNIVERSALIS registries.
 

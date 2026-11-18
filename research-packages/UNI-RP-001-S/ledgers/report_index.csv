@@ -1,0 +1,2 @@
+report_id,path,title,research_ids,simulation_ids
+RPT-001,reports/RPT-001_SYNTHETIC_ADDITIVE_ENVELOPE.md,Synthetic additive envelope: five executed cases,RES-001; RES-002; RES-003; RES-004; RES-005,SIM-001; SIM-002; SIM-003; SIM-004; SIM-005
